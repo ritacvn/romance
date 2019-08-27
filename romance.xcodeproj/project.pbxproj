@@ -80,6 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				5C1AE09B2314A14100950738 /* romance */,
+				5C9438442314ABDE00622634 /* Controller */,
+				5C9438432314ABD500622634 /* View */,
+				5C9438422314ABC800622634 /* Model */,
 				5C1AE0B32314A14300950738 /* romanceTests */,
 				5C1AE0BE2314A14300950738 /* romanceUITests */,
 				5C1AE09A2314A14100950738 /* Products */,
@@ -99,11 +102,6 @@
 		5C1AE09B2314A14100950738 /* romance */ = {
 			isa = PBXGroup;
 			children = (
-				5C1AE09C2314A14200950738 /* AppDelegate.swift */,
-				5C1AE09E2314A14200950738 /* ViewController.swift */,
-				5C1AE0A02314A14200950738 /* Main.storyboard */,
-				5C1AE0A62314A14300950738 /* Assets.xcassets */,
-				5C1AE0A82314A14300950738 /* LaunchScreen.storyboard */,
 				5C1AE0AB2314A14300950738 /* Info.plist */,
 				5C1AE0A32314A14200950738 /* romance.xcdatamodeld */,
 			);
@@ -126,6 +124,32 @@
 				5C1AE0C12314A14300950738 /* Info.plist */,
 			);
 			path = romanceUITests;
+			sourceTree = "<group>";
+		};
+		5C9438422314ABC800622634 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE09C2314A14200950738 /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C9438432314ABD500622634 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE0A02314A14200950738 /* Main.storyboard */,
+				5C1AE0A62314A14300950738 /* Assets.xcassets */,
+				5C1AE0A82314A14300950738 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C9438442314ABDE00622634 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE09E2314A14200950738 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
