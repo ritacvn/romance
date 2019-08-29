@@ -19,11 +19,21 @@ class Dinamica03ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updadeTheme()
+        
+        themeLabel.isHidden = true
+       
     }
     
     @IBAction func randomizeTheme(_ sender: Any) {
+        
         updadeTheme()
+        themeLabel.isHidden = false
+        
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        updadeTheme()
+        themeLabel.isHidden = false
     }
     
     func updadeTheme(){
