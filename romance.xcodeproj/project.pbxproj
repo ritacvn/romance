@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
+		1FEBDC3D23176F0400646F06 /* DinamicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* DinamicaViewController.swift */; };
 		5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09C2314A14200950738 /* AppDelegate.swift */; };
 		5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */; };
 		5C1AE0A22314A14200950738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AE0A02314A14200950738 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
+		1FEBDC3C23176F0400646F06 /* DinamicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinamicaViewController.swift; sourceTree = "<group>"; };
 		5C1AE0992314A14100950738 /* romance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = romance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AE09C2314A14200950738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserirNomesViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1AE09C2314A14200950738 /* AppDelegate.swift */,
+				1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */,
+				1FEBDC3C23176F0400646F06 /* DinamicaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +292,8 @@
 				5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */,
 				5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,
+				1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */,
+				1FEBDC3D23176F0400646F06 /* DinamicaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
