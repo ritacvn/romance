@@ -17,6 +17,7 @@
 		5C1AE0AA2314A14300950738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AE0A82314A14300950738 /* LaunchScreen.storyboard */; };
 		5C1AE0B52314A14300950738 /* romanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0B42314A14300950738 /* romanceTests.swift */; };
 		5C1AE0C02314A14300950738 /* romanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0BF2314A14300950738 /* romanceUITests.swift */; };
+		5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94384B2318165500622634 /* TelaCronometroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5C1AE0BB2314A14300950738 /* romanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = romanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AE0BF2314A14300950738 /* romanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = romanceUITests.swift; sourceTree = "<group>"; };
 		5C1AE0C12314A14300950738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C94384B2318165500622634 /* TelaCronometroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCronometroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */,
 				1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */,
+				5C94384B2318165500622634 /* TelaCronometroViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */,
 				5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */,
+				5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,
 				1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */,
 				1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */,

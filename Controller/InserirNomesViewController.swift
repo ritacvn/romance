@@ -8,25 +8,30 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     
-    public var name1var: String?
-    public var name2var: String?
-    
     @IBOutlet weak var name1: UITextField!
-    
     @IBOutlet weak var name2: UITextField!
-    
-    @IBOutlet weak var nomelabel: UILabel!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       showNames()
     }
-    func showNames(){
-        name1var = name1.text
-        name2var = name2.text
+
+    @IBAction func goNextViewButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
+        
     }
-   
+    // Parsing names to the other view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "InputNameToDisplay"{
+            let displayVC = segue.destination as! Dinamica03ViewController
+            displayVC.name1 = name1.text
+            displayVC.name2 = name2.text
+        }
+    }
+
 }
 

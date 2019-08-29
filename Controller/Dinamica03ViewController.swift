@@ -10,25 +10,26 @@ import Foundation
 import UIKit
 
 class Dinamica03ViewController: UIViewController {
-    
+    // MARK: Variáveis
     var randomTheme: Int = 0
+    var name1: String?
+    var name2: String?
     
-    
+     // MARK: Outlets
     @IBOutlet weak var themeLabel: UILabel!
-    
+    @IBOutlet weak var name1label: UILabel!
+    @IBOutlet weak var name2label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         themeLabel.isHidden = true
-       
+        name1label.text = name1
+        name2label.text = name2
     }
     
     @IBAction func randomizeTheme(_ sender: Any) {
-        
         updadeTheme()
         themeLabel.isHidden = false
-        
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -37,11 +38,8 @@ class Dinamica03ViewController: UIViewController {
     }
     
     func updadeTheme(){
-       
         randomTheme = Int.random(in: 0 ... 5)
-        
         themeLabel.text = arrayDeTemas_Dinamica03[randomTheme]
-        
     }
     
 }
