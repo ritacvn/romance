@@ -10,18 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    public var name1var: String = " "
-    public var name2var: String = " "
+    public var name1var: String?
+    public var name2var: String?
     
     @IBOutlet weak var name1: UITextField!
     
     @IBOutlet weak var name2: UITextField!
     
+    @IBOutlet weak var nomelabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       showNames()
     }
-
+    func showNames(){
+        name1var = name1.text
+        name2var = name2.text
+    }
    
 }
 
