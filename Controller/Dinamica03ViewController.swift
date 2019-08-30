@@ -21,6 +21,8 @@ class Dinamica03ViewController: UIViewController {
     @IBOutlet weak var name2label: UILabel!
     @IBOutlet weak var RecieveThemeLabel: UILabel!
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()

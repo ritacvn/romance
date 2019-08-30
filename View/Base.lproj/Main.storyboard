@@ -242,14 +242,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="É a sua vez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N72-1R-UW9">
-                                <rect key="frame" x="16" y="100" width="104" height="27"/>
+                                <rect key="frame" x="16" y="100" width="190" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="22"/>
                                 <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome01!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-7d-8ag">
-                                <rect key="frame" x="16" y="129" width="88" height="27"/>
+                                <rect key="frame" x="16" y="129" width="170" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="22"/>
                                 <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -261,6 +261,8 @@
                     </view>
                     <connections>
                         <outlet property="acabouLabel" destination="Jz9-T0-yId" id="Dpm-Zp-Lp2"/>
+                        <outlet property="balloonA" destination="U3C-Lx-TUc" id="rwZ-tA-wfq"/>
+                        <outlet property="balloonB" destination="7CP-QF-sxT" id="JIV-Xp-Cdy"/>
                         <outlet property="buttonStartOutlet" destination="AqE-c2-3Wu" id="Cwj-o1-cXA"/>
                         <outlet property="minuteLabel" destination="vW1-Lc-u0N" id="fg6-cB-hpr"/>
                         <outlet property="secondLabel" destination="4UZ-8F-3aK" id="SRc-ZM-92v"/>

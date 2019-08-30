@@ -8,31 +8,47 @@
 
 import UIKit
 import AudioToolbox
+import Motion
+
 
 class TelaCronometroViewController: UIViewController {
     
+    
+    //MARK: Variables
     var count = 0
-    
     var minute = 0
-    
     var hour = 0
     var i = 0
     var timer = Timer()
     
+    
+    //MARK: Outlets
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var buttonStartOutlet: UIButton!
-    
     @IBOutlet weak var acabouLabel: UILabel!
+    
+    //Baloes
+    @IBOutlet weak var balloonA: UIImageView!
+    @IBOutlet weak var balloonB: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
     }
     
+    //MARK: IBAction
     @IBAction func startButton(_ sender: Any) {
+        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        animateSize_Scale()
+        
     }
+    
+    
+    
     @objc func counter(){
         count += 1
         
@@ -59,12 +75,15 @@ class TelaCronometroViewController: UIViewController {
         if minuteLabel.text == "00" && secondLabel.text == "05"{
             acabouLabel.text = "CABBOU MEU FILHO"
             timer.invalidate()
+            animateSize_Unscale()
             
             for _ in 0...10{ AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 sleep(1)
             }
+            
         }
     }
+    
     @IBAction func pauseButton(_ sender: Any) {
         timer.invalidate()
     }
@@ -75,6 +94,25 @@ class TelaCronometroViewController: UIViewController {
         minute = 0
         minuteLabel.text = "00"
         secondLabel.text = "00"
+    }
+    
+    func animateSize_Scale() {
+        
+       //let size = balloonA.bounds.size
+        
+        balloonA.animate( [.delay(1),
+                           .duration(0.5),
+                           .size(CGSize(width: 595, height: 620))
+                            ]
+        )
+            
+       // balloonA.animate(.delay(1),.duration(0.5),.size(size))
+    }
+    
+    func animateSize_Unscale() {
+        
+        balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+        
     }
     
 }

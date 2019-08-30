@@ -1,0 +1,18 @@
+PODS:
+  - Motion (3.1.1):
+    - Motion/Core (= 3.1.1)
+  - Motion/Core (3.1.1)
+
+DEPENDENCIES:
+  - Motion
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Motion
+
+SPEC CHECKSUMS:
+  Motion: f115b33f36cc52472a25a965daa89b3859817de0
+
+PODFILE CHECKSUM: bd7588460b931ead1775e95f114e9bbc8a088c3f
+
+COCOAPODS: 1.6.0.beta.2
