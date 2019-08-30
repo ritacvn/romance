@@ -20,6 +20,8 @@ class TelaCronometroViewController: UIViewController {
     var hour = 0
     var i = 0
     var timer = Timer()
+    var name1: String?
+    var name2: String?
     
     
     //MARK: Outlets
@@ -27,6 +29,8 @@ class TelaCronometroViewController: UIViewController {
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var buttonStartOutlet: UIButton!
     @IBOutlet weak var acabouLabel: UILabel!
+    @IBOutlet weak var name1Outlet: UILabel!
+    @IBOutlet weak var name2Outlet: UILabel!
     
     //Baloes
     @IBOutlet weak var balloonA: UIImageView!
@@ -35,13 +39,13 @@ class TelaCronometroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        name1Outlet.text = name1
+        name2Outlet.text = name2
         
     }
     
     //MARK: IBAction
     @IBAction func startButton(_ sender: Any) {
-        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         animateSize_Scale()
         
@@ -51,14 +55,13 @@ class TelaCronometroViewController: UIViewController {
     
     @objc func counter(){
         count += 1
-        
         if count >= 0 {
             secondLabel.text = "0\(count)"
             if count == 60 {
                 count = 0
                 secondLabel.text = "00"
                 minute += 1
-                if minute >= 0 {
+                    if minute >= 0 {
                     minuteLabel.text = "\(minute)"
                     if minute == 60 {
                         minute = 0
@@ -68,8 +71,6 @@ class TelaCronometroViewController: UIViewController {
                 else{
                     minuteLabel.text = "0\(minute)"
                 }
-                
-                
             }
     }
         if minuteLabel.text == "00" && secondLabel.text == "05"{
@@ -77,7 +78,8 @@ class TelaCronometroViewController: UIViewController {
             timer.invalidate()
             animateSize_Unscale()
             
-            for _ in 0...10{ AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            for _ in 0...3{
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                 sleep(1)
             }
             
@@ -94,6 +96,7 @@ class TelaCronometroViewController: UIViewController {
         minute = 0
         minuteLabel.text = "00"
         secondLabel.text = "00"
+        
     }
     
     func animateSize_Scale() {

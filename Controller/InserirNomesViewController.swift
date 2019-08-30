@@ -31,6 +31,21 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
         
     }
+    @IBAction func alertButton(_ sender: Any) {
+        if name2.text == "" || name2.text == ""{
+            let message: String = "Você não preencheu todos os campos"
+            
+            let alert = UIAlertController(title:title,
+                                          message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok",
+                                       style: .default, handler: nil)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    
     // Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "InputNameToDisplay"{

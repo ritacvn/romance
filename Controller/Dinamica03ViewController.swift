@@ -37,6 +37,9 @@ class Dinamica03ViewController: UIViewController {
         themeLabel.isHidden = false
     }
     
+    @IBAction func goNextViewButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "DisplayNameSegue", sender: self)
+    }
     
     //Func to shake phone and receive a theme
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -49,7 +52,14 @@ class Dinamica03ViewController: UIViewController {
         }
         
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DisplayNameSegue"{
+            let displayVC = segue.destination as! TelaCronometroViewController
+            displayVC.name1 = name1label.text
+            displayVC.name2 = name2label.text
+            
+        }
+    }
     func updadeTheme(){
         randomTheme = Int.random(in: 0 ... 5)
         themeLabel.text = arrayDeTemas_Dinamica03[randomTheme]

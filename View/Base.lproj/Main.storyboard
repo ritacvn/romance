@@ -38,6 +38,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pronto"/>
                                 <connections>
+                                    <action selector="alertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HaB-nx-TAg"/>
                                     <action selector="goNextViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Egw-ju-fYD"/>
                                 </connections>
                             </button>
@@ -162,7 +163,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Começar"/>
                                 <connections>
-                                    <segue destination="QRi-ft-NKl" kind="presentation" id="pEU-S0-g7n"/>
+                                    <action selector="goNextViewButton:" destination="fbl-sZ-TIu" eventType="touchUpInside" id="vw7-nQ-aY4"/>
+                                    <segue destination="QRi-ft-NKl" kind="presentation" identifier="DisplayNameSegue" id="pEU-S0-g7n"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -174,6 +176,7 @@
                         <outlet property="name1label" destination="0fC-M5-OUt" id="8Lw-IY-ggI"/>
                         <outlet property="name2label" destination="KC8-9r-0a2" id="iwM-Eu-YDI"/>
                         <outlet property="themeLabel" destination="cVw-R1-gW8" id="tfM-mq-8fC"/>
+                        <segue destination="QRi-ft-NKl" kind="presentation" id="k9h-01-ncC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VH6-ru-gdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -226,8 +229,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label cabou" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz9-T0-yId">
-                                <rect key="frame" x="145" y="323" width="88" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label cabou" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz9-T0-yId">
+                                <rect key="frame" x="80" y="323" width="215" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -255,6 +258,20 @@
                                 <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-0k-8DP">
+                                <rect key="frame" x="205" y="597" width="170" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="22"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="É a sua vez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-AD-b3M">
+                                <rect key="frame" x="185" y="561" width="190" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="22"/>
+                                <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hXS-HM-p4H"/>
@@ -265,6 +282,8 @@
                         <outlet property="balloonB" destination="7CP-QF-sxT" id="JIV-Xp-Cdy"/>
                         <outlet property="buttonStartOutlet" destination="AqE-c2-3Wu" id="Cwj-o1-cXA"/>
                         <outlet property="minuteLabel" destination="vW1-Lc-u0N" id="fg6-cB-hpr"/>
+                        <outlet property="name1Outlet" destination="y4e-7d-8ag" id="iNk-by-0gS"/>
+                        <outlet property="name2Outlet" destination="HHQ-0k-8DP" id="h6i-yw-4aF"/>
                         <outlet property="secondLabel" destination="4UZ-8F-3aK" id="SRc-ZM-92v"/>
                     </connections>
                 </viewController>
@@ -278,4 +297,7 @@
         <image name="BalaoB_V1" width="519" height="492"/>
         <image name="TextField_V1" width="327" height="93"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pEU-S0-g7n"/>
+    </inferredMetricsTieBreakers>
 </document>
