@@ -19,12 +19,15 @@ class Dinamica03ViewController: UIViewController {
     @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var name1label: UILabel!
     @IBOutlet weak var name2label: UILabel!
+    @IBOutlet weak var RecieveThemeLabel: UILabel!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         themeLabel.isHidden = true
         name1label.text = name1
         name2label.text = name2
+        
     }
     
     @IBAction func randomizeTheme(_ sender: Any) {
@@ -32,9 +35,17 @@ class Dinamica03ViewController: UIViewController {
         themeLabel.isHidden = false
     }
     
+    
+    //Func to shake phone and receive a theme
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        
         updadeTheme()
         themeLabel.isHidden = false
+        
+        if themeLabel.isHidden == false {
+            RecieveThemeLabel.isHidden = true
+        }
+        
     }
     
     func updadeTheme(){
