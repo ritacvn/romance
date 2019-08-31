@@ -12,8 +12,6 @@ import Motion
 
 
 class TelaCronometroViewController: UIViewController {
-    
-    
     //MARK: Variables
     var count = 0
     var minute = 0
@@ -31,7 +29,7 @@ class TelaCronometroViewController: UIViewController {
     @IBOutlet weak var acabouLabel: UILabel!
     @IBOutlet weak var name1Outlet: UILabel!
     @IBOutlet weak var name2Outlet: UILabel!
-    
+    @IBOutlet weak var nextPersonButtonOutlet: UIButton!
     //Baloes
     @IBOutlet weak var balloonA: UIImageView!
     @IBOutlet weak var balloonB: UIImageView!
@@ -51,8 +49,8 @@ class TelaCronometroViewController: UIViewController {
         
     }
     
-    
-    
+    @IBAction func nextPersonButton(_ sender: Any) {
+    }
     @objc func counter(){
         count += 1
         if count >= 0 {
@@ -76,13 +74,18 @@ class TelaCronometroViewController: UIViewController {
         if minuteLabel.text == "00" && secondLabel.text == "05"{
             acabouLabel.text = "CABBOU MEU FILHO"
             timer.invalidate()
+                for _ in 0...3{
+                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                    sleep(1)
+                }
+            acabouLabel.isHidden = true
             animateSize_Unscale()
-            
-            for _ in 0...3{
-                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-                sleep(1)
-            }
-            
+            balloonB.animate( [.delay(1),
+                               .duration(0.5),
+                               .size(CGSize(width: 595, height: 620))
+                ]
+            )
+            counter()
         }
     }
     
@@ -100,7 +103,6 @@ class TelaCronometroViewController: UIViewController {
     }
     
     func animateSize_Scale() {
-        
        //let size = balloonA.bounds.size
         
         balloonA.animate( [.delay(1),
@@ -108,7 +110,6 @@ class TelaCronometroViewController: UIViewController {
                            .size(CGSize(width: 595, height: 620))
                             ]
         )
-            
        // balloonA.animate(.delay(1),.duration(0.5),.size(size))
     }
     

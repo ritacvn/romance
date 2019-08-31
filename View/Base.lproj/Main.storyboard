@@ -265,6 +265,15 @@
                                 <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQM-NH-drG">
+                                <rect key="frame" x="272" y="285" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextPersonButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="npp-zp-m3F"/>
+                                    <action selector="startButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="Dht-qB-Z3x"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="É a sua vez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-AD-b3M">
                                 <rect key="frame" x="185" y="561" width="190" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -284,6 +293,7 @@
                         <outlet property="minuteLabel" destination="vW1-Lc-u0N" id="fg6-cB-hpr"/>
                         <outlet property="name1Outlet" destination="y4e-7d-8ag" id="iNk-by-0gS"/>
                         <outlet property="name2Outlet" destination="HHQ-0k-8DP" id="h6i-yw-4aF"/>
+                        <outlet property="nextPersonButtonOutlet" destination="kQM-NH-drG" id="IPR-qx-3VL"/>
                         <outlet property="secondLabel" destination="4UZ-8F-3aK" id="SRc-ZM-92v"/>
                     </connections>
                 </viewController>

@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
         
     }
+    /// Show alert if text fields are empty
     @IBAction func alertButton(_ sender: Any) {
         if name2.text == "" || name2.text == ""{
             let message: String = "Você não preencheu todos os campos"
