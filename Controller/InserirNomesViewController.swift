@@ -7,10 +7,10 @@
 //
 
 import UIKit
+import Foundation
 
 
-
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var name1: UITextField!
     @IBOutlet weak var name2: UITextField!
@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+        self.name1.delegate = self
+        self.name2.delegate = self
     }
 
     @IBAction func goNextViewButton(_ sender: Any) {
@@ -55,7 +57,10 @@ class ViewController: UIViewController {
             displayVC.name2 = name2.text
         }
     }
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     //Calls this function when the tap is recognized.
     @objc func dismissKeyboard() {
