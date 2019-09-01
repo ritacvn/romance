@@ -20,6 +20,7 @@ class TelaCronometroViewController: UIViewController {
     var timer = Timer()
     var name1: String?
     var name2: String?
+    var randomTheme: Int = 0
     
     
     //MARK: Outlets
@@ -34,18 +35,35 @@ class TelaCronometroViewController: UIViewController {
     @IBOutlet weak var balloonA: UIImageView!
     @IBOutlet weak var balloonB: UIImageView!
     
+    //Theme labels
+    
+    @IBOutlet weak var theThemeIsLabel: UILabel!
+    @IBOutlet weak var themeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         name1Outlet.text = name1
         name2Outlet.text = name2
         
+        updadeTheme()
+        
+        minuteLabel.isHidden = true
+        secondLabel.isHidden = true
+
     }
     
     //MARK: IBAction
     @IBAction func startButton(_ sender: Any) {
+        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         animateSize_Scale()
+        
+        themeLabel.isHidden = true
+        theThemeIsLabel.isHidden = true
+        
+        minuteLabel.isHidden = false
+        secondLabel.isHidden = false
         
     }
     
@@ -101,7 +119,6 @@ class TelaCronometroViewController: UIViewController {
                 
             }
             
-            
         }
     }
     
@@ -115,7 +132,14 @@ class TelaCronometroViewController: UIViewController {
         minute = 0
         minuteLabel.text = "00"
         secondLabel.text = "00"
-        
+    }
+    
+    //MARK: Functions
+    
+    //Randomizing the theme
+    func updadeTheme(){
+        randomTheme = Int.random(in: 0 ... 5)
+        themeLabel.text = arrayDeTemas_Dinamica03[randomTheme]
     }
     
     func animateSize_Scale() {

@@ -50,13 +50,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // Parsing names to the other view
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "InputNameToDisplay"{
-            let displayVC = segue.destination as! Dinamica03ViewController
-            displayVC.name1 = name1.text
-            displayVC.name2 = name2.text
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "InputNameToDisplay"{
+//            let displayVC = segue.destination as! Dinamica03ViewController
+//            displayVC.name1 = name1.text
+//            displayVC.name2 = name2.text
+//        }
+//    }
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
