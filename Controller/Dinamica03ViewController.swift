@@ -27,8 +27,8 @@ class Dinamica03ViewController: UIViewController {
         
         super.viewDidLoad()
         themeLabel.isHidden = true
-        name1label.text = name1
-        name2label.text = name2
+      //  name1label.text = name1
+      //  name2label.text = name2
         
     }
     
