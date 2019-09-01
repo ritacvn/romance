@@ -71,10 +71,10 @@ class TelaCronometroViewController: UIViewController {
                 }
             }
     }
-        if minuteLabel.text == "00" && secondLabel.text == "05"{
+        if minuteLabel.text == "00" && secondLabel.text == "06"{
             acabouLabel.text = "CABBOU MEU FILHO"
             timer.invalidate()
-                for _ in 0...3{
+                for _ in 0...1{
                     AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                     sleep(1)
                 }
@@ -85,7 +85,23 @@ class TelaCronometroViewController: UIViewController {
                                .size(CGSize(width: 595, height: 620))
                 ]
             )
-            counter()
+            timer.invalidate()
+            count = 0
+            minute = 0
+            minuteLabel.text = "00"
+            secondLabel.text = "00"
+            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+            if minuteLabel.text == "00" && secondLabel.text == "05"{
+                timer.invalidate()
+                for _ in 0...3{
+                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+                    sleep(1)
+                }
+                balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+                
+            }
+            
+            
         }
     }
     
