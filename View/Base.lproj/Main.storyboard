@@ -297,13 +297,50 @@
                     <view key="view" contentMode="scaleToFill" id="ji0-Fk-y5N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balao1_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="h5f-Ou-RmU">
+                                <rect key="frame" x="6" y="87" width="337" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balao2_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="WHB-5i-moe">
+                                <rect key="frame" x="69" y="143" width="230" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balao3_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="fJf-YQ-LEb">
+                                <rect key="frame" x="69" y="143" width="164" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parabéns vocês finalizaram a 1º Dinâmica juntos!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dt-gw-6l5">
+                                <rect key="frame" x="60" y="423" width="248" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="27"/>
+                                <color key="textColor" red="0.1843137255" green="0.30196078430000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalaoMini2_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="a6X-n6-dXr">
+                                <rect key="frame" x="300" y="28" width="126" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalaoMini3_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="mUi-SZ-5Cs">
+                                <rect key="frame" x="233" y="0.0" width="63" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalaoMini4_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="qQj-VG-t52">
+                                <rect key="frame" x="37" y="-14" width="74" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalaoMini5_v1_LS" translatesAutoresizingMaskIntoConstraints="NO" id="dEo-pd-jvT">
+                                <rect key="frame" x="-70" y="529" width="126" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.98039215690000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="FTW-kv-keK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ps-Zc-Mkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1516" y="-412"/>
+            <point key="canvasLocation" x="1516" y="-412.44377811094455"/>
         </scene>
     </scenes>
     <resources>
@@ -317,6 +354,13 @@
         <image name="B2_v1_RandomScreen" width="993" height="672"/>
         <image name="B3_v1_NameScreen" width="1209" height="819"/>
         <image name="B3_v1_RandomScreem" width="681" height="483"/>
+        <image name="Balao1_v1_LS" width="1011" height="918"/>
+        <image name="Balao2_v1_LS" width="717" height="486"/>
+        <image name="Balao3_v1_LS" width="492" height="348"/>
+        <image name="BalaoMini2_v1_LS" width="66" height="261"/>
+        <image name="BalaoMini3_v1_LS" width="189" height="168"/>
+        <image name="BalaoMini4_v1_LS" width="222" height="84"/>
+        <image name="BalaoMini5_v1_LS" width="171" height="258"/>
         <image name="TextField_V1" width="327" height="93"/>
         <image name="bNext_v1_NameScreen" width="165" height="165"/>
         <image name="bPause_v1_GameScreen" width="60" height="72"/>
