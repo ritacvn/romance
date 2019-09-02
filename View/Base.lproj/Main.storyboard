@@ -290,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="709.60000000000002" y="-412.44377811094455"/>
         </scene>
-        <!--View Controller-->
+        <!--End Game View Controller-->
         <scene sceneID="Cnm-Jn-DOt">
             <objects>
-                <viewController id="O9T-ol-uEL" sceneMemberID="viewController">
+                <viewController id="O9T-ol-uEL" customClass="EndGameViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ji0-Fk-y5N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
