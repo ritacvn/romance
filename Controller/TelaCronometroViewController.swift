@@ -22,7 +22,6 @@ class TelaCronometroViewController: UIViewController {
     var name2: String?
     var randomTheme: Int = 0
     
-    
     //MARK: Outlets
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
@@ -31,12 +30,12 @@ class TelaCronometroViewController: UIViewController {
     @IBOutlet weak var name1Outlet: UILabel!
     @IBOutlet weak var name2Outlet: UILabel!
     @IBOutlet weak var nextPersonButtonOutlet: UIButton!
+    
     //Baloes
     @IBOutlet weak var balloonA: UIImageView!
     @IBOutlet weak var balloonB: UIImageView!
     
     //Theme labels
-    
     @IBOutlet weak var theThemeIsLabel: UILabel!
     @IBOutlet weak var themeLabel: UILabel!
     
@@ -64,6 +63,7 @@ class TelaCronometroViewController: UIViewController {
         
         minuteLabel.isHidden = false
         secondLabel.isHidden = false
+        
         
     }
     
