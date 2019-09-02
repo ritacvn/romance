@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2567231C959500C4E083 /* EndGameViewController.swift */; };
+		1F8F256A231C9E0800C4E083 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2569231C9E0800C4E083 /* CustomNavigationController.swift */; };
 		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
 		1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */; };
 		1FFBF11A2318D03B00D5FA34 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBF1192318D03B00D5FA34 /* fonts */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		0AB65113904A78B278E6710A /* Pods-romance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romance.debug.xcconfig"; path = "Target Support Files/Pods-romance/Pods-romance.debug.xcconfig"; sourceTree = "<group>"; };
 		1F8F2567231C959500C4E083 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		1F8F2569231C9E0800C4E083 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
 		1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamica03ViewController.swift; sourceTree = "<group>"; };
 		1FFBF1192318D03B00D5FA34 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */,
 				5C94384B2318165500622634 /* TelaCronometroViewController.swift */,
 				1F8F2567231C959500C4E083 /* EndGameViewController.swift */,
+				1F8F2569231C9E0800C4E083 /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */,
 				5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,
+				1F8F256A231C9E0800C4E083 /* CustomNavigationController.swift in Sources */,
 				1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */,
 				1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */,
 				1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */,
