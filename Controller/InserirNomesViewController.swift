@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DisplayNameSegue"{
-            let displayVC = segue.destination as! TelaCronometroViewController
+            let displayVC = segue.destination as! Dinamica03ViewController
             displayVC.name1 = name1.text
             displayVC.name2 = name2.text
         }

@@ -22,6 +22,8 @@ class Dinamica03ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        name2label.text = name2
+        name1label.text = name1
     }
     
     //Shake to go next page
@@ -30,14 +32,14 @@ class Dinamica03ViewController: UIViewController {
     }
 
    
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if segue.identifier == "DisplayNameSegue"{
-    //      //      let displayVC = segue.destination as! TelaCronometroViewController
-    //      //      displayVC.name1 = name1label.text
-    //      //      displayVC.name2 = name2label.text
-    //
-    //        }
-    //    }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "DisplayNameSegue"{
+                let displayVC = segue.destination as! TelaCronometroViewController
+                displayVC.name1 = name1label.text
+                displayVC.name2 = name2label.text
+    
+            }
+        }
     
     
     //  @IBAction func randomizeTheme(_ sender: Any) {

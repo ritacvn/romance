@@ -104,19 +104,29 @@ class TelaCronometroViewController: UIViewController {
                 ]
             )
             timer.invalidate()
+            
+            
             count = 0
             minute = 0
             minuteLabel.text = "00"
             secondLabel.text = "00"
+            
+            while minuteLabel.text != "00"{
+                count = 0
+                minute = 0
+                minuteLabel.text = "00"
+                secondLabel.text = "00"
             timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
             if minuteLabel.text == "00" && secondLabel.text == "05"{
                 timer.invalidate()
                 for _ in 0...3{
                     AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
                     sleep(1)
+                
                 }
                 balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
                 
+            }
             }
             
         }
