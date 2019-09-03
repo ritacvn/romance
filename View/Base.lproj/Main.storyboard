@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ctr-Sy-P2U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Oz-aI-xQ2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -75,12 +75,17 @@
                                 <rect key="frame" x="56" y="117" width="251" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardtrue" translatesAutoresizingMaskIntoConstraints="NO" id="vqB-IB-X3k">
-                                        <rect key="frame" x="0.0" y="8" width="251" height="347"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyN-h1-3gb">
+                                        <rect key="frame" x="-9" y="-15" width="268" height="376"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X61-DI-JXH">
-                                        <rect key="frame" x="104" y="155" width="42" height="21"/>
+                                        <state key="normal" image="cardtrue"/>
+                                        <connections>
+                                            <action selector="flipButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="kQD-0Z-b4Q"/>
+                                            <action selector="showPalavra:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="WQ7-Uc-Hzy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X61-DI-JXH">
+                                        <rect key="frame" x="63" y="155" width="123" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -101,7 +106,10 @@
                         <viewLayoutGuide key="safeArea" id="FkN-St-viW"/>
                     </view>
                     <connections>
+                        <outlet property="btnCard" destination="uyN-h1-3gb" id="z7Z-J4-jCF"/>
                         <outlet property="cardFlip" destination="QhP-NM-5No" id="S3G-A6-Vv2"/>
+                        <outlet property="labelGenerica" destination="wdx-6c-iwP" id="CRe-T0-PLe"/>
+                        <outlet property="labelPalavra" destination="X61-DI-JXH" id="OmP-p5-f42"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLc-Sh-QP6" userLabel="First Responder" sceneMemberID="firstResponder"/>

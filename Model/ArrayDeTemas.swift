@@ -9,3 +9,4 @@
 import Foundation
 
 let arrayDeTemas_Dinamica03 = ["tema1","tema2","tema3","tema4","tema4","tema5"]
+let arrayPalavrasDinamica02 = ["Colher","Prato","Foca","Toalha","Escova"]
