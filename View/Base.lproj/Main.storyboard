@@ -411,7 +411,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LL3-0S-0Th">
                         <barButtonItem key="leftBarButtonItem" image="backButton" style="plain" id="lNx-XE-uP0">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="mkc-Me-Gu7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" id="mkc-Me-Gu7">
                                 <rect key="frame" x="16" y="0.0" width="36" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
