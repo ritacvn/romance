@@ -9,6 +9,8 @@ target 'romance' do
   # Pods for romance
 
     pod 'Motion'
+    pod 'FSPagerView'
+    pod	TextFieldEffects
 
   target 'romanceTests' do
     inherit! :search_paths
