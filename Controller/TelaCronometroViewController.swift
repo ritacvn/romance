@@ -99,7 +99,7 @@ class TelaCronometroViewController: UIViewController {
                 minute = 0
                 minuteLabel.text = "00"
                 secondLabel.text = "00"
-                buttonStartOutlet.touchesBegan(self, with: <#T##UIEvent?#>)
+                //buttonStartOutlet.touchesBegan(self, with: <#T##UIEvent?#>)
                 
             }
 ////                for _ in 0...1{
