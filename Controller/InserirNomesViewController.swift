@@ -15,6 +15,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name1: UITextField!
     @IBOutlet weak var name2: UITextField!
    
+    var nameOfPerson1: String = ""
+    var nameOfPerson2: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +27,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+        
         self.name1.delegate = self
         self.name2.delegate = self
-    }
-
-    @IBAction func goNextViewButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
         
     }
+    
     /// Show alert if text fields are empty
     @IBAction func alertButton(_ sender: Any) {
         if name2.text == "" || name2.text == ""{
-            let message: String = "Você não preencheu todos os campos"
             
-            let alert = UIAlertController(title:title,
-                                          message: message, preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok",
-                                       style: .default, handler: nil)
+            let message: String = "Você não preencheu todos os campos"
+            let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
             
             alert.addAction(action)
             
@@ -49,13 +47,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func goNextViewButton(_ sender: Any) {
+        self.nameOfPerson1 = name1.text!
+        self.nameOfPerson2 = name2.text!
+        self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
+    }
+    
     // Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DisplayNameSegue"{
-            let displayVC = segue.destination as! Dinamica03ViewController
-            displayVC.name1 = name1.text
-            displayVC.name2 = name2.text
-        }
+        let displayVC = segue.destination as! Dinamica03ViewController
+            displayVC.name1 = self.nameOfPerson1
+            displayVC.name2 = self.nameOfPerson2
     }
     
     

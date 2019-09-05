@@ -13,17 +13,23 @@ class Dinamica03ViewController: UIViewController {
     
     // MARK: Variáveis
     var randomTheme: Int = 0
-    var name1: String?
-    var name2: String?
+    var name1: String = ""
+    var name2: String = ""
     
     // MARK: Outlets
     @IBOutlet weak var name1label: UILabel!
     @IBOutlet weak var name2label: UILabel!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        name2label.text = name2
+        
         name1label.text = name1
+        name2label.text = name2
+        
+        name2label.isHidden = true
+        name1label.isHidden = true
     }
     
     //Shake to go next page
@@ -31,15 +37,11 @@ class Dinamica03ViewController: UIViewController {
         self.performSegue(withIdentifier: "DisplayNameSegue", sender: self)
     }
 
-   
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "DisplayNameSegue"{
-                let displayVC = segue.destination as! TelaCronometroViewController
-                displayVC.name1 = name1label.text
-                displayVC.name2 = name2label.text
-    
-            }
-        }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let displayVC = segue.destination as! TelaCronometroViewController
+            displayVC.finalName1 = name1label.text!
+            displayVC.finalName2 = name2label.text!
+    }
     
     
     //  @IBAction func randomizeTheme(_ sender: Any) {

@@ -18,8 +18,8 @@ class TelaCronometroViewController: UIViewController {
     var hour = 0
     var i = 0
     var timer = Timer()
-    var name1: String?
-    var name2: String?
+    var finalName1: String = ""
+    var finalName2: String = ""
     var randomTheme: Int = 0
     
     //MARK: Outlets
@@ -42,14 +42,15 @@ class TelaCronometroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name1Outlet.text = name1
-        name2Outlet.text = name2
+        name1Outlet.text = finalName1
+        name2Outlet.text = finalName2
         
         updadeTheme()
         
         minuteLabel.isHidden = true
         secondLabel.isHidden = true
-
+        
+        print("Hello \(finalName1)")
     }
     
     //MARK: IBAction
