@@ -21,6 +21,7 @@ class TelaCronometroViewController: UIViewController {
     var name1: String?
     var name2: String?
     var randomTheme: Int = 0
+    var countVariable: Int = 0
     
     //MARK: Outlets
     @IBOutlet weak var minuteLabel: UILabel!
@@ -30,7 +31,8 @@ class TelaCronometroViewController: UIViewController {
     @IBOutlet weak var name1Outlet: UILabel!
     @IBOutlet weak var name2Outlet: UILabel!
     @IBOutlet weak var nextPersonButtonOutlet: UIButton!
-    
+
+    @IBOutlet weak var buttonStartOutlet2: UIButton!
     //Baloes
     @IBOutlet weak var balloonA: UIImageView!
     @IBOutlet weak var balloonB: UIImageView!
@@ -49,7 +51,30 @@ class TelaCronometroViewController: UIViewController {
         
         minuteLabel.isHidden = true
         secondLabel.isHidden = true
-
+        buttonStartOutlet2.isHidden = true
+    }
+    
+    @IBAction func startButton2(_ sender: Any) {
+        animateSize_Unscale()
+        timer.invalidate()
+        count = 0
+        minute = 0
+        minuteLabel.text = "00"
+        secondLabel.text = "00"
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        balloonB.animate( [.delay(1),
+                           .duration(0.5),
+                           .size(CGSize(width: 595, height: 620))
+            ]
+        )
+        
+        themeLabel.isHidden = true
+        theThemeIsLabel.isHidden = true
+        
+        minuteLabel.isHidden = false
+        secondLabel.isHidden = false
+        buttonStartOutlet2.isEnabled = false
+       
     }
     
     //MARK: IBAction
@@ -64,10 +89,10 @@ class TelaCronometroViewController: UIViewController {
         minuteLabel.isHidden = false
         secondLabel.isHidden = false
         
-        
     }
     
     @IBAction func nextPersonButton(_ sender: Any) {
+        
     }
     @objc func counter(){
         count += 1
@@ -89,55 +114,21 @@ class TelaCronometroViewController: UIViewController {
                 }
             }
     }
-        if minuteLabel.text == "00" && secondLabel.text == "06"{
-//            acabouLabel.text = "CABBOU MEU FILHO"
+        if minuteLabel.text == "00" && secondLabel.text == "05"{
+            balloonA.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
            timer.invalidate()
-            buttonStartOutlet.isEnabled = true
-            if buttonStartOutlet.isEnabled == true {
-                print("play again")
-                count = 0
-                minute = 0
-                minuteLabel.text = "00"
-                secondLabel.text = "00"
-                //buttonStartOutlet.touchesBegan(self, with: <#T##UIEvent?#>)
-                
-            }
-////                for _ in 0...1{
-////                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-////                    sleep(1)
-////                }
-//            acabouLabel.isHidden = true
-//            animateSize_Unscale()
-//            balloonB.animate( [.delay(1),
-//                               .duration(0.5),
-//                               .size(CGSize(width: 595, height: 620))
-//                ]
-//            )
-//            timer.invalidate()
-//
-//
-//            count = 0
-//            minute = 0
-//            minuteLabel.text = "00"
-//            secondLabel.text = "00"
-//
-//            while minuteLabel.text != "00"{
-//            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-//            if minuteLabel.text == "00" && secondLabel.text == "05"{
-//                timer.invalidate()
-////                for _ in 0...3{
-////                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-////                    sleep(1)
-////
-////                }
-//                balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
-//
-//            }
-//            }
-//
+            buttonStartOutlet.isHidden = true
+            buttonStartOutlet2.isHidden = false
+            balloonB.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+            buttonStartOutlet2.isEnabled = true
+            
+            count = 0
+            minute = 0
+            minuteLabel.text = "00"
+            secondLabel.text = "00"
         }
     }
-    
+
     @IBAction func pauseButton(_ sender: Any) {
         timer.invalidate()
     }
