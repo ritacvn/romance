@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CardTela2ViewController: UIViewController {
 
     var isopen = false
