@@ -54,7 +54,7 @@ class TelaCronometroViewController: UIViewController {
     
     //MARK: IBAction
     @IBAction func startButton(_ sender: Any) {
-        
+        buttonStartOutlet.isEnabled = false
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         animateSize_Scale()
         
@@ -90,45 +90,46 @@ class TelaCronometroViewController: UIViewController {
             }
     }
         if minuteLabel.text == "00" && secondLabel.text == "06"{
-            acabouLabel.text = "CABBOU MEU FILHO"
-            timer.invalidate()
-                for _ in 0...1{
-                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-                    sleep(1)
-                }
-            acabouLabel.isHidden = true
-            animateSize_Unscale()
-            balloonB.animate( [.delay(1),
-                               .duration(0.5),
-                               .size(CGSize(width: 595, height: 620))
-                ]
-            )
-            timer.invalidate()
-            
-            
-            count = 0
-            minute = 0
-            minuteLabel.text = "00"
-            secondLabel.text = "00"
-            
-            while minuteLabel.text != "00"{
-                count = 0
-                minute = 0
-                minuteLabel.text = "00"
-                secondLabel.text = "00"
-            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-            if minuteLabel.text == "00" && secondLabel.text == "05"{
-                timer.invalidate()
-                for _ in 0...3{
-                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-                    sleep(1)
-                
-                }
-                balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+//            acabouLabel.text = "CABBOU MEU FILHO"
+           timer.invalidate()
+            buttonStartOutlet.isEnabled = true
+            if buttonStartOutlet.isEnabled == true {
+                print("play again")
                 
             }
-            }
-            
+////                for _ in 0...1{
+////                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+////                    sleep(1)
+////                }
+//            acabouLabel.isHidden = true
+//            animateSize_Unscale()
+//            balloonB.animate( [.delay(1),
+//                               .duration(0.5),
+//                               .size(CGSize(width: 595, height: 620))
+//                ]
+//            )
+//            timer.invalidate()
+//
+//
+//            count = 0
+//            minute = 0
+//            minuteLabel.text = "00"
+//            secondLabel.text = "00"
+//
+//            while minuteLabel.text != "00"{
+//            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+//            if minuteLabel.text == "00" && secondLabel.text == "05"{
+//                timer.invalidate()
+////                for _ in 0...3{
+////                    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+////                    sleep(1)
+////
+////                }
+//                balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+//
+//            }
+//            }
+//
         }
     }
     
