@@ -95,6 +95,11 @@ class TelaCronometroViewController: UIViewController {
             buttonStartOutlet.isEnabled = true
             if buttonStartOutlet.isEnabled == true {
                 print("play again")
+                count = 0
+                minute = 0
+                minuteLabel.text = "00"
+                secondLabel.text = "00"
+                buttonStartOutlet.touchesBegan(self, with: <#T##UIEvent?#>)
                 
             }
 ////                for _ in 0...1{
