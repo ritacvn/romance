@@ -18,6 +18,53 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Activities View Controller-->
+        <scene sceneID="TgL-8p-2K4">
+            <objects>
+                <viewController id="lfu-2v-v9B" customClass="ActivitiesViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lr2-xc-U27">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="p6c-c3-dlU">
+                                <rect key="frame" x="67" y="164" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UuI-aa-r7u" customClass="CenterViewFlowLayout" customModule="romance" customModuleProvider="target">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCellId" id="khK-Zq-dRx">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ci7-St-FCV">
+                                                    <rect key="frame" x="-95" y="-39" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1BG-ts-qQW"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="p6c-c3-dlU" id="mfR-t8-A9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJR-h6-IbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2062" y="329"/>
+        </scene>
         <!--Inicial Dinamica2 View Controller-->
         <scene sceneID="Joo-MB-4BI">
             <objects>
@@ -87,15 +134,10 @@
                                 <rect key="frame" x="56" y="117" width="251" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uyN-h1-3gb">
-                                        <rect key="frame" x="-9" y="-15" width="268" height="376"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardtrue" translatesAutoresizingMaskIntoConstraints="NO" id="Z0C-or-KbT">
+                                        <rect key="frame" x="-10" y="-6" width="271" height="361"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="cardtrue"/>
-                                        <connections>
-                                            <action selector="flipButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="kQD-0Z-b4Q"/>
-                                            <action selector="showPalavra:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="WQ7-Uc-Hzy"/>
-                                        </connections>
-                                    </button>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X61-DI-JXH">
                                         <rect key="frame" x="63" y="155" width="123" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -121,13 +163,21 @@
                                     <segue destination="bG2-3S-PJu" kind="presentation" id="daa-Ni-hq7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRV-fw-7XH">
+                                <rect key="frame" x="148" y="501" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Random"/>
+                                <connections>
+                                    <action selector="flipButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="1AK-zA-aLD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="FkN-St-viW"/>
                     </view>
                     <connections>
-                        <outlet property="btnCard" destination="uyN-h1-3gb" id="z7Z-J4-jCF"/>
                         <outlet property="cardFlip" destination="QhP-NM-5No" id="S3G-A6-Vv2"/>
+                        <outlet property="cardImage" destination="Z0C-or-KbT" id="k0r-ip-z5J"/>
                         <outlet property="labelGenerica" destination="wdx-6c-iwP" id="CRe-T0-PLe"/>
                         <outlet property="labelPalavra" destination="X61-DI-JXH" id="OmP-p5-f42"/>
                     </connections>
@@ -180,31 +230,10 @@
                                 <rect key="frame" x="62" y="131" width="251" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNi-dl-Mhs">
-                                        <rect key="frame" x="-9" y="-15" width="270" height="380"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cardtrue" translatesAutoresizingMaskIntoConstraints="NO" id="nLp-ih-enB">
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="355"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="cardtrue"/>
-                                        <connections>
-                                            <action selector="flipButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="WTY-qI-TQ1"/>
-                                            <action selector="flipButton:" destination="199-TW-JJd" eventType="touchUpInside" id="tIS-uE-KE6"/>
-                                            <action selector="showPalavra:" destination="199-TW-JJd" eventType="touchUpInside" id="s58-Ix-uu5"/>
-                                            <action selector="showPalavra:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="xD4-Wx-v1q"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Pn-dh-Q56">
-                                        <rect key="frame" x="63" y="155" width="123" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A palavra é:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImS-5h-vPO">
-                                        <rect key="frame" x="80" y="97" width="90" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -216,15 +245,21 @@
                                     <segue destination="igY-58-YhP" kind="presentation" id="gfE-HF-l6f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXJ-hq-RlD">
+                                <rect key="frame" x="164" y="512" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="flipButton:" destination="199-TW-JJd" eventType="touchUpInside" id="zal-iN-ug7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uu4-u1-CWq"/>
                     </view>
                     <connections>
-                        <outlet property="btnCard" destination="PNi-dl-Mhs" id="ITY-a8-H7g"/>
                         <outlet property="cardFlip" destination="5Mx-J7-2eM" id="0kZ-4a-7Jf"/>
-                        <outlet property="labelGenerica" destination="ImS-5h-vPO" id="kSQ-e6-3bV"/>
-                        <outlet property="labelPalavra" destination="6Pn-dh-Q56" id="xEr-gX-yax"/>
+                        <outlet property="cardImage" destination="nLp-ih-enB" id="S0E-bY-CxH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1s-Sk-mFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,7 +305,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hma-6q-i4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2564" y="-37"/>
+            <point key="canvasLocation" x="-3023" y="-40"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -646,6 +681,6 @@
         <image name="bPause_v1_GameScreen" width="60" height="72"/>
         <image name="bPlay_v1_GameScreen" width="165" height="165"/>
         <image name="backButton" width="36" height="60"/>
-        <image name="cardtrue" width="1162" height="1541"/>
+        <image name="cardtrue" width="326" height="471"/>
     </resources>
 </document>
