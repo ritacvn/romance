@@ -186,7 +186,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-3c-RLM">
                                 <rect key="frame" x="13" y="488" width="145" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinamica 1" image="Dinamica_DiscurssãoCronometrada"/>
+                                <state key="normal" title="Dinamica 1" image="SquareDIN1"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Fwa-Hl-WpU"/>
                                 </connections>
@@ -221,7 +221,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-Jj-UIj">
                                 <rect key="frame" x="205" y="488" width="145" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinâmica 2" image="Dinamica_Declaraçãp"/>
+                                <state key="normal" title="Dinâmica 2" image="SquareDIN2"/>
                                 <connections>
                                     <segue destination="tdu-aD-04F" kind="show" id="iII-Qi-1Vk"/>
                                 </connections>
@@ -769,8 +769,8 @@
         <image name="BalaoMini3_v1_LS" width="189" height="168"/>
         <image name="BalaoMini4_v1_LS" width="222" height="84"/>
         <image name="BalaoMini5_v1_LS" width="171" height="258"/>
-        <image name="Dinamica_Declaraçãp" width="155" height="152"/>
-        <image name="Dinamica_DiscurssãoCronometrada" width="155" height="152"/>
+        <image name="SquareDIN1" width="155" height="152"/>
+        <image name="SquareDIN2" width="155" height="152"/>
         <image name="Theme_Comunication" width="375" height="304"/>
         <image name="bNext_v1_NameScreen" width="165" height="165"/>
         <image name="bPause_v1_GameScreen" width="60" height="72"/>
