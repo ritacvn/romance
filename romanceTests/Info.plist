@@ -4,8 +4,13 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>coolvetica compressed rg.ttf</string>
+		<string>coolvetica condensed rg.ttf</string>
+		<string>coolvetica crammed rg.ttf</string>
+		<string>coolvetica rg.ttf</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

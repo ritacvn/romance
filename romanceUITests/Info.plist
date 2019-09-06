@@ -4,23 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SF-Pro-Display-BlackItalic.otf</string>
-		<string>SF-Pro-Display-Bold.otf</string>
-		<string>SF-Pro-Display-BoldItalic.otf</string>
-		<string>SF-Pro-Display-Heavy.otf</string>
-		<string>SF-Pro-Display-HeavyItalic.otf</string>
-		<string>SF-Pro-Display-Light.otf</string>
-		<string>SF-Pro-Display-LightItalic</string>
-		<string>SF-Pro-Display-Medium.otf</string>
-		<string>SF-Pro-Display-MediumItalic.otf</string>
-		<string>SF-Pro-Display-Regular.otf</string>
-		<string>SF-Pro-Display-RegularItalic.otf</string>
-		<string>SF-Pro-Display-Semibold.otf</string>
-		<string>SF-Pro-Display-SemiboldItalic.otf</string>
-		<string>SF-Pro-Display-Thin.otf</string>
-		<string>SF-Pro-Display-ThinItalic.otf</string>
-		<string>SF-Pro-Display-Ultralight.otf</string>
-		<string>SF-Pro-Display-UltralightItalic.otf</string>
+		<string>coolvetica compressed rg.ttf</string>
+		<string>coolvetica condensed rg.ttf</string>
+		<string>coolvetica crammed rg.ttf</string>
+		<string>coolvetica rg.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
