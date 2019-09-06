@@ -60,7 +60,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="8Oz-aI-xQ2" kind="presentation" id="YCZ-6f-x1F"/>
+                                    <segue destination="bG2-3S-PJu" kind="show" id="6xw-sr-xyk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_n3" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-pU-vGg">
@@ -148,7 +148,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go next page"/>
                                 <connections>
-                                    <segue destination="bG2-3S-PJu" kind="presentation" id="daa-Ni-hq7"/>
+                                    <segue destination="199-TW-JJd" kind="show" id="UNM-8I-b5M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRV-fw-7XH">
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLc-Sh-QP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-247.19999999999999" y="328.78560719640183"/>
+            <point key="canvasLocation" x="516" y="329"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L2g-Wz-KW8">
@@ -279,21 +279,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fulano1 faça uma declaração" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K71-Ro-idg">
-                                <rect key="frame" x="96" y="189" width="222" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKV-MX-xbc">
+                                <rect key="frame" x="322" y="41" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="8Oz-aI-xQ2" kind="show" id="opv-xf-a6v"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_Turn3" translatesAutoresizingMaskIntoConstraints="NO" id="xEK-JW-pTp">
+                                <rect key="frame" x="122" y="188" width="438" height="463"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_Turn1" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-ph-Qem">
+                                <rect key="frame" x="-120" y="267" width="627" height="495"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_Turn2" translatesAutoresizingMaskIntoConstraints="NO" id="bYG-Xh-X7R">
+                                <rect key="frame" x="-56" y="332" width="525" height="502"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It's your turn Rita!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K71-Ro-idg">
+                                <rect key="frame" x="35" y="123" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKV-MX-xbc">
-                                <rect key="frame" x="184" y="542" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <segue destination="199-TW-JJd" kind="presentation" id="sJf-ap-UiG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1jM-dI-qeQ"/>
@@ -301,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwN-Bv-vd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="329"/>
+            <point key="canvasLocation" x="-247.19999999999999" y="328.78560719640183"/>
         </scene>
         <!--Card Tela2 View Controller-->
         <scene sceneID="4AS-Y0-eIv">
@@ -381,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeG-w0-fgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="329"/>
+            <point key="canvasLocation" x="2010" y="329"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -788,6 +800,9 @@
         <image name="bPlay_v1_GameScreen" width="165" height="165"/>
         <image name="backButton" width="36" height="60"/>
         <image name="cardtrue" width="489" height="706.5"/>
+        <image name="form_Turn1" width="718" height="559"/>
+        <image name="form_Turn2" width="501" height="529"/>
+        <image name="form_Turn3" width="400" height="491"/>
         <image name="form_n1" width="309" height="379"/>
         <image name="form_n2" width="180" height="173"/>
         <image name="form_n3" width="487" height="380"/>
