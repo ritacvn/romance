@@ -16,6 +16,12 @@
         <array key="SF-Pro-Display-Light.otf">
             <string>SFProDisplay-Light</string>
         </array>
+        <array key="coolvetica condensed rg.ttf">
+            <string>CoolveticaCondensedRg-Regular</string>
+        </array>
+        <array key="coolvetica rg.ttf">
+            <string>CoolveticaRg-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Inicial Dinamica2 View Controller-->
@@ -155,17 +161,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Atividades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-f4-duS">
-                                <rect key="frame" x="16" y="390" width="80" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-f4-duS">
+                                <rect key="frame" x="16" y="436" width="98" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Activities">
+                                        <attributes>
+                                            <color key="NSColor" red="0.2901960784" green="0.56470588239999997" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="CoolveticaRg-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-3c-RLM">
-                                <rect key="frame" x="16" y="430" width="99" height="126"/>
+                                <rect key="frame" x="13" y="488" width="145" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinamica 1" image="cardA"/>
+                                <state key="normal" title="Dinamica 1" image="Dinamica_DiscurssãoCronometrada"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Fwa-Hl-WpU"/>
                                 </connections>
@@ -174,26 +187,60 @@
                                 <rect key="frame" x="0.0" y="-22" width="375" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comunição é muito boa nos relacionamentos :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
-                                <rect key="frame" x="16" y="318" width="334" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
+                                <rect key="frame" x="15" y="226" width="222" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Comunnication">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="33" name="CoolveticaRg-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
+                                <rect key="frame" x="16" y="297" width="334" height="131.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <string key="text">Comunição é muito boa nos relacionamentos :) Comunição é muito boa nos relacionamentos :) Comunição é muito boa nos relacionamentos :) Comunição é muito boa nos relacionamentos :) Comunição é muito boa nos relacionamentos :) Comunição é muito boa nos relacionamentos :) Comunição </string>
+                                <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaCondensedRg-Regular" family="Coolvetica" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-Jj-UIj">
-                                <rect key="frame" x="137" y="430" width="101" height="126"/>
+                                <rect key="frame" x="205" y="488" width="145" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinâmica 2" image="cardB"/>
+                                <state key="normal" title="Dinâmica 2" image="Dinamica_Declaraçãp"/>
                                 <connections>
                                     <segue destination="tdu-aD-04F" kind="show" id="iII-Qi-1Vk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comunicação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
-                                <rect key="frame" x="16" y="246" width="257" height="21"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ihP-D2-Mo3">
+                                <rect key="frame" x="13" y="417" width="351" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun Declaration of Love" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2S-ND-foS">
+                                <rect key="frame" x="217" y="568" width="109" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwB-O4-IJl">
+                                <rect key="frame" x="23" y="568" width="84" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Timed Dicussion">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="CoolveticaRg-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -714,14 +761,15 @@
         <image name="BalaoMini3_v1_LS" width="189" height="168"/>
         <image name="BalaoMini4_v1_LS" width="222" height="84"/>
         <image name="BalaoMini5_v1_LS" width="171" height="258"/>
+        <image name="Dinamica_Declaraçãp" width="155" height="152"/>
+        <image name="Dinamica_DiscurssãoCronometrada" width="155" height="152"/>
         <image name="Theme_Comunication" width="375" height="304"/>
         <image name="bNext_v1_NameScreen" width="165" height="165"/>
         <image name="bPause_v1_GameScreen" width="60" height="72"/>
         <image name="bPlay_v1_GameScreen" width="165" height="165"/>
         <image name="backButton" width="36" height="60"/>
-        <image name="cardA" width="326" height="471"/>
-        <image name="cardB" width="326" height="471"/>
         <image name="cardtrue" width="326" height="471"/>
+        <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="G2F-qe-EWU"/>
