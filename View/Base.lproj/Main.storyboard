@@ -156,46 +156,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Atividades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-f4-duS">
-                                <rect key="frame" x="8" y="281" width="80" height="21"/>
+                                <rect key="frame" x="16" y="390" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-3c-RLM">
-                                <rect key="frame" x="42" y="324" width="99" height="126"/>
+                                <rect key="frame" x="16" y="430" width="99" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dinamica 1" image="cardA"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Fwa-Hl-WpU"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalaoA_v2_NameScreen" translatesAutoresizingMaskIntoConstraints="NO" id="rb6-vk-YG9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Theme_Comunication" translatesAutoresizingMaskIntoConstraints="NO" id="rb6-vk-YG9">
+                                <rect key="frame" x="0.0" y="-22" width="375" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comunicação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
-                                <rect key="frame" x="16" y="181" width="257" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comunição é muito boa nos relacionamentos :)" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
-                                <rect key="frame" x="8" y="221" width="343" height="40"/>
+                                <rect key="frame" x="16" y="318" width="334" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-Jj-UIj">
-                                <rect key="frame" x="199" y="324" width="101" height="126"/>
+                                <rect key="frame" x="137" y="430" width="101" height="126"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dinâmica 2" image="cardB"/>
                                 <connections>
                                     <segue destination="tdu-aD-04F" kind="show" id="iII-Qi-1Vk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comunicação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
+                                <rect key="frame" x="16" y="246" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="feZ-rQ-uG9"/>
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hil-Rz-5DW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2943" y="-11"/>
+            <point key="canvasLocation" x="-2943.1999999999998" y="-11.244377811094454"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bVj-Cc-PRF">
@@ -710,11 +710,11 @@
         <image name="Balao1_v1_LS" width="1011" height="918"/>
         <image name="Balao2_v1_LS" width="717" height="486"/>
         <image name="Balao3_v1_LS" width="492" height="348"/>
-        <image name="BalaoA_v2_NameScreen" width="138" height="138"/>
         <image name="BalaoMini2_v1_LS" width="66" height="261"/>
         <image name="BalaoMini3_v1_LS" width="189" height="168"/>
         <image name="BalaoMini4_v1_LS" width="222" height="84"/>
         <image name="BalaoMini5_v1_LS" width="171" height="258"/>
+        <image name="Theme_Comunication" width="375" height="304"/>
         <image name="bNext_v1_NameScreen" width="165" height="165"/>
         <image name="bPause_v1_GameScreen" width="60" height="72"/>
         <image name="bPlay_v1_GameScreen" width="165" height="165"/>
