@@ -92,6 +92,14 @@
                                     <segue destination="lBF-HX-uKY" kind="show" id="NUS-Ba-bpz"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_n1" translatesAutoresizingMaskIntoConstraints="NO" id="njb-o3-6bm">
+                                <rect key="frame" x="65" y="20" width="107" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_n2" translatesAutoresizingMaskIntoConstraints="NO" id="dia-k7-JVy">
+                                <rect key="frame" x="119" y="20" width="131" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OL4-JV-bev"/>
@@ -103,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pB2-1Z-dSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1079.2" y="328.78560719640183"/>
+            <point key="canvasLocation" x="-1032.8" y="328.78560719640183"/>
         </scene>
         <!--Card Tela View Controller-->
         <scene sceneID="cy4-xO-owv">
@@ -769,9 +777,11 @@
         <image name="bPlay_v1_GameScreen" width="165" height="165"/>
         <image name="backButton" width="36" height="60"/>
         <image name="cardtrue" width="326" height="471"/>
+        <image name="form_n1" width="309" height="379"/>
+        <image name="form_n2" width="180" height="173"/>
         <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="G2F-qe-EWU"/>
+        <segue reference="NUS-Ba-bpz"/>
     </inferredMetricsTieBreakers>
 </document>
