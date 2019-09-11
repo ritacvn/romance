@@ -21,7 +21,7 @@ class CardTelaViewController: UIViewController {
     @IBOutlet weak var cardImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelPalavra.isHidden = true
+         labelPalavra.isHidden = true
         labelGenerica.isHidden = true
         // Do any additional setup after loading the view.
     }
