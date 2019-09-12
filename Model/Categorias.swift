@@ -14,7 +14,7 @@ struct Categoria {
     let image: String?
     
     static func fetchCategories() -> [Categoria]{
-        let comunicacao = Categoria(nome: "Comunicação", descricao: "ação de transmitir uma mensagem e, eventualmente, receber outra mensagem como resposta", image: "cardA")
+        let comunicacao = Categoria(nome: "Comunicação", descricao: "ação de transmitir uma mensagem e, eventualmente, receber outra mensagem como resposta", image: "comunicacao")
         
         let conhecimento = Categoria(nome: "Conhecimento", descricao: "Conhecimento é o ato ou efeito de conhecer, é ter ideia ou a noção de alguma coisa. É o saber, a instrução e a informação.", image: "conhecimento")
         
