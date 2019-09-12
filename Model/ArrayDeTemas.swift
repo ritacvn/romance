@@ -10,3 +10,6 @@ import UIKit
 
 let arrayDeTemas_Dinamica03 = ["tema1","tema2","tema3","tema4","tema4","tema5"]
 let arrayImagens: [UIImage] = [UIImage(named: "FrontOfCard_A")!, UIImage(named: "FrontOfCard_B")!]
+let arrayDeFrases = ["frase1","frase2","frase3","frase4"]
+let arrayImages: [UIImage] = [UIImage(named: "communication")!, UIImage(named: "SquareDIN1")!]
+let arrarCategorias = ["communication","carinho", "conhecimento","empatia"]
