@@ -66,7 +66,7 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonNextView:" destination="G3M-vs-Omt" eventType="touchUpInside" id="1My-xW-N7S"/>
-                                    <segue destination="9hG-LH-gax" kind="show" id="w7p-s1-DKK"/>
+                                    <segue destination="9hG-LH-gax" kind="show" identifier="goNextView" id="w7p-s1-DKK"/>
                                 </connections>
                             </button>
                         </subviews>

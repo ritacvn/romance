@@ -14,6 +14,9 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
     
     @IBOutlet weak var nome2TextField: UITextField!
     
+    var namePerson1: String = ""
+    var namePerson2: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Looks for single or multiple taps.
@@ -40,6 +43,9 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
             
             present(alert, animated: true, completion: nil)
         }
+        self.namePerson1 = nome1TextField.text!
+        self.namePerson2 = nome2TextField.text!
+        self.performSegue(withIdentifier: "goNextView", sender: self)
     }
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
@@ -54,8 +60,8 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let displayVC = segue.destination as! FrasesRandomicaViewController
-        displayVC.nome1 = self.nome1TextField
-        displayVC.nome2 = self.nome2TextField
+        displayVC.nome1 = self.namePerson1
+        displayVC.nome2 = self.namePerson2
     }
     
 }
