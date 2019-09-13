@@ -323,7 +323,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoriaImage" destination="ITA-cW-u0q" id="bc5-FQ-7H8"/>
-                                    <segue destination="lBF-HX-uKY" kind="presentation" id="En3-Do-h7M"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -354,10 +353,10 @@
             </objects>
             <point key="canvasLocation" x="-4960" y="3"/>
         </scene>
-        <!--View Controller-->
+        <!--Comunicao Tela View Controller-->
         <scene sceneID="L2g-Wz-KW8">
             <objects>
-                <viewController id="lBF-HX-uKY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="comunicacao" id="lBF-HX-uKY" customClass="ComunicaoTelaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ge3-LD-W8s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -459,6 +458,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hil-Rz-5DW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2943.1999999999998" y="-11.244377811094454"/>
+        </scene>
+        <!--Teste View Controller-->
+        <scene sceneID="7Sq-dV-DnA">
+            <objects>
+                <viewController storyboardIdentifier="teste" id="75G-Y8-CNu" customClass="TesteViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nxH-Mj-vdr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrJ-q0-S2k">
+                                <rect key="frame" x="166" y="266" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wjf-sl-6V7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCo-y1-v2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3849" y="734"/>
         </scene>
         <!--Turn View Controller-->
         <scene sceneID="bVj-Cc-PRF">
@@ -1078,6 +1101,7 @@
         <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="En3-Do-h7M"/>
+        <segue reference="iII-Qi-1Vk"/>
+        <segue reference="NUS-Ba-bpz"/>
     </inferredMetricsTieBreakers>
 </document>

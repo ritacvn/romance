@@ -21,4 +21,10 @@ class CategoriesTableViewcontroller: UITableViewController{
         cell.categoria = categoria
         return cell
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "comunicacao") as! ComunicaoTelaViewController
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
 }
