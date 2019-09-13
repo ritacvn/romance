@@ -96,6 +96,7 @@ class TelaCronometroViewController: UIViewController {
     @IBAction func nextPersonButton(_ sender: Any) {
         
     }
+    
     @objc func counter(){
         count += 1
         if count >= 0 {
@@ -116,7 +117,8 @@ class TelaCronometroViewController: UIViewController {
                 }
             }
     }
-        if minuteLabel.text == "00" && secondLabel.text == "05"{
+        
+    if minuteLabel.text == "00" && secondLabel.text == "05"{
             balloonA.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
            timer.invalidate()
             buttonStartOutlet.isHidden = true
