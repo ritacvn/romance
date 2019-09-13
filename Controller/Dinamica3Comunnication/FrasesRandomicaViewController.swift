@@ -14,6 +14,10 @@ class FrasesRandomicaViewController: UIViewController {
     
     var frase: Int = 0
     
+
+    var nome1: String = ""
+    var nome2: String = ""
+    
     //time variables
     var timer = Timer()
     var count: Int = 0
@@ -21,6 +25,7 @@ class FrasesRandomicaViewController: UIViewController {
     var second: Int = 0
     
 //MARK: Outlets
+
     
     @IBOutlet weak var fraseRandomizada: UILabel!
     
@@ -49,7 +54,8 @@ class FrasesRandomicaViewController: UIViewController {
         super.viewDidLoad()
         
         randomizarFrase()
-        
+        print(nome1)
+        print(nome2)
     }
     
     //Phrase to randomize phrase
