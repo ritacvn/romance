@@ -24,10 +24,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Inserir Nomes Dinamica3 View Controller-->
         <scene sceneID="6cS-NC-xb5">
             <objects>
-                <viewController id="G3M-vs-Omt" sceneMemberID="viewController">
+                <viewController id="G3M-vs-Omt" customClass="InserirNomesDinamica3ViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WVM-a9-RAg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,11 +64,18 @@
                                 <rect key="frame" x="164" y="544" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonNextView:" destination="G3M-vs-Omt" eventType="touchUpInside" id="1My-xW-N7S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dsg-mS-fG5"/>
                     </view>
+                    <connections>
+                        <outlet property="nome1TextField" destination="o7N-Vf-qz7" id="T7W-0b-j6X"/>
+                        <outlet property="nome2TextField" destination="kci-TI-cfY" id="d3F-Ox-hoM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGI-3a-1mo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

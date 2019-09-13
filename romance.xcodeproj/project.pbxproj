@@ -16,6 +16,7 @@
 		5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E79232946DE00E822E0 /* Categorias.swift */; };
 		5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E7C232A82C200E822E0 /* SegueFromRight.swift */; };
 		5C106E7F232A94F200E822E0 /* TurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E7E232A94F200E822E0 /* TurnViewController.swift */; };
+		5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */; };
 		5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09C2314A14200950738 /* AppDelegate.swift */; };
 		5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */; };
 		5C1AE0A22314A14200950738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AE0A02314A14200950738 /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 		5C106E79232946DE00E822E0 /* Categorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorias.swift; sourceTree = "<group>"; };
 		5C106E7C232A82C200E822E0 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		5C106E7E232A94F200E822E0 /* TurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnViewController.swift; sourceTree = "<group>"; };
+		5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserirNomesDinamica3ViewController.swift; sourceTree = "<group>"; };
 		5C1AE0992314A14100950738 /* romance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = romance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AE09C2314A14200950738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserirNomesViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				5CF90AD22329299D00CC96CD /* FrasesRandomicaViewController.swift */,
+				5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */,
 			);
 			path = Dinamica3Comunnication;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 				1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */,
 				1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */,
 				5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */,
+				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
 				5C851013231E047700C1A74B /* CardTela2ViewController.swift in Sources */,
 				5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */,
