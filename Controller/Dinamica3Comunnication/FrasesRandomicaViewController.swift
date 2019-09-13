@@ -13,6 +13,10 @@ class FrasesRandomicaViewController: UIViewController {
     
     @IBOutlet weak var fraseRandomizada: UILabel!
     
+    @IBOutlet weak var minuteLabel: UILabel!
+    
+    @IBOutlet weak var secondLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
