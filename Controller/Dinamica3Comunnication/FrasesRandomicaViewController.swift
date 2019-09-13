@@ -15,6 +15,7 @@ class FrasesRandomicaViewController: UIViewController {
     var frase: Int = 0
     
     //time variables
+    var timer = Timer()
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -27,13 +28,18 @@ class FrasesRandomicaViewController: UIViewController {
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     
-    
-    
-   
-    
+
 //MARK: Actions
     
     @IBAction func startActivity(_ sender: Any) {
+       
+        count = 0
+        minute = 0
+        minuteLabel.text = "00"
+        secondLabel.text = "00"
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        
     }
     
 
