@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2567231C959500C4E083 /* EndGameViewController.swift */; };
-		1F8F256A231C9E0800C4E083 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2569231C9E0800C4E083 /* CustomNavigationController.swift */; };
 		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
 		1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */; };
 		5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E752329302600E822E0 /* CategoriesTableViewController.swift */; };
@@ -17,7 +16,6 @@
 		5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E7C232A82C200E822E0 /* SegueFromRight.swift */; };
 		5C106E7F232A94F200E822E0 /* TurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E7E232A94F200E822E0 /* TurnViewController.swift */; };
 		5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */; };
-		5C106E83232BD82E00E822E0 /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E82232BD82E00E822E0 /* TesteViewController.swift */; };
 		5C106E85232BD97100E822E0 /* ComunicaoTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E84232BD97100E822E0 /* ComunicaoTelaViewController.swift */; };
 		5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09C2314A14200950738 /* AppDelegate.swift */; };
 		5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */; };
@@ -70,7 +68,6 @@
 /* Begin PBXFileReference section */
 		0AB65113904A78B278E6710A /* Pods-romance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romance.debug.xcconfig"; path = "Target Support Files/Pods-romance/Pods-romance.debug.xcconfig"; sourceTree = "<group>"; };
 		1F8F2567231C959500C4E083 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
-		1F8F2569231C9E0800C4E083 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
 		1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamica03ViewController.swift; sourceTree = "<group>"; };
 		21DDF71AD54B0A3EC988AFDA /* Pods-romanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-romanceUITests/Pods-romanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +81,6 @@
 		5C106E7C232A82C200E822E0 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		5C106E7E232A94F200E822E0 /* TurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnViewController.swift; sourceTree = "<group>"; };
 		5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserirNomesDinamica3ViewController.swift; sourceTree = "<group>"; };
-		5C106E82232BD82E00E822E0 /* TesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		5C106E84232BD97100E822E0 /* ComunicaoTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunicaoTelaViewController.swift; sourceTree = "<group>"; };
 		5C1AE0992314A14100950738 /* romance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = romance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AE09C2314A14200950738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +160,23 @@
 				40EB277CB6D9AEB6D431E06A /* Pods_romanceUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C106E86232BE0ED00E822E0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5C106E752329302600E822E0 /* CategoriesTableViewController.swift */,
+				5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		5C106E87232BE0FC00E822E0 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				5C106E84232BD97100E822E0 /* ComunicaoTelaViewController.swift */,
+			);
+			path = Activities;
 			sourceTree = "<group>";
 		};
 		5C1AE0902314A14100950738 = {
@@ -255,14 +268,11 @@
 		5C9438442314ABDE00622634 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5C106E87232BE0FC00E822E0 /* Activities */,
+				5C106E86232BE0ED00E822E0 /* Categories */,
 				5CF90AD1232928DE00CC96CD /* Dinamica3Comunnication */,
 				5CF90AD0232928A100CC96CD /* Dinamica2Comunnication */,
 				5CF90ACF2329287600CC96CD /* Dinamica1Comunnication */,
-				1F8F2569231C9E0800C4E083 /* CustomNavigationController.swift */,
-				5C106E752329302600E822E0 /* CategoriesTableViewController.swift */,
-				5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */,
-				5C106E82232BD82E00E822E0 /* TesteViewController.swift */,
-				5C106E84232BD97100E822E0 /* ComunicaoTelaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -548,9 +558,7 @@
 				5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */,
 				5CF90AD32329299D00CC96CD /* FrasesRandomicaViewController.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,
-				5C106E83232BD82E00E822E0 /* TesteViewController.swift in Sources */,
 				5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */,
-				1F8F256A231C9E0800C4E083 /* CustomNavigationController.swift in Sources */,
 				1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */,
 				5C106E85232BD97100E822E0 /* ComunicaoTelaViewController.swift in Sources */,
 				1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */,

@@ -19,12 +19,26 @@ class CategoriesTableViewcontroller: UITableViewController{
         let categoria = categories[indexPath.row]
         
         cell.categoria = categoria
+        
         return cell
+        
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "comunicacao") as! ComunicaoTelaViewController
             self.present(vc, animated: true, completion: nil)
         }
+        else{
+            
+            let message: String = "Sorry, but this category is not available yet "
+            let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+
+        }
+        
     }
 }
