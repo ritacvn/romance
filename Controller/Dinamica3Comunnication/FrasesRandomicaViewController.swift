@@ -11,6 +11,9 @@ import UIKit
 class FrasesRandomicaViewController: UIViewController {
     var frase: Int = 0
     
+    var nome1: String = ""
+    var nome2: String = ""
+    
     @IBOutlet weak var fraseRandomizada: UILabel!
     
     @IBOutlet weak var minuteLabel: UILabel!

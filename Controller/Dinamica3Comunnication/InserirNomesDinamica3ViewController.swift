@@ -18,8 +18,9 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
         super.viewDidLoad()
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-        //tap.cancelsTouchesInView = false
+        
+//        Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+//        tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
         
@@ -43,6 +44,18 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nome2TextField.resignFirstResponder()
+        nome1TextField.resignFirstResponder()
+        
+        return true
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let displayVC = segue.destination as! FrasesRandomicaViewController
+        displayVC.nome1 = self.nome1TextField
+        displayVC.nome2 = self.nome2TextField
     }
     
 }
