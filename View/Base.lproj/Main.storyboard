@@ -906,14 +906,6 @@
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-UG-aZl">
-                                <rect key="frame" x="341" y="28" width="16" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pause" image="bPause_v1_GameScreen"/>
-                                <connections>
-                                    <action selector="pauseButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="0Wi-Eu-nKB"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paz Mundial!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95Z-If-dGi">
                                 <rect key="frame" x="109" y="295" width="157" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -936,6 +928,21 @@
                                     <action selector="startButton2:" destination="QRi-ft-NKl" eventType="touchUpInside" id="QcV-tF-gEF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-9B-ZdX" userLabel="clockLabel">
+                                <rect key="frame" x="276" y="33" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-UG-aZl">
+                                <rect key="frame" x="343" y="135" width="16" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Pause" image="bPause_v1_GameScreen"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="0Wi-Eu-nKB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94509803920000002" green="0.98039215690000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hXS-HM-p4H"/>
@@ -946,6 +953,7 @@
                         <outlet property="balloonB" destination="7CP-QF-sxT" id="JIV-Xp-Cdy"/>
                         <outlet property="buttonStartOutlet" destination="AqE-c2-3Wu" id="Cwj-o1-cXA"/>
                         <outlet property="buttonStartOutlet2" destination="xu6-7Y-GOf" id="JIJ-00-sn7"/>
+                        <outlet property="clockLabel" destination="gnX-9B-ZdX" id="1P9-oM-xVD"/>
                         <outlet property="minuteLabel" destination="vW1-Lc-u0N" id="fg6-cB-hpr"/>
                         <outlet property="name1Outlet" destination="y4e-7d-8ag" id="iNk-by-0gS"/>
                         <outlet property="name2Outlet" destination="HHQ-0k-8DP" id="h6i-yw-4aF"/>
