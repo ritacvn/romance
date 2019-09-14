@@ -18,12 +18,20 @@ class TelaCronometroViewController: UIViewController {
     //var count = 0
     //var minute = 0
     //var hour = 0
-    var i = 0
     //var timer = Timer()
+    
+    var i = 0
     var finalName1: String = ""
     var finalName2: String = ""
     var randomTheme: Int = 0
     var countVariable: Int = 0
+    
+    //Time Variables
+    var timer = Timer()
+    var time: Int = 61
+    var count: Int = 0
+    var minute: Int = 0
+    var second: Int = 0
     
 //MARK: Outlets
     
@@ -34,8 +42,8 @@ class TelaCronometroViewController: UIViewController {
     @IBOutlet weak var name1Outlet: UILabel!
     @IBOutlet weak var name2Outlet: UILabel!
     @IBOutlet weak var nextPersonButtonOutlet: UIButton!
-
     @IBOutlet weak var buttonStartOutlet2: UIButton!
+    
     //Baloes
     @IBOutlet weak var balloonA: UIImageView!
     @IBOutlet weak var balloonB: UIImageView!
@@ -46,8 +54,6 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Label
     @IBOutlet weak var clockLabel: UILabel!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +96,9 @@ class TelaCronometroViewController: UIViewController {
 //MARK: IBActions
     
     @IBAction func startButton(_ sender: Any) {
-        buttonStartOutlet.isEnabled = false
+        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        
         animateSize_Scale()
         
         themeLabel.isHidden = true
@@ -142,12 +149,9 @@ class TelaCronometroViewController: UIViewController {
 //        }
 //    }
     
-    //Time Variables
-    var timer = Timer()
-    var time: Int = 5
-    var count: Int = 0
-    var minute: Int = 0
-    var second: Int = 0
+    
+
+    
     
     //Time Logic
     @objc func counter(){
@@ -157,6 +161,7 @@ class TelaCronometroViewController: UIViewController {
         second = time%60
         
         if time >= 70{
+            
             clockLabel.text = "\(String(minute)):\(String(second))"
             time -= 1
         }
@@ -178,8 +183,6 @@ class TelaCronometroViewController: UIViewController {
         else if time < 10{
             clockLabel.text = "00:0\(String(second))"
             time -= 1
-            
-            
         }
         if time < 0{
             
@@ -188,8 +191,8 @@ class TelaCronometroViewController: UIViewController {
         }
         
     }
-    
 
+    
     @IBAction func pauseButton(_ sender: Any) {
         timer.invalidate()
     }
