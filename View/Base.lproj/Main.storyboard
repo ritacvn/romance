@@ -487,6 +487,7 @@
                     <connections>
                         <outlet property="parterName" destination="K71-Ro-idg" id="PYv-IG-F3t"/>
                         <outlet property="timerLabel" destination="mPt-ea-2B7" id="eXo-6f-3hq"/>
+                        <segue destination="8Oz-aI-xQ2" kind="show" identifier="goToActivitySegue" id="Xs5-sL-WMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwN-Bv-vd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1065,6 +1066,7 @@
         <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Xs5-sL-WMg"/>
         <segue reference="Sxa-Qw-5AC"/>
     </inferredMetricsTieBreakers>
 </document>

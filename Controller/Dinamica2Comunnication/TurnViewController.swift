@@ -33,7 +33,7 @@ class TurnViewController: UIViewController {
         time -= 1
         timerLabel.text = "\(time)"
         
-        if time < 0 {
+        if time <= 0 {
             self.timer.invalidate()
             performSegue(withIdentifier: "goToActivitySegue", sender: self)
         }
