@@ -17,7 +17,7 @@ class TurnViewController: UIViewController {
     
     @IBOutlet weak var timerLabel: UILabel!
     var timer = Timer()
-    var count = 0
+    var time = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +29,18 @@ class TurnViewController: UIViewController {
     }
     
     @objc func counter(){
-        count += 1
-        if count >= 0 {
-            timerLabel.text = "0\(count)"
+        
+        time -= 1
+        timerLabel.text = "\(time)"
+        
+        if time < 0 {
+            self.timer.invalidate()
+            performSegue(withIdentifier: "goToActivitySegue", sender: self)
         }
+        
     }
     
     
-    
-       
 }
   
 
