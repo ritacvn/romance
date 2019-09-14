@@ -19,12 +19,12 @@ class CardTelaViewController: UIViewController {
     @IBOutlet weak var labelGenerica: UILabel!
    
     @IBOutlet weak var cardImage: UIImageView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //labelPalavra.isHidden = true
-       // labelGenerica.isHidden = true
-        // Do any additional setup after loading the view.
-    }
+        override func viewDidLoad() {
+            super.viewDidLoad()
+                //labelPalavra.isHidden = true
+                // labelGenerica.isHidden = true
+                // Do any additional setup after loading the view.
+        }
     
 
     @IBAction func flipButton(_ sender: Any) {
@@ -35,9 +35,18 @@ class CardTelaViewController: UIViewController {
             }
         }
     
+    @IBAction func FinishButton(_ sender: Any) {
+        
+        //performSegue(withIdentifier: <#T##String#>, sender: Any)
+        
+    }
+    
+    
 //    @IBAction func showPalavra(_ sender: Any) {
 //        updateImage()
 //    }
+    
+    
 
     func updateImage(){
         imagem = Int.random(in: 0 ... 1)

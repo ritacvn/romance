@@ -9,12 +9,22 @@
 import UIKit
 
 class TurnViewController: UIViewController {
-
+    
+    var name1: String = ""
+    var name2: String = ""
+    
+    @IBOutlet weak var parterName: UILabel!
+    
     @IBOutlet weak var timerLabel: UILabel!
     var timer = Timer()
     var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        parterName.text = "It's your turn \(name2)!"
+        
+        //Time
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
     }
     
@@ -22,9 +32,11 @@ class TurnViewController: UIViewController {
         count += 1
         if count >= 0 {
             timerLabel.text = "0\(count)"
-           
         }
     }
+    
+    
+    
        
 }
   

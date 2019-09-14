@@ -171,11 +171,12 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-TB-6xa">
-                                <rect key="frame" x="305" y="578" width="32" height="30"/>
+                                <rect key="frame" x="305" y="578" width="32" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="bG2-3S-PJu" kind="show" id="6xw-sr-xyk"/>
+                                    <action selector="nextButton:" destination="tdu-aD-04F" eventType="touchUpInside" id="O4V-cs-qmc"/>
+                                    <segue destination="bG2-3S-PJu" kind="show" identifier="SegueToTurnScreen" id="6xw-sr-xyk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="form_n3" translatesAutoresizingMaskIntoConstraints="NO" id="0bi-pU-vGg">
@@ -275,6 +276,7 @@
                                 <state key="disabled" backgroundImage="FinishSpeechButton_Unable"/>
                                 <state key="highlighted" backgroundImage="FinishSpeechButton_Hightlighted"/>
                                 <connections>
+                                    <action selector="FinishButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="X3C-f7-lA1"/>
                                     <segue destination="alA-lA-Lto" kind="show" id="WOV-VC-0u9"/>
                                 </connections>
                             </button>
@@ -491,6 +493,7 @@
                         <viewLayoutGuide key="safeArea" id="1jM-dI-qeQ"/>
                     </view>
                     <connections>
+                        <outlet property="parterName" destination="K71-Ro-idg" id="PYv-IG-F3t"/>
                         <outlet property="timerLabel" destination="mPt-ea-2B7" id="eXo-6f-3hq"/>
                     </connections>
                 </viewController>
