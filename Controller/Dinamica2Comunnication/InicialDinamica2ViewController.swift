@@ -53,11 +53,13 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
     
     //Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! TurnViewController
-        var couple = Couple(partnerOne: self.name1, partnerTwo: self.name2)
         
-        displayVC.couple = couple
-        displayVC.end = false
+        if segue.identifier == "SegueToTurnScreen"{
+            let displayVC = segue.destination as! TurnViewController
+            let couple = Couple(partnerOne: self.name1, partnerTwo: self.name2)
+            displayVC.couple = couple
+            displayVC.end = false
+        }
         
     }
     

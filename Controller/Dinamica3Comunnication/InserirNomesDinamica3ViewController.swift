@@ -46,9 +46,14 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! FrasesRandomicaViewController
-        displayVC.nome1 = self.namePerson1
-        displayVC.nome2 = self.namePerson2
+        
+        if segue.identifier == "goNextView"{
+            let displayVC = segue.destination as! FrasesRandomicaViewController
+            let couple = Couple(partnerOne: self.namePerson1, partnerTwo: self.namePerson2)
+            displayVC.couple = couple
+            
+        }
+        
     }
     
     @objc func dismissKeyboard() {

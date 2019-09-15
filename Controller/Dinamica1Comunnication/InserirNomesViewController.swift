@@ -15,8 +15,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name1: UITextField!
     @IBOutlet weak var name2: UITextField!
    
-    var nameOfPerson1: String = ""
-    var nameOfPerson2: String = ""
+    var nameOfPartnerOne: String = ""
+    var nameOfPartnerTwo: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,16 +48,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func goNextViewButton(_ sender: Any) {
-        self.nameOfPerson1 = name1.text!
-        self.nameOfPerson2 = name2.text!
+        self.nameOfPartnerOne = name1.text!
+        self.nameOfPartnerTwo = name2.text!
         self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
     }
     
     // Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let displayVC = segue.destination as! Dinamica03ViewController
-            displayVC.name1 = self.nameOfPerson1
-            displayVC.name2 = self.nameOfPerson2
+        let couple = Couple(partnerOne: self.nameOfPartnerOne, partnerTwo: self.nameOfPartnerTwo)
+        displayVC.couple = couple
     }
     
     

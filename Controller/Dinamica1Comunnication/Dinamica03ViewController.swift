@@ -13,20 +13,17 @@ class Dinamica03ViewController: UIViewController {
     
     // MARK: Variáveis
     var randomTheme: Int = 0
-    var name1: String = ""
-    var name2: String = ""
+    var couple: Couple?
     
     // MARK: Outlets
     @IBOutlet weak var name1label: UILabel!
     @IBOutlet weak var name2label: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name1label.text = name1
-        name2label.text = name2
+        name1label.text = "Get ready \(String(describing: couple?.partnerOne))"
+        name2label.text = "Get ready \(String(describing: couple?.partnerTwo))"
         
         name2label.isHidden = true
         name1label.isHidden = true
@@ -39,8 +36,7 @@ class Dinamica03ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let displayVC = segue.destination as! TelaCronometroViewController
-            displayVC.finalName1 = name1label.text!
-            displayVC.finalName2 = name2label.text!
+         displayVC.couple = self.couple
     }
     
     

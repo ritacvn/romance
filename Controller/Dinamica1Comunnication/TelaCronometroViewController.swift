@@ -15,14 +15,11 @@ class TelaCronometroViewController: UIViewController {
 
 //MARK: Variables and Constants
     
-    //var count = 0
-    //var minute = 0
-    //var hour = 0
-    //var timer = Timer()
-    
     var i = 0
-    var finalName1: String = ""
-    var finalName2: String = ""
+    
+    //Name from set name Screen
+    var couple: Couple?
+    
     var randomTheme: Int = 0
     var countVariable: Int = 0
     
@@ -58,16 +55,14 @@ class TelaCronometroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name1Outlet.text = finalName1
-        name2Outlet.text = finalName2
+        name1Outlet.text = "Get ready \(String(describing: couple!.partnerOne))!"
+        name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
         
         updadeTheme()
         
         minuteLabel.isHidden = true
         secondLabel.isHidden = true
         buttonStartOutlet2.isHidden = true
-        
-        print("Hello \(finalName1)")
     }
     
     @IBAction func startButton2(_ sender: Any) {
