@@ -270,14 +270,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t32-oZ-ThU">
-                                <rect key="frame" x="199" y="579" width="146" height="40"/>
+                                <rect key="frame" x="199" y="529" width="146" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="FinishSpeechButton_Hightlighted"/>
                                 <state key="disabled" backgroundImage="FinishSpeechButton_Unable"/>
                                 <state key="highlighted" backgroundImage="FinishSpeechButton_Hightlighted"/>
                                 <connections>
-                                    <action selector="FinishButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="X3C-f7-lA1"/>
-                                    <segue destination="bG2-3S-PJu" kind="show" identifier="backToTurnVC" id="ui4-jo-Bd3"/>
+                                    <action selector="finishButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="tDi-Zz-Lms"/>
+                                    <segue destination="igY-58-YhP" kind="show" identifier="goToEndVCSegue" id="iyI-JP-xhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-yI-n1N">
+                                <rect key="frame" x="256" y="589" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="Ss7-wd-Wei"/>
+                                    <segue destination="bG2-3S-PJu" kind="show" identifier="backToTurnVC" id="yWU-7L-poj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -287,12 +296,13 @@
                     <connections>
                         <outlet property="cardFlip" destination="QhP-NM-5No" id="S3G-A6-Vv2"/>
                         <outlet property="cardImage" destination="Z0C-or-KbT" id="k0r-ip-z5J"/>
-                        <segue destination="igY-58-YhP" kind="show" identifier="goToEndVCSegue" id="8hk-YB-wYM"/>
+                        <outlet property="finishButtonOutlet" destination="t32-oZ-ThU" id="xpt-Fu-B4U"/>
+                        <outlet property="nextButtonOutlet" destination="EtQ-yI-n1N" id="jZm-qq-nOQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLc-Sh-QP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="556" y="329"/>
+            <point key="canvasLocation" x="529" y="319"/>
         </scene>
         <!--Categories-->
         <scene sceneID="sCW-j3-F6F">
@@ -495,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="-266" y="329"/>
         </scene>
-        <!--View Controller-->
+        <!--End Activity Two View Controller-->
         <scene sceneID="Tyh-yy-oy0">
             <objects>
-                <viewController id="igY-58-YhP" sceneMemberID="viewController">
+                <viewController id="igY-58-YhP" customClass="EndActivityTwoViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BHb-wp-12j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -975,7 +985,7 @@
         <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ui4-jo-Bd3"/>
+        <segue reference="yWU-7L-poj"/>
         <segue reference="Sxa-Qw-5AC"/>
     </inferredMetricsTieBreakers>
 </document>

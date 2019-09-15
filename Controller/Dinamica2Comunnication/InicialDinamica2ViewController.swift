@@ -57,6 +57,7 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
         var couple = Couple(partnerOne: self.name1, partnerTwo: self.name2)
         
         displayVC.couple = couple
+        displayVC.end = false
         
     }
     

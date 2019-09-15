@@ -9,21 +9,35 @@
 import UIKit
 
 
+
 class CardTelaViewController: UIViewController {
     
     var isopen = false
     var palavra: Int = 0
     var imagem: Int = 0
     var couple: Couple?
- 
+    var end: Bool?
     
+   
     @IBOutlet weak var cardFlip: UIView!
     @IBOutlet weak var labelPalavra: UILabel!
     @IBOutlet weak var labelGenerica: UILabel!
     @IBOutlet weak var cardImage: UIImageView!
     
+    @IBOutlet weak var finishButtonOutlet: UIButton!
+    @IBOutlet weak var nextButtonOutlet: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if end! {
+            nextButtonOutlet.isHidden = true
+            finishButtonOutlet.isHidden = false
+        }else{
+            nextButtonOutlet.isHidden = false
+            finishButtonOutlet.isHidden = true
+        }
+        
             //labelPalavra.isHidden = true
             // labelGenerica.isHidden = true
             
@@ -37,18 +51,6 @@ class CardTelaViewController: UIViewController {
             }
     }
     
-    @IBAction func FinishButton(_ sender: UIButton) {
-       
-        //Posting notification that the finish button was tapped
-        let name = Notification.Name(rawValue: finishButonNotificationKey)
-        NotificationCenter.default.post(name: name, object: nil)
-        
-        //Perform TurnViewControllerScreen
-        performSegue(withIdentifier: "backToTurnVC", sender: self)
-      
-    }
-    
-    
 //    @IBAction func showPalavra(_ sender: Any) {
 //        updateImage()
 //    }
@@ -58,11 +60,25 @@ class CardTelaViewController: UIViewController {
         cardImage.image = arrayImagens[imagem]
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! TurnViewController
-        couple?.switchCouple()
-        displayVC.couple = self.couple
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
+       
+        if segue.identifier == "backToTurnVC"{
+            let displayVC = segue.destination as! TurnViewController
+            couple?.switchCouple()
+            displayVC.couple = self.couple
+            displayVC.end = !self.end!
+        }
+
+    }
+    
+   
+    @IBAction func nextButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "backToTurnVC", sender: self)
+    }
+    
+    
+    @IBAction func finishButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToEndVCSegue", sender: self)
     }
     
     
