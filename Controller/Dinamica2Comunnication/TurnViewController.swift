@@ -8,24 +8,46 @@
 
 import UIKit
 
+let finishButonNotificationKey = "finishButtonTapped"
+
 class TurnViewController: UIViewController {
     
-    var name1: String = ""
-    var name2: String = ""
+    var couple: Couple?
     
-    @IBOutlet weak var parterName: UILabel!
+    let finishButton = Notification.Name(rawValue: finishButonNotificationKey)
     
-    @IBOutlet weak var timerLabel: UILabel!
     var timer = Timer()
     var time = 5
+    
+    @IBOutlet weak var parterName: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
+   
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        parterName.text = "It's your turn \(name2)!"
+        createObserves()
+        
+        parterName.text = "It's your turn \(String(describing: couple!.partnerTurn()))!"
         
         //Time
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+    }
+    
+    func createObserves(){
+        
+        //Check if finishButton waas tapped
+        NotificationCenter.default.addObserver(self, selector: #selector(TurnViewController.updadeName(notification:)), name: finishButton, object: nil)
+        
+    }
+    
+    @objc func updadeName(notification: NSNotification){
+        
+        
     }
     
     @objc func counter(){
@@ -38,6 +60,11 @@ class TurnViewController: UIViewController {
             performSegue(withIdentifier: "goToActivitySegue", sender: self)
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let displayVC = segue.destination as! CardTelaViewController
+        displayVC.couple = self.couple
     }
     
     

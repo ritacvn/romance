@@ -54,8 +54,10 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
     //Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let displayVC = segue.destination as! TurnViewController
-        displayVC.name1 = self.name1
-        displayVC.name2 = self.name2
+        var couple = Couple(partnerOne: self.name1, partnerTwo: self.name2)
+        
+        displayVC.couple = couple
+        
     }
     
 }

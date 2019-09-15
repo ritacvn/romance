@@ -13,6 +13,9 @@ class CardTelaViewController: UIViewController {
     var isopen = false
     var palavra: Int = 0
     var imagem: Int = 0
+    
+    var couple: Couple?
+    
     @IBOutlet weak var cardFlip: UIView!
     @IBOutlet weak var labelPalavra: UILabel!
     
@@ -35,10 +38,12 @@ class CardTelaViewController: UIViewController {
             }
         }
     
-    @IBAction func FinishButton(_ sender: Any) {
+    @IBAction func FinishButton(_ sender: UIButton) {
         
-        //performSegue(withIdentifier: <#T##String#>, sender: Any)
+        let name = Notification.Name(rawValue: finishButonNotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
         
+        performSegue(withIdentifier: "backToTurnVC", sender: self)
     }
     
     
@@ -46,10 +51,16 @@ class CardTelaViewController: UIViewController {
 //        updateImage()
 //    }
     
-    
-
     func updateImage(){
         imagem = Int.random(in: 0 ... 1)
         cardImage.image = arrayImagens[imagem]
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let displayVC = segue.destination as! TurnViewController
+        couple?.switchCouple()
+        displayVC.couple = self.couple
+
+    }
+    
 }

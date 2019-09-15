@@ -277,7 +277,7 @@
                                 <state key="highlighted" backgroundImage="FinishSpeechButton_Hightlighted"/>
                                 <connections>
                                     <action selector="FinishButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="X3C-f7-lA1"/>
-                                    <segue destination="alA-lA-Lto" kind="show" id="WOV-VC-0u9"/>
+                                    <segue destination="bG2-3S-PJu" kind="show" identifier="backToTurnVC" id="ui4-jo-Bd3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1066,7 +1066,7 @@
         <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Xs5-sL-WMg"/>
+        <segue reference="ui4-jo-Bd3"/>
         <segue reference="Sxa-Qw-5AC"/>
     </inferredMetricsTieBreakers>
 </document>
