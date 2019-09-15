@@ -366,88 +366,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-f4-duS">
-                                <rect key="frame" x="13" y="374" width="98" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Activities">
-                                        <attributes>
-                                            <color key="NSColor" red="0.2901960784" green="0.56470588239999997" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="24"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-3c-RLM">
-                                <rect key="frame" x="13" y="411" width="145" height="142"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinamica 1" image="SquareDIN1"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Fwa-Hl-WpU"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Theme_Comunication" translatesAutoresizingMaskIntoConstraints="NO" id="rb6-vk-YG9">
-                                <rect key="frame" x="0.0" y="-22" width="375" height="311"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CommunicationTHEME" translatesAutoresizingMaskIntoConstraints="NO" id="rb6-vk-YG9">
+                                <rect key="frame" x="0.0" y="-12" width="375" height="311"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
-                                <rect key="frame" x="15" y="226" width="222" height="40"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MAIN_Card" translatesAutoresizingMaskIntoConstraints="NO" id="o9C-12-x19">
+                                <rect key="frame" x="-1" y="226" width="377" height="419"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Comunnication">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" metaFont="system" size="33"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="Ação de transmitir uma mensagem e, eventualmente, receber outra mensagem como resposta." adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
-                                <rect key="frame" x="16" y="297" width="334" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="CoolveticaCondensedRg-Regular" family="Coolvetica" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-Jj-UIj">
-                                <rect key="frame" x="205" y="411" width="145" height="142"/>
+                                <rect key="frame" x="176" y="481" width="145" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinâmica 2" image="SquareDIN2"/>
+                                <state key="normal" title="Dinâmica 2" image="Activity_DeclDiv"/>
                                 <connections>
                                     <segue destination="tdu-aD-04F" kind="show" id="iII-Qi-1Vk"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="ihP-D2-Mo3">
-                                <rect key="frame" x="12" y="364" width="351" height="2"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nth-1H-qbP" userLabel="Dinamica3">
+                                <rect key="frame" x="337" y="481" width="145" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun Declaration of Love" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2S-ND-foS">
-                                <rect key="frame" x="217" y="491" width="109" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timed Dicussion" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwB-O4-IJl">
-                                <rect key="frame" x="23" y="491" width="84" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CoolveticaRg-Regular" family="Coolvetica" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nth-1H-qbP">
-                                <rect key="frame" x="160" y="585" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="Activity_DinFras"/>
                                 <connections>
                                     <segue destination="G3M-vs-Omt" kind="show" id="YvS-FS-MzH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comunnication  " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
+                                <rect key="frame" x="23" y="258" width="331" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="33"/>
+                                <color key="textColor" red="0.1207025424" green="0.1260433644" blue="0.1260433644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-3c-RLM">
+                                <rect key="frame" x="15" y="481" width="145" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dinamica 1" image="Activity_DircCron"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Fwa-Hl-WpU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMU-Ev-aEC">
+                                <rect key="frame" x="23" y="295" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">com·​mu·​ni·​ca·​tion 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
+                                <rect key="frame" x="20" y="349" width="236" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Definition 
+A process by which information is exchanged between individuals through a common system of symbols, signs, or behavior.
+</string>
+                                <color key="textColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CoolveticaCondensedRg-Regular" family="Coolvetica" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="feZ-rQ-uG9"/>
@@ -455,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hil-Rz-5DW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2943.1999999999998" y="-11.244377811094454"/>
+            <point key="canvasLocation" x="-3148" y="-9.4452773613193415"/>
         </scene>
         <!--Turn View Controller-->
         <scene sceneID="bVj-Cc-PRF">
@@ -930,6 +907,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Activity_DeclDiv" width="161" height="170"/>
+        <image name="Activity_DinFras" width="155" height="164"/>
+        <image name="Activity_DircCron" width="161" height="170"/>
         <image name="B1A_v1_GameScreen" width="996" height="672"/>
         <image name="B1Aa_v1_GameScreen" width="657" height="528"/>
         <image name="B1B_v1_GameScreen" width="1011" height="918"/>
@@ -948,13 +928,12 @@
         <image name="BalaoMini3_v1_LS" width="189" height="168"/>
         <image name="BalaoMini4_v1_LS" width="222" height="84"/>
         <image name="BalaoMini5_v1_LS" width="171" height="258"/>
+        <image name="CommunicationTHEME" width="375" height="299"/>
         <image name="FinishSpeechButton_Hightlighted" width="146" height="40"/>
         <image name="FinishSpeechButton_Unable" width="146" height="40"/>
-        <image name="SquareDIN1" width="155" height="152"/>
-        <image name="SquareDIN2" width="155" height="152"/>
+        <image name="MAIN_Card" width="375" height="412"/>
         <image name="SwipeCardButton_Hightlighted" width="146" height="40"/>
         <image name="SwipeCardButton_Unable" width="146" height="40"/>
-        <image name="Theme_Comunication" width="375" height="304"/>
         <image name="bNext_v1_NameScreen" width="165" height="165"/>
         <image name="bPause_v1_GameScreen" width="60" height="72"/>
         <image name="bPlay_v1_GameScreen" width="165" height="165"/>
@@ -968,9 +947,9 @@
         <image name="form_n1" width="309" height="379"/>
         <image name="form_n2" width="180" height="173"/>
         <image name="form_n3" width="487" height="380"/>
-        <image name="line" width="1023" height="6"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="iII-Qi-1Vk"/>
         <segue reference="6xw-sr-xyk"/>
         <segue reference="NUS-Ba-bpz"/>
     </inferredMetricsTieBreakers>
