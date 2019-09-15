@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2567231C959500C4E083 /* EndGameViewController.swift */; };
+		1FBB7C68232DF30200C4A8C2 /* EndActivityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */; };
+		1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA7BA232DC7C1000FBC48 /* Couple.swift */; };
 		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
 		1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */; };
 		5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E752329302600E822E0 /* CategoriesTableViewController.swift */; };
@@ -40,7 +42,6 @@
 		5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */; };
 		5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */; };
 		5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */; };
-		5C851013231E047700C1A74B /* CardTela2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C851012231E047700C1A74B /* CardTela2ViewController.swift */; };
 		5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94384B2318165500622634 /* TelaCronometroViewController.swift */; };
 		5CF90AD32329299D00CC96CD /* FrasesRandomicaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF90AD22329299D00CC96CD /* FrasesRandomicaViewController.swift */; };
 		8DFCE56049F7B7AE9C2AE774 /* Pods_romanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F849F3807C8BDB5DA882844 /* Pods_romanceTests.framework */; };
@@ -68,6 +69,8 @@
 /* Begin PBXFileReference section */
 		0AB65113904A78B278E6710A /* Pods-romance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romance.debug.xcconfig"; path = "Target Support Files/Pods-romance/Pods-romance.debug.xcconfig"; sourceTree = "<group>"; };
 		1F8F2567231C959500C4E083 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndActivityTwoViewController.swift; sourceTree = "<group>"; };
+		1FCCA7BA232DC7C1000FBC48 /* Couple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
 		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
 		1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamica03ViewController.swift; sourceTree = "<group>"; };
 		21DDF71AD54B0A3EC988AFDA /* Pods-romanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-romanceUITests/Pods-romanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +106,6 @@
 		5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTelaViewController.swift; sourceTree = "<group>"; };
 		5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialDinamica2ViewController.swift; sourceTree = "<group>"; };
-		5C851012231E047700C1A74B /* CardTela2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTela2ViewController.swift; sourceTree = "<group>"; };
 		5C94384B2318165500622634 /* TelaCronometroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCronometroViewController.swift; sourceTree = "<group>"; };
 		5CF90AD22329299D00CC96CD /* FrasesRandomicaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrasesRandomicaViewController.swift; sourceTree = "<group>"; };
 		86B5FDF3202CA8437D5C463F /* Pods-romanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romanceTests.debug.xcconfig"; path = "Target Support Files/Pods-romanceTests/Pods-romanceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */,
 				5C106E79232946DE00E822E0 /* Categorias.swift */,
 				5C106E7C232A82C200E822E0 /* SegueFromRight.swift */,
+				1FCCA7BA232DC7C1000FBC48 /* Couple.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,8 +296,8 @@
 			children = (
 				5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */,
 				5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */,
-				5C851012231E047700C1A74B /* CardTela2ViewController.swift */,
 				5C106E7E232A94F200E822E0 /* TurnViewController.swift */,
+				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,
 			);
 			path = Dinamica2Comunnication;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 			files = (
 				5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */,
 				5C106E7F232A94F200E822E0 /* TurnViewController.swift in Sources */,
+				1FBB7C68232DF30200C4A8C2 /* EndActivityTwoViewController.swift in Sources */,
 				5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */,
 				5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */,
 				5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */,
@@ -565,8 +569,8 @@
 				1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */,
 				5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */,
 				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
+				1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */,
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
-				5C851013231E047700C1A74B /* CardTela2ViewController.swift in Sources */,
 				5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */,
 				5C106E7823293B9E00E822E0 /* CategoriaTableViewCell.swift in Sources */,
 			);

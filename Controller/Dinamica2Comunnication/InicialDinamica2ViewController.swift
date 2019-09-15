@@ -10,6 +10,10 @@ import UIKit
 
 class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
 
+    var name1: String = ""
+    var name2: String = ""
+    
+    
     @IBOutlet weak var nome1text: UITextField!
     @IBOutlet weak var nome2text: UITextField!
     
@@ -25,7 +29,9 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
         self.nome1text.delegate = self
         self.nome2text.delegate = self
     }
-
+    
+    
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
@@ -36,6 +42,24 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    
+    @IBAction func nextButton(_ sender: Any) {
+        
+        self.name1 = nome1text.text!
+        self.name2 = nome2text.text!
+        self.performSegue(withIdentifier: "SegueToTurnScreen", sender: self)
+    
+    }
+    
+    //Parsing names to the other view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let displayVC = segue.destination as! TurnViewController
+        var couple = Couple(partnerOne: self.name1, partnerTwo: self.name2)
+        
+        displayVC.couple = couple
+        displayVC.end = false
+        
+    }
+    
 }
 
