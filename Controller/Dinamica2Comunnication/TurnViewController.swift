@@ -65,6 +65,7 @@ class TurnViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let displayVC = segue.destination as! CardTelaViewController
         displayVC.couple = self.couple
+     
     }
     
     

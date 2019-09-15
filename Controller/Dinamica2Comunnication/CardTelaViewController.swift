@@ -8,42 +8,44 @@
 
 import UIKit
 
+
 class CardTelaViewController: UIViewController {
     
     var isopen = false
     var palavra: Int = 0
     var imagem: Int = 0
-    
     var couple: Couple?
+ 
     
     @IBOutlet weak var cardFlip: UIView!
     @IBOutlet weak var labelPalavra: UILabel!
-    
     @IBOutlet weak var labelGenerica: UILabel!
-   
     @IBOutlet weak var cardImage: UIImageView!
-        override func viewDidLoad() {
-            super.viewDidLoad()
-                //labelPalavra.isHidden = true
-                // labelGenerica.isHidden = true
-                // Do any additional setup after loading the view.
-        }
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+            //labelPalavra.isHidden = true
+            // labelGenerica.isHidden = true
+            
+    }
+    
     @IBAction func flipButton(_ sender: Any) {
             if isopen == false{
                 isopen = true
                 updateImage()
                 UIView.transition(with: cardImage, duration: 0.6, options: .transitionFlipFromRight, animations: nil, completion: nil)
             }
-        }
+    }
     
     @IBAction func FinishButton(_ sender: UIButton) {
-        
+       
+        //Posting notification that the finish button was tapped
         let name = Notification.Name(rawValue: finishButonNotificationKey)
         NotificationCenter.default.post(name: name, object: nil)
         
+        //Perform TurnViewControllerScreen
         performSegue(withIdentifier: "backToTurnVC", sender: self)
+      
     }
     
     
@@ -60,7 +62,8 @@ class CardTelaViewController: UIViewController {
         let displayVC = segue.destination as! TurnViewController
         couple?.switchCouple()
         displayVC.couple = self.couple
-
+        
     }
+    
     
 }
