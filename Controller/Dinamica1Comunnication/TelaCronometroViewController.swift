@@ -25,7 +25,7 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 61
+    var time: Int = 5
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -60,8 +60,6 @@ class TelaCronometroViewController: UIViewController {
         
         updadeTheme()
         
-//        minuteLabel.isHidden = true
-//        secondLabel.isHidden = true
         buttonStartOutlet2.isHidden = true
     }
     
@@ -77,12 +75,8 @@ class TelaCronometroViewController: UIViewController {
             ]
         )
         
-//        themeLabel.isHidden = true
-//        theThemeIsLabel.isHidden = true
-//
-//        minuteLabel.isHidden = false
-//        secondLabel.isHidden = false
         buttonStartOutlet2.isEnabled = false
+        buttonStartOutlet2.isHidden = true
        
     }
     
@@ -96,54 +90,13 @@ class TelaCronometroViewController: UIViewController {
         
         themeLabel.isHidden = true
         theThemeIsLabel.isHidden = true
-        
-//        minuteLabel.isHidden = false
-//        secondLabel.isHidden = false
+        buttonStartOutlet.isHidden = true
         
     }
     
     @IBAction func nextPersonButton(_ sender: Any) {
         
     }
-    
-//    @objc func counter(){
-//        count += 1
-//        if count >= 0 {
-//            secondLabel.text = "0\(count)"
-//            if count == 60 {
-//                count = 0
-//                secondLabel.text = "00"
-//                minute += 1
-//                    if minute >= 0 {
-//                    minuteLabel.text = "\(minute)"
-//                    if minute == 60 {
-//                        minute = 0
-//                        minuteLabel.text = "00"
-//                    }
-//                }
-//                else{
-//                    minuteLabel.text = "0\(minute)"
-//                }
-//            }
-//    }
-//
-//    if minuteLabel.text == "00" && secondLabel.text == "05"{
-//            balloonA.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
-//           timer.invalidate()
-//            buttonStartOutlet.isHidden = true
-//            buttonStartOutlet2.isHidden = false
-//            balloonB.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
-//            buttonStartOutlet2.isEnabled = true
-//
-//            count = 0
-//            minute = 0
-//            minuteLabel.text = "00"
-//            secondLabel.text = "00"
-//        }
-//    }
-    
-    
-
     
     
     //Time Logic
@@ -183,16 +136,17 @@ class TelaCronometroViewController: UIViewController {
             
         }
         if clockLabel.text == "00:00" {
-            balloonA.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+            animateSize_Unscale()
                        timer.invalidate()
                         buttonStartOutlet.isHidden = true
                         buttonStartOutlet2.isHidden = false
-                        balloonB.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+                        balloonB.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 244, height: 251)))
                         buttonStartOutlet2.isEnabled = true
-            
                         second = 0
                         minute = 0
-            clockLabel.text = "01:00"
+                        time = 5
+            clockLabel.text = "00:05"
+            
         }
         
     }
@@ -219,19 +173,17 @@ class TelaCronometroViewController: UIViewController {
     }
     
     func animateSize_Scale() {
-       //let size = balloonA.bounds.size
         
         balloonA.animate( [.delay(1),
                            .duration(0.5),
-                           .size(CGSize(width: 595, height: 620))
+                           .size(CGSize(width: 244, height: 251))
                             ]
         )
-       // balloonA.animate(.delay(1),.duration(0.5),.size(size))
     }
     
     func animateSize_Unscale() {
         
-        balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+        balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
         
     }
     
