@@ -25,6 +25,7 @@ class FrasesRandomicaViewController: UIViewController {
     
 //MARK: Outlets
     
+    @IBOutlet weak var namePerson: UILabel!
     @IBOutlet weak var fraseRandomizada: UILabel!
     //Time labels
     @IBOutlet weak var clockLabel: UILabel!
@@ -45,7 +46,8 @@ class FrasesRandomicaViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        namePerson.text = "Get ready \(String(describing: couple?.partnerOne))"
+       
         randomizarFrase()
         
     }

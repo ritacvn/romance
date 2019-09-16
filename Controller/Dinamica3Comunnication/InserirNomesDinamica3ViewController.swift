@@ -78,5 +78,6 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
         self.namePerson2 = nome2TextField.text!
         self.performSegue(withIdentifier: "goNextView", sender: self)
     }
+    
  
 }
