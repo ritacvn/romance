@@ -61,6 +61,9 @@ class TelaCronometroViewController: UIViewController {
         updadeTheme()
         
         buttonStartOutlet2.isHidden = true
+        if clockLabel.text == "00:05" {
+             balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
+        }
     }
     
     @IBAction func startButton2(_ sender: Any) {
@@ -71,12 +74,13 @@ class TelaCronometroViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         balloonB.animate( [.delay(1),
                            .duration(0.5),
-                           .size(CGSize(width: 595, height: 620))
+                           .size(CGSize(width: 244, height: 251))
             ]
         )
         
         buttonStartOutlet2.isEnabled = false
         buttonStartOutlet2.isHidden = true
+    
        
     }
     
@@ -140,12 +144,18 @@ class TelaCronometroViewController: UIViewController {
                        timer.invalidate()
                         buttonStartOutlet.isHidden = true
                         buttonStartOutlet2.isHidden = false
-                        balloonB.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 244, height: 251)))
                         buttonStartOutlet2.isEnabled = true
                         second = 0
                         minute = 0
                         time = 5
             clockLabel.text = "00:05"
+            
+            if clockLabel.text == "00:05" && buttonStartOutlet2.isEnabled == true{
+                 balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
+                balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
+                
+            }
+            
             
         }
         
