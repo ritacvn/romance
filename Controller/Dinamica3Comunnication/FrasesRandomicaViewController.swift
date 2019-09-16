@@ -37,7 +37,7 @@ class FrasesRandomicaViewController: UIViewController {
         count = 00
         minute = 00
       
-        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
         
     }
     
@@ -49,6 +49,8 @@ class FrasesRandomicaViewController: UIViewController {
         namePerson.text = "Get ready \(String(describing: couple?.partnerOne))"
        
         randomizarFrase()
+        
+        
         
     }
     
@@ -95,6 +97,15 @@ class FrasesRandomicaViewController: UIViewController {
                 self.timer.invalidate()
             
             }
+        if clockLabel.text == "00:00"{
+            namePerson.text = "Get ready \(String(describing: couple?.partnerTwo))"
+            randomizarFrase()
+            timer.invalidate()
+            minute = 0
+            second = 0
+            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
+        }
+        
     }
     
 
