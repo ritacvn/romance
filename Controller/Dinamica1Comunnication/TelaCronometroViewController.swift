@@ -67,24 +67,22 @@ class TelaCronometroViewController: UIViewController {
     
     @IBAction func startButton2(_ sender: Any) {
         animateSize_Unscale()
-//        timer.invalidate()
-//        count = 0
-//        minute = 0
-//        minuteLabel.text = "00"
-//        secondLabel.text = "00"
-//        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-//        balloonB.animate( [.delay(1),
-//                           .duration(0.5),
-//                           .size(CGSize(width: 595, height: 620))
-//            ]
-//        )
+        timer.invalidate()
+        
+
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        balloonB.animate( [.delay(1),
+                           .duration(0.5),
+                           .size(CGSize(width: 595, height: 620))
+            ]
+        )
         
 //        themeLabel.isHidden = true
 //        theThemeIsLabel.isHidden = true
 //
 //        minuteLabel.isHidden = false
 //        secondLabel.isHidden = false
-//        buttonStartOutlet2.isEnabled = false
+        buttonStartOutlet2.isEnabled = false
        
     }
     
@@ -183,6 +181,18 @@ class TelaCronometroViewController: UIViewController {
             
             self.timer.invalidate()
             
+        }
+        if clockLabel.text == "00:00" {
+            balloonA.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+                       timer.invalidate()
+                        buttonStartOutlet.isHidden = true
+                        buttonStartOutlet2.isHidden = false
+                        balloonB.animate(.delay(0.5),.duration(0.5),.size(CGSize(width: 385, height: 403)))
+                        buttonStartOutlet2.isEnabled = true
+            
+                        second = 0
+                        minute = 0
+            clockLabel.text = "01:00"
         }
         
     }
