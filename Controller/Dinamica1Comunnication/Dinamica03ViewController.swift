@@ -35,8 +35,12 @@ class Dinamica03ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! TelaCronometroViewController
-         displayVC.couple = self.couple
+        
+        if segue.identifier == "DisplayNameSegue" {
+            let displayVC = segue.destination as! TelaCronometroViewController
+            displayVC.couple = self.couple
+        }
+      
     }
     
     

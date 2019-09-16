@@ -60,31 +60,31 @@ class TelaCronometroViewController: UIViewController {
         
         updadeTheme()
         
-        minuteLabel.isHidden = true
-        secondLabel.isHidden = true
+//        minuteLabel.isHidden = true
+//        secondLabel.isHidden = true
         buttonStartOutlet2.isHidden = true
     }
     
     @IBAction func startButton2(_ sender: Any) {
         animateSize_Unscale()
-        timer.invalidate()
-        count = 0
-        minute = 0
-        minuteLabel.text = "00"
-        secondLabel.text = "00"
-        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-        balloonB.animate( [.delay(1),
-                           .duration(0.5),
-                           .size(CGSize(width: 595, height: 620))
-            ]
-        )
+//        timer.invalidate()
+//        count = 0
+//        minute = 0
+//        minuteLabel.text = "00"
+//        secondLabel.text = "00"
+//        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+//        balloonB.animate( [.delay(1),
+//                           .duration(0.5),
+//                           .size(CGSize(width: 595, height: 620))
+//            ]
+//        )
         
-        themeLabel.isHidden = true
-        theThemeIsLabel.isHidden = true
-        
-        minuteLabel.isHidden = false
-        secondLabel.isHidden = false
-        buttonStartOutlet2.isEnabled = false
+//        themeLabel.isHidden = true
+//        theThemeIsLabel.isHidden = true
+//
+//        minuteLabel.isHidden = false
+//        secondLabel.isHidden = false
+//        buttonStartOutlet2.isEnabled = false
        
     }
     
@@ -99,8 +99,8 @@ class TelaCronometroViewController: UIViewController {
         themeLabel.isHidden = true
         theThemeIsLabel.isHidden = true
         
-        minuteLabel.isHidden = false
-        secondLabel.isHidden = false
+//        minuteLabel.isHidden = false
+//        secondLabel.isHidden = false
         
     }
     

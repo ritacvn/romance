@@ -903,7 +903,6 @@ A process by which information is exchanged between individuals through a common
         <image name="form_n3" width="487" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iII-Qi-1Vk"/>
         <segue reference="6xw-sr-xyk"/>
         <segue reference="NUS-Ba-bpz"/>
     </inferredMetricsTieBreakers>

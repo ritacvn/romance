@@ -55,9 +55,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // Parsing names to the other view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! Dinamica03ViewController
-        let couple = Couple(partnerOne: self.nameOfPartnerOne, partnerTwo: self.nameOfPartnerTwo)
-        displayVC.couple = couple
+        
+        if segue.identifier == "InputNameToDisplay" {
+            let displayVC = segue.destination as! Dinamica03ViewController
+            let couple = Couple(partnerOne: self.nameOfPartnerOne, partnerTwo: self.nameOfPartnerTwo)
+            displayVC.couple = couple
+        }
+       
     }
     
     
