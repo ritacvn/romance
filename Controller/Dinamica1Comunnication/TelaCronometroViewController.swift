@@ -15,6 +15,9 @@ class TelaCronometroViewController: UIViewController {
 
 //MARK: Variables and Constants
     
+    var endTurn: Bool = false
+    
+    
     var i = 0
     
     //Name from set name Screen
@@ -52,6 +55,7 @@ class TelaCronometroViewController: UIViewController {
     //Time Label
     @IBOutlet weak var clockLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,36 +65,43 @@ class TelaCronometroViewController: UIViewController {
         updadeTheme()
         
         buttonStartOutlet2.isHidden = true
+        
         if clockLabel.text == "00:05" {
-             balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
+            animateSize_Unscale(ballon: balloonA)
         }
+        
     }
     
     @IBAction func startButton2(_ sender: Any) {
-        animateSize_Unscale()
+        
+        animateSize_Unscale(ballon: balloonA)
+        name1Outlet.text = "Thank you \(String(describing: couple!.partnerOne))!"
+        
+        //Para o Tempo
         timer.invalidate()
         
-
+        //Reinicia o tempo
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-        balloonB.animate( [.delay(1),
-                           .duration(0.5),
-                           .size(CGSize(width: 244, height: 251))
-            ]
-        )
         
-        buttonStartOutlet2.isEnabled = false
-        buttonStartOutlet2.isHidden = true
+        //Scale ballon B
+        animateSize_Scale(ballon: balloonB)
+        name2Outlet.text = "It's your turn \(String(describing: couple!.partnerTwo))!"
+        
+        //buttonStartOutlet2.isEnabled = false
+       // buttonStartOutlet2.isHidden = true
     
-       
     }
     
 //MARK: IBActions
     
     @IBAction func startButton(_ sender: Any) {
         
+        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         
-        animateSize_Scale()
+        animateSize_Scale(ballon: balloonA)
+        name1Outlet.text = "It's your turn \(String(describing: couple!.partnerOne))!"
+        
         
         themeLabel.isHidden = true
         theThemeIsLabel.isHidden = true
@@ -140,19 +151,30 @@ class TelaCronometroViewController: UIViewController {
             
         }
         if clockLabel.text == "00:00" {
-            animateSize_Unscale()
-                       timer.invalidate()
+            
+            animateSize_Unscale(ballon: balloonA)
+            timer.invalidate()
                         buttonStartOutlet.isHidden = true
                         buttonStartOutlet2.isHidden = false
                         buttonStartOutlet2.isEnabled = true
                         second = 0
                         minute = 0
                         time = 5
+            
             clockLabel.text = "00:05"
             
+            
             if clockLabel.text == "00:05" && buttonStartOutlet2.isEnabled == true{
-                 balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
-                balloonB.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
+               
+                animateSize_Unscale(ballon: balloonA)
+                
+                //Unscale ballonB
+                animateSize_Unscale(ballon: balloonB)
+                
+                if endTurn == true && name2Outlet.text == "It's your turn \(String(describing: couple!.partnerTwo))!" {
+                    
+                    name2Outlet.text = "Thank you \(String(describing: couple!.partnerTwo))!"
+                }
                 
             }
             
@@ -162,17 +184,7 @@ class TelaCronometroViewController: UIViewController {
     }
 
     
-    @IBAction func pauseButton(_ sender: Any) {
-        timer.invalidate()
-    }
-    
-    @IBAction func resetButton(_ sender: Any) {
-        timer.invalidate()
-        count = 0
-        minute = 0
-        minuteLabel.text = "00"
-        secondLabel.text = "00"
-    }
+  
     
 //MARK: Functions
     
@@ -182,19 +194,23 @@ class TelaCronometroViewController: UIViewController {
         themeLabel.text = arrayDeTemas_Dinamica03[randomTheme]
     }
     
-    func animateSize_Scale() {
+    func animateSize_Scale(ballon: UIImageView) {
         
-        balloonA.animate( [.delay(1),
+        ballon.animate( [.delay(1),
                            .duration(0.5),
                            .size(CGSize(width: 244, height: 251))
                             ]
         )
     }
     
-    func animateSize_Unscale() {
+    func animateSize_Unscale(ballon: UIImageView) {
         
-        balloonA.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
+        ballon.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
         
+        if ballon == balloonB{
+             endTurn = true
+        }
+       
     }
     
 }
