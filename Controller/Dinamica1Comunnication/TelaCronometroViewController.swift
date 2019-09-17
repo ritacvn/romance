@@ -16,9 +16,13 @@ class TelaCronometroViewController: UIViewController {
 //MARK: Variables and Constants
     
     var endTurn: Bool = false
+    var change: Bool = false
     
     
     var i = 0
+    
+    //Theme variables
+    var theme: String = ""
     
     //Name from set name Screen
     var couple: Couple?
@@ -28,7 +32,7 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 5
+    var time: Int = 15
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -63,6 +67,7 @@ class TelaCronometroViewController: UIViewController {
         name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
         
         updadeTheme()
+        theThemeIsLabel.text = "The theme is \(String(describing: theme))"
         
         buttonStartOutlet2.isHidden = true
         
@@ -74,9 +79,11 @@ class TelaCronometroViewController: UIViewController {
     
     @IBAction func startButton2(_ sender: Any) {
         
+        //Unscale ballon A
         animateSize_Unscale(ballon: balloonA)
-        name1Outlet.text = "Thank you \(String(describing: couple!.partnerOne))!"
         
+        name1Outlet.text = "Thank you \(String(describing: couple!.partnerOne))!"
+       
         //Para o Tempo
         timer.invalidate()
         
@@ -85,10 +92,11 @@ class TelaCronometroViewController: UIViewController {
         
         //Scale ballon B
         animateSize_Scale(ballon: balloonB)
+       
+        theThemeIsLabel.text = "Argue about \(String(describing: theme))"
         name2Outlet.text = "It's your turn \(String(describing: couple!.partnerTwo))!"
+        buttonStartOutlet2.isHidden = true
         
-        //buttonStartOutlet2.isEnabled = false
-       // buttonStartOutlet2.isHidden = true
     
     }
     
@@ -103,9 +111,8 @@ class TelaCronometroViewController: UIViewController {
         name1Outlet.text = "It's your turn \(String(describing: couple!.partnerOne))!"
         
         
-        themeLabel.isHidden = true
-        theThemeIsLabel.isHidden = true
-        buttonStartOutlet.isHidden = true
+        theThemeIsLabel.text = "Ague about the \(String(describing: theme))"
+        buttonStartOutlet2.isHidden = true
         
     }
     
@@ -159,12 +166,13 @@ class TelaCronometroViewController: UIViewController {
                         buttonStartOutlet2.isEnabled = true
                         second = 0
                         minute = 0
-                        time = 5
+                        time = 15
             
-            clockLabel.text = "00:05"
+            clockLabel.text = "00:15"
             
             
-            if clockLabel.text == "00:05" && buttonStartOutlet2.isEnabled == true{
+            
+            if clockLabel.text == "00:15" && buttonStartOutlet2.isEnabled == true{
                
                 animateSize_Unscale(ballon: balloonA)
                 
@@ -178,9 +186,8 @@ class TelaCronometroViewController: UIViewController {
                 }
                 
             }
-            
-            
         }
+        
         
     }
 
@@ -192,7 +199,7 @@ class TelaCronometroViewController: UIViewController {
     //Randomizing the theme
     func updadeTheme(){
         randomTheme = Int.random(in: 0 ... 5)
-        themeLabel.text = arrayDeTemas_Dinamica03[randomTheme]
+        theme = arrayDeTemas_Dinamica03[randomTheme]
     }
     
     func animateSize_Scale(ballon: UIImageView) {
@@ -210,6 +217,10 @@ class TelaCronometroViewController: UIViewController {
         
         if ballon == balloonB{
              endTurn = true
+        }
+        
+        if ballon == balloonA{
+            change = true
         }
        
     }
