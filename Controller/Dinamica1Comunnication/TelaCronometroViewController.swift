@@ -172,8 +172,9 @@ class TelaCronometroViewController: UIViewController {
                 animateSize_Unscale(ballon: balloonB)
                 
                 if endTurn == true && name2Outlet.text == "It's your turn \(String(describing: couple!.partnerTwo))!" {
-                    
                     name2Outlet.text = "Thank you \(String(describing: couple!.partnerTwo))!"
+                    
+                    performSegue(withIdentifier: "endSegue", sender: self)
                 }
                 
             }
