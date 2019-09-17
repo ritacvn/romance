@@ -16,6 +16,9 @@
         <array key="SF-Pro-Display-Light.otf">
             <string>SFProDisplay-Light</string>
         </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
         <array key="coolvetica condensed rg.ttf">
             <string>CoolveticaCondensedRg-Regular</string>
         </array>
@@ -613,7 +616,7 @@ A process by which information is exchanged between individuals through a common
                                 <rect key="frame" x="16" y="259" width="264" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isMotionEnabled" value="YES"/>
@@ -920,7 +923,7 @@ We need this to set turns right for your and your partner!</string>
         <image name="Activity_DinFras" width="155" height="164"/>
         <image name="Activity_DircCron" width="161" height="170"/>
         <image name="BackButton" width="13" height="22"/>
-        <image name="BackOfCard_Din2" width="342" height="487"/>
+        <image name="BackOfCard_Din2" width="335" height="475"/>
         <image name="Balao1_ShakeScreen" width="198" height="204"/>
         <image name="Balao1_v1_LS" width="1011" height="918"/>
         <image name="Balao2_ShakeScreen" width="198" height="204"/>
