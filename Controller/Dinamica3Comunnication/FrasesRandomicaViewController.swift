@@ -30,26 +30,36 @@ class FrasesRandomicaViewController: UIViewController {
     //Time labels
     @IBOutlet weak var clockLabel: UILabel!
 
-//MARK: Actions
+    @IBOutlet weak var start2outlet: UIButton!
+    @IBOutlet weak var start1outlet: UIButton!
+    //MARK: Actions
     
     @IBAction func startActivity(_ sender: Any) {
-       
+       start1outlet.isEnabled = false
+       start1outlet.isHidden = true
         count = 00
         minute = 00
-      
+       randomizarFrase()
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
         
     }
     
-
+    @IBAction func startActivity2(_ sender: Any) {
+        count = 00
+        minute = 00
+       
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
+    }
+    
 //MARK: Functions
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        namePerson.text = "Get ready \(String(describing: couple?.partnerOne))"
+        namePerson.text = "Get ready \(String(describing: couple!.partnerOne))"
        
         randomizarFrase()
-        
+        start2outlet.isEnabled = false
+        start2outlet.isHidden = true
         
         
     }
@@ -98,13 +108,17 @@ class FrasesRandomicaViewController: UIViewController {
             
             }
         if clockLabel.text == "00:00"{
-            namePerson.text = "Get ready \(String(describing: couple?.partnerTwo))"
-            randomizarFrase()
+            namePerson.text = "Get ready \(String(describing: couple!.partnerTwo))"
             timer.invalidate()
+            start2outlet.isEnabled = true
+            start2outlet.isHidden = false
+            randomizarFrase()
             minute = 0
             second = 0
-            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
+            time = 10
+           
         }
+        
         
     }
     
