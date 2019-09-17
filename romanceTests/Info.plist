@@ -4,10 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>coolvetica compressed rg.ttf</string>
-		<string>coolvetica condensed rg.ttf</string>
-		<string>coolvetica crammed rg.ttf</string>
-		<string>coolvetica rg.ttf</string>
+		<string>SF-Pro-Display-BlackItalic.otf</string>
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
