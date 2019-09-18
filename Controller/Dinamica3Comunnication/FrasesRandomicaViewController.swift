@@ -15,10 +15,14 @@ class FrasesRandomicaViewController: UIViewController {
     var frase: Int = 0
     
     var couple: Couple?
+    var endTurn: Int = 0
     
     //time variables
     var timer = Timer()
     var time: Int = 10
+    
+    var fraseTema: String = ""
+    
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -35,39 +39,43 @@ class FrasesRandomicaViewController: UIViewController {
     //MARK: Actions
     
     @IBAction func startActivity(_ sender: Any) {
-       start1outlet.isEnabled = false
-       start1outlet.isHidden = true
-        count = 00
-        minute = 00
-       randomizarFrase()
+        
+        start1outlet.isEnabled = false
+        start1outlet.isHidden = true
+       
+        //randomizarFrase()
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
         
     }
     
     @IBAction func startActivity2(_ sender: Any) {
-        count = 00
-        minute = 00
-       
+        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
+        
+        start1outlet.isEnabled = false
+        start2outlet.isHidden = true
+    
     }
     
 //MARK: Functions
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         namePerson.text = "Get ready \(String(describing: couple!.partnerOne))"
-       
+        
         randomizarFrase()
+        fraseRandomizada.text = "What do you think about \(fraseTema)"
+        
         start2outlet.isEnabled = false
         start2outlet.isHidden = true
-        
         
     }
     
     //Func to randomize phrase
     func randomizarFrase(){
         frase = Int.random(in: 0...3)
-        fraseRandomizada.text = arrayDeFrases[frase]
+        fraseTema = arrayDeFrases[frase]
     }
     
     //Time Logic
@@ -107,15 +115,26 @@ class FrasesRandomicaViewController: UIViewController {
                 self.timer.invalidate()
             
             }
+        
         if clockLabel.text == "00:00"{
+            
+            endTurn += 1
+            
             namePerson.text = "Get ready \(String(describing: couple!.partnerTwo))"
             timer.invalidate()
+            
             start2outlet.isEnabled = true
             start2outlet.isHidden = false
-            randomizarFrase()
-            minute = 0
-            second = 0
+            
+            //randomizarFrase()
             time = 10
+            
+            print(endTurn)
+            
+            if endTurn == 2 {
+                performSegue(withIdentifier: "endDin3Segue", sender: self)
+                
+            }
            
         }
         
