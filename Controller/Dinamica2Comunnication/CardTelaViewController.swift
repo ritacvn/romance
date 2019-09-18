@@ -56,7 +56,7 @@ class CardTelaViewController: UIViewController {
 //    }
     
     func updateImage(){
-        imagem = Int.random(in: 0 ... 1)
+        imagem = Int.random(in: 0 ... 4)
         cardImage.image = arrayImagens[imagem]
     }
     
