@@ -22,6 +22,6 @@ struct Categoria {
         
         let empatia = Categoria(nome: "Empatia", descricao: "processo de identificação em que o indivíduo se coloca no lugar do outro e, com base em suas próprias suposições ou impressões, tenta compreender o comportamento do outro.", image: "empatia")
         
-        return [comunicacao, conhecimento, carinho, empatia]
+        return [comunicacao, empatia, conhecimento, carinho,]
     }
 }
