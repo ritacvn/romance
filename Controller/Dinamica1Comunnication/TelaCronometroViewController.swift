@@ -67,7 +67,7 @@ class TelaCronometroViewController: UIViewController {
         name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
         
         updadeTheme()
-        theThemeIsLabel.text = "The theme is \(String(describing: theme))"
+        theThemeIsLabel.text = "The theme is: \(String(describing: theme))"
         
         buttonStartOutlet2.isHidden = true
         
