@@ -46,7 +46,7 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func nextButton(_ sender: Any) {
         if nome1text.text == "" || nome2text.text == ""{
             
-            let message: String = "Sorry, you didin't fill all the fields"
+            let message: String = "You didin't fill all the fields"
             let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
             

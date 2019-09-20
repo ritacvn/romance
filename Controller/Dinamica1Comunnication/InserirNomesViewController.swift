@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func alertButton(_ sender: Any) {
         if name2.text == "" || name2.text == ""{
             
-            let message: String = "Você não preencheu todos os campos"
+            let message: String = "You didn't fill all the fields"
             let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
             
