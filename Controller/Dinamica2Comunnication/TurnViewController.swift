@@ -28,7 +28,7 @@ class TurnViewController: UIViewController {
         
         //createObserves()
         
-        parterName.text = "It's your turn \(String(describing: couple!.partnerTurn()))!"
+        parterName.text = "It's your turn: \(String(describing: couple!.partnerTurn()))!"
         
         //Time
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)

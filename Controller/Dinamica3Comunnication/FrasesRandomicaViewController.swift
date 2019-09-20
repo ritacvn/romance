@@ -65,7 +65,7 @@ class FrasesRandomicaViewController: UIViewController {
         namePerson.text = "Get ready \(String(describing: couple!.partnerOne))"
         
         randomizarFrase()
-        fraseRandomizada.text = "What do you think about \(fraseTema)"
+        fraseRandomizada.text = "What do you think about: \(fraseTema)"
         
         start2outlet.isEnabled = false
         start2outlet.isHidden = true
@@ -120,7 +120,7 @@ class FrasesRandomicaViewController: UIViewController {
             
             endTurn += 1
             
-            namePerson.text = "Get ready \(String(describing: couple!.partnerTwo))"
+            namePerson.text = "Get ready: \(String(describing: couple!.partnerTwo))"
             timer.invalidate()
             
             start2outlet.isEnabled = true

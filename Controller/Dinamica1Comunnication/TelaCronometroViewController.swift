@@ -82,7 +82,7 @@ class TelaCronometroViewController: UIViewController {
         //Unscale ballon A
         animateSize_Unscale(ballon: balloonA)
         
-        name1Outlet.text = "Thank you \(String(describing: couple!.partnerOne))!"
+        name1Outlet.text = "Thank you: \(String(describing: couple!.partnerOne))!"
        
         //Para o Tempo
         timer.invalidate()
@@ -93,8 +93,8 @@ class TelaCronometroViewController: UIViewController {
         //Scale ballon B
         animateSize_Scale(ballon: balloonB)
        
-        theThemeIsLabel.text = "Argue about \(String(describing: theme))"
-        name2Outlet.text = "It's your turn \(String(describing: couple!.partnerTwo))!"
+        theThemeIsLabel.text = "Argue about: \(String(describing: theme))"
+        name2Outlet.text = "It's your turn: \(String(describing: couple!.partnerTwo))!"
         buttonStartOutlet2.isHidden = true
         
     
@@ -108,10 +108,10 @@ class TelaCronometroViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         
         animateSize_Scale(ballon: balloonA)
-        name1Outlet.text = "It's your turn \(String(describing: couple!.partnerOne))!"
+        name1Outlet.text = "It's your turn: \(String(describing: couple!.partnerOne))!"
         
         
-        theThemeIsLabel.text = "Ague about the \(String(describing: theme))"
+        theThemeIsLabel.text = "Ague about the: \(String(describing: theme))"
         buttonStartOutlet2.isHidden = true
         
     }
@@ -179,8 +179,8 @@ class TelaCronometroViewController: UIViewController {
                 //Unscale ballonB
                 animateSize_Unscale(ballon: balloonB)
                 
-                if endTurn == true && name2Outlet.text == "It's your turn \(String(describing: couple!.partnerTwo))!" {
-                    name2Outlet.text = "Thank you \(String(describing: couple!.partnerTwo))!"
+                if endTurn == true && name2Outlet.text == "It's your turn: \(String(describing: couple!.partnerTwo))!" {
+                    name2Outlet.text = "Thank you: \(String(describing: couple!.partnerTwo))!"
                     
                     performSegue(withIdentifier: "endSegue", sender: self)
                 }
