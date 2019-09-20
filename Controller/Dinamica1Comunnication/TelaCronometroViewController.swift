@@ -32,7 +32,7 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 15
+    var time: Int = 60
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -67,7 +67,7 @@ class TelaCronometroViewController: UIViewController {
         name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
         
         updadeTheme()
-        theThemeIsLabel.text = "The theme is: \(String(describing: theme))"
+        theThemeIsLabel.text = "The theme is: \(String(describing: theme))!"
         
         buttonStartOutlet2.isHidden = true
         
@@ -111,7 +111,7 @@ class TelaCronometroViewController: UIViewController {
         name1Outlet.text = "It's your turn: \(String(describing: couple!.partnerOne))!"
         
         
-        theThemeIsLabel.text = "Ague about the: \(String(describing: theme))"
+        theThemeIsLabel.text = "Ague about the: \(String(describing: theme))!"
         buttonStartOutlet2.isHidden = true
         
     }
@@ -168,11 +168,11 @@ class TelaCronometroViewController: UIViewController {
                         minute = 0
                         time = 15
             
-            clockLabel.text = "00:15"
+            clockLabel.text = "00:60"
             
             
             
-            if clockLabel.text == "00:15" && buttonStartOutlet2.isEnabled == true{
+            if clockLabel.text == "00:60" && buttonStartOutlet2.isEnabled == true{
                
                 animateSize_Unscale(ballon: balloonA)
                 
