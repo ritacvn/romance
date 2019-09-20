@@ -44,7 +44,16 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func nextButton(_ sender: Any) {
-        
+        if nome1text.text == "" || nome2text.text == ""{
+            
+            let message: String = "Sorry, you didin't fill all the fields"
+            let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
+            
+            alert.addAction(action)
+            
+            present(alert, animated: true, completion: nil)
+        }
         self.name1 = nome1text.text!
         self.name2 = nome2text.text!
         self.performSegue(withIdentifier: "SegueToTurnScreen", sender: self)

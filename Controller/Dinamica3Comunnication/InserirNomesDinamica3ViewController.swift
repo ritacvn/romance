@@ -66,7 +66,7 @@ class InserirNomesDinamica3ViewController: UIViewController, UITextFieldDelegate
     @IBAction func buttonNextView(_ sender: Any) {
         if nome1TextField.text == "" || nome2TextField.text == ""{
             
-            let message: String = "Desculpe, você não preencheu todos os campos"
+            let message: String = "Sorry, you didin't fill all the fields"
             let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
             let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
             
