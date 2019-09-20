@@ -24,6 +24,7 @@ class CategoriesTableViewcontroller: UITableViewController{
         
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
         if indexPath.row == 0{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "comunicacao") as! ComunicaoTelaViewController
             self.present(vc, animated: true, completion: nil)
@@ -37,7 +38,6 @@ class CategoriesTableViewcontroller: UITableViewController{
             alert.addAction(action)
             
             present(alert, animated: true, completion: nil)
-
         }
         
     }
