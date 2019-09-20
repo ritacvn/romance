@@ -15,4 +15,4 @@ let arrayDeFrases = ["frase1","frase2","frase3","frase4"]
 
 //let arrayImages: [UIImage] = [UIImage(named: "communication")!, UIImage(named: "SquareDIN1")!]
 
-let arrarCategorias = ["communication","carinho", "conhecimento","empatia"]
+let arrarCategorias = ["communication","conhecimento","empatia"]
