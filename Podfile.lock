@@ -1,0 +1,26 @@
+PODS:
+  - FSPagerView (0.8.3)
+  - Motion (3.1.1):
+    - Motion/Core (= 3.1.1)
+  - Motion/Core (3.1.1)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - FSPagerView
+  - Motion
+  - TextFieldEffects
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FSPagerView
+    - Motion
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  Motion: f115b33f36cc52472a25a965daa89b3859817de0
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: d37aced678870ee8ca57b40ff22d877f7f7cba7d
+
+COCOAPODS: 1.6.0.beta.2
