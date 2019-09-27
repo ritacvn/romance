@@ -12,12 +12,14 @@ import UIKit
 
 class CardTelaViewController: UIViewController {
     
+    
     var isopen = false
     var palavra: Int = 0
     var imagem: Int = 0
-    var couple: Couple?
     var end: Bool?
     
+    //Importando classes
+        var couple: Couple?
    
     @IBOutlet weak var cardFlip: UIView!
     @IBOutlet weak var labelPalavra: UILabel!

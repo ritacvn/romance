@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F15CD86233E3C270025FC94 /* UIFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F15CD85233E3C270025FC94 /* UIFeedback.swift */; };
 		1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2567231C959500C4E083 /* EndGameViewController.swift */; };
 		1FBB7C68232DF30200C4A8C2 /* EndActivityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */; };
 		1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA7BA232DC7C1000FBC48 /* Couple.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		0AB65113904A78B278E6710A /* Pods-romance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romance.debug.xcconfig"; path = "Target Support Files/Pods-romance/Pods-romance.debug.xcconfig"; sourceTree = "<group>"; };
+		1F15CD85233E3C270025FC94 /* UIFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFeedback.swift; sourceTree = "<group>"; };
 		1F8F2567231C959500C4E083 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndActivityTwoViewController.swift; sourceTree = "<group>"; };
 		1FCCA7BA232DC7C1000FBC48 /* Couple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				5C106E79232946DE00E822E0 /* Categorias.swift */,
 				5C106E7C232A82C200E822E0 /* SegueFromRight.swift */,
 				1FCCA7BA232DC7C1000FBC48 /* Couple.swift */,
+				1F15CD85233E3C270025FC94 /* UIFeedback.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 			files = (
 				5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */,
 				5C106E7F232A94F200E822E0 /* TurnViewController.swift in Sources */,
+				1F15CD86233E3C270025FC94 /* UIFeedback.swift in Sources */,
 				1FBB7C68232DF30200C4A8C2 /* EndActivityTwoViewController.swift in Sources */,
 				5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */,
 				5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */,
@@ -753,6 +757,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9WDNLZLLU;
 				INFOPLIST_FILE = romance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -772,6 +777,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T9WDNLZLLU;
 				INFOPLIST_FILE = romance/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

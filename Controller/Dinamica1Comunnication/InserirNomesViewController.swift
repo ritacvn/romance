@@ -18,6 +18,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var nameOfPartnerOne: String = ""
     var nameOfPartnerTwo: String = ""
     
+    //FeedbackClass
+    var feedback: UIFeedback?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +54,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.nameOfPartnerOne = name1.text!
         self.nameOfPartnerTwo = name2.text!
         self.performSegue(withIdentifier: "InputNameToDisplay", sender: self)
+        
+       
     }
     
     // Parsing names to the other view

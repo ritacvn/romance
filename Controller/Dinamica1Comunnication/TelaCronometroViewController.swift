@@ -13,7 +13,7 @@ import Motion
 
 class TelaCronometroViewController: UIViewController {
 
-//MARK: Variables and Constants
+// MARK: Variables and Constants
     
     var endTurn: Bool = false
     var change: Bool = false
@@ -24,8 +24,13 @@ class TelaCronometroViewController: UIViewController {
     //Theme variables
     var theme: String = ""
     
-    //Name from set name Screen
-    var couple: Couple?
+    //Importing classes
+    
+        //Name from set name Screen
+        var couple: Couple?
+    
+        
+    
     
     var randomTheme: Int = 0
     var countVariable: Int = 0
@@ -78,6 +83,9 @@ class TelaCronometroViewController: UIViewController {
     }
     
     @IBAction func startButton2(_ sender: Any) {
+    
+        //Haptic feedback
+        UIFeedback.hapticFeedback()
         
         //Unscale ballon A
         animateSize_Unscale(ballon: balloonA)
@@ -96,20 +104,20 @@ class TelaCronometroViewController: UIViewController {
         theThemeIsLabel.text = "Argue about: \(String(describing: theme))"
         name2Outlet.text = "It's your turn: \(String(describing: couple!.partnerTwo))!"
         buttonStartOutlet2.isHidden = true
-        
-    
+  
     }
     
 //MARK: IBActions
     
     @IBAction func startButton(_ sender: Any) {
         
-        
+        //Haptic feedback
+        UIFeedback.hapticFeedback()
+                
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         
         animateSize_Scale(ballon: balloonA)
         name1Outlet.text = "It's your turn: \(String(describing: couple!.partnerOne))!"
-        
         
         theThemeIsLabel.text = "Ague about the: \(String(describing: theme))!"
         buttonStartOutlet2.isHidden = true
