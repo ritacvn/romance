@@ -45,7 +45,8 @@ class FrasesRandomicaViewController: UIViewController {
        
         //randomizarFrase()
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(FrasesRandomicaViewController.counter), userInfo: nil, repeats: true)
-        
+       
+        UIFeedback.hapticFeedback()
     }
     
     @IBAction func startActivity2(_ sender: Any) {
@@ -54,6 +55,8 @@ class FrasesRandomicaViewController: UIViewController {
         
         start1outlet.isEnabled = false
         start2outlet.isHidden = true
+        
+        UIFeedback.hapticFeedback()
     
     }
     

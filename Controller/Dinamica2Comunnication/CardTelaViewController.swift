@@ -51,6 +51,8 @@ class CardTelaViewController: UIViewController {
                 updateImage()
                 UIView.transition(with: cardImage, duration: 0.6, options: .transitionFlipFromRight, animations: nil, completion: nil)
             }
+        
+        UIFeedback.hapticFeedback()
     }
     
 //    @IBAction func showPalavra(_ sender: Any) {
@@ -76,11 +78,13 @@ class CardTelaViewController: UIViewController {
    
     @IBAction func nextButton(_ sender: UIButton) {
         performSegue(withIdentifier: "backToTurnVC", sender: self)
+        UIFeedback.hapticFeedback()
     }
     
     
     @IBAction func finishButton(_ sender: UIButton) {
         performSegue(withIdentifier: "goToEndVCSegue", sender: self)
+        UIFeedback.hapticFeedback()
     }
     
     
