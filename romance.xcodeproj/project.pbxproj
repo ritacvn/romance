@@ -168,6 +168,13 @@
 			path = Familiarity;
 			sourceTree = "<group>";
 		};
+		1F58CE292344F446002A828F /* SettingName */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingName;
+			sourceTree = "<group>";
+		};
 		2FE299EC6CE6A901D73B91CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +322,7 @@
 		5C9438442314ABDE00622634 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1F58CE292344F446002A828F /* SettingName */,
 				5C106E87232BE0FC00E822E0 /* ScreenOfActivities */,
 				5C106E86232BE0ED00E822E0 /* Categories */,
 			);
