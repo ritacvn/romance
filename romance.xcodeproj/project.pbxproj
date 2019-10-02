@@ -144,6 +144,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F58CE262344F2CE002A828F /* Comunnication */ = {
+			isa = PBXGroup;
+			children = (
+				5CF90AD1232928DE00CC96CD /* TheSentencesActivity */,
+				5CF90AD0232928A100CC96CD /* FunnySpeach */,
+				5CF90ACF2329287600CC96CD /* TimedDiscussion */,
+			);
+			path = Comunnication;
+			sourceTree = "<group>";
+		};
+		1F58CE272344F34B002A828F /* Empathy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Empathy;
+			sourceTree = "<group>";
+		};
+		1F58CE282344F38F002A828F /* Familiarity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Familiarity;
+			sourceTree = "<group>";
+		};
 		2FE299EC6CE6A901D73B91CD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,18 +194,21 @@
 		5C106E86232BE0ED00E822E0 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				1F58CE282344F38F002A828F /* Familiarity */,
+				1F58CE272344F34B002A828F /* Empathy */,
+				1F58CE262344F2CE002A828F /* Comunnication */,
 				5C106E752329302600E822E0 /* CategoriesTableViewController.swift */,
 				5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		5C106E87232BE0FC00E822E0 /* Activities */ = {
+		5C106E87232BE0FC00E822E0 /* ScreenOfActivities */ = {
 			isa = PBXGroup;
 			children = (
 				5C106E84232BD97100E822E0 /* ComunicaoTelaViewController.swift */,
 			);
-			path = Activities;
+			path = ScreenOfActivities;
 			sourceTree = "<group>";
 		};
 		5C1AE0902314A14100950738 = {
@@ -288,16 +315,13 @@
 		5C9438442314ABDE00622634 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5C106E87232BE0FC00E822E0 /* Activities */,
+				5C106E87232BE0FC00E822E0 /* ScreenOfActivities */,
 				5C106E86232BE0ED00E822E0 /* Categories */,
-				5CF90AD1232928DE00CC96CD /* Dinamica3Comunnication */,
-				5CF90AD0232928A100CC96CD /* Dinamica2Comunnication */,
-				5CF90ACF2329287600CC96CD /* Dinamica1Comunnication */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		5CF90ACF2329287600CC96CD /* Dinamica1Comunnication */ = {
+		5CF90ACF2329287600CC96CD /* TimedDiscussion */ = {
 			isa = PBXGroup;
 			children = (
 				1F8F2567231C959500C4E083 /* EndGameViewController.swift */,
@@ -305,10 +329,10 @@
 				1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */,
 				5C94384B2318165500622634 /* TelaCronometroViewController.swift */,
 			);
-			path = Dinamica1Comunnication;
+			path = TimedDiscussion;
 			sourceTree = "<group>";
 		};
-		5CF90AD0232928A100CC96CD /* Dinamica2Comunnication */ = {
+		5CF90AD0232928A100CC96CD /* FunnySpeach */ = {
 			isa = PBXGroup;
 			children = (
 				5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */,
@@ -316,16 +340,16 @@
 				5C106E7E232A94F200E822E0 /* TurnViewController.swift */,
 				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,
 			);
-			path = Dinamica2Comunnication;
+			path = FunnySpeach;
 			sourceTree = "<group>";
 		};
-		5CF90AD1232928DE00CC96CD /* Dinamica3Comunnication */ = {
+		5CF90AD1232928DE00CC96CD /* TheSentencesActivity */ = {
 			isa = PBXGroup;
 			children = (
 				5CF90AD22329299D00CC96CD /* FrasesRandomicaViewController.swift */,
 				5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */,
 			);
-			path = Dinamica3Comunnication;
+			path = TheSentencesActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
