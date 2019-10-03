@@ -175,11 +175,11 @@ class TelaCronometroViewController: UIViewController {
                         second = 0
                         minute = 0
                         time = 60
-            clockLabel.text = "00:60"
+            clockLabel.text = "01:00"
             
             
             
-            if clockLabel.text == "00:60" && buttonStartOutlet2.isEnabled == true{
+            if clockLabel.text == "01:00" && buttonStartOutlet2.isEnabled == true{
                
                 animateSize_Unscale(ballon: balloonA)
                 
