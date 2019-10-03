@@ -113,13 +113,13 @@ class TelaCronometroViewController: UIViewController {
         
         //Haptic feedback
         UIFeedback.hapticFeedback()
-                
+        buttonStartOutlet.isHidden = true
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         
         animateSize_Scale(ballon: balloonA)
         name1Outlet.text = "It's your turn: \(String(describing: couple!.partnerOne))!"
         
-        theThemeIsLabel.text = "Ague about the: \(String(describing: theme))!"
+        theThemeIsLabel.text = "Argue about the: \(String(describing: theme))!"
         buttonStartOutlet2.isHidden = true
         
     }
@@ -174,8 +174,7 @@ class TelaCronometroViewController: UIViewController {
                         buttonStartOutlet2.isEnabled = true
                         second = 0
                         minute = 0
-                        time = 15
-            
+                        time = 60
             clockLabel.text = "00:60"
             
             
