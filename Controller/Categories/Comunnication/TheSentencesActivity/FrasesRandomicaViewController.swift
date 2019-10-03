@@ -65,10 +65,10 @@ class FrasesRandomicaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        namePerson.text = "Hello \(String(describing: couple!.partnerOne))!"
+        namePerson.text = "Hello, \(String(describing: couple!.partnerOne))!"
         
         randomizarFrase()
-        fraseRandomizada.text = "What do you think about the sentence: \(fraseTema)."
+        fraseRandomizada.text = "What do you think about the sentence: \n \(fraseTema)."
         
         start2outlet.isEnabled = false
         start2outlet.isHidden = true
@@ -123,7 +123,7 @@ class FrasesRandomicaViewController: UIViewController {
             
             endTurn += 1
             
-            namePerson.text = "Now it's your turn \(String(describing: couple!.partnerTwo))!"
+            namePerson.text = "Now it's your turn: \(String(describing: couple!.partnerTwo))!"
             timer.invalidate()
             
             start2outlet.isEnabled = true
