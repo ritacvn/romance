@@ -28,6 +28,7 @@
 		5C1AE0AA2314A14300950738 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AE0A82314A14300950738 /* LaunchScreen.storyboard */; };
 		5C1AE0B52314A14300950738 /* romanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0B42314A14300950738 /* romanceTests.swift */; };
 		5C1AE0C02314A14300950738 /* romanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0BF2314A14300950738 /* romanceUITests.swift */; };
+		5C233885234B718300A321F1 /* Rounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C233884234B718300A321F1 /* Rounds.swift */; };
 		5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */; };
 		5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */; };
 		5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */; };
@@ -107,6 +108,7 @@
 		5C1AE0BB2314A14300950738 /* romanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = romanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AE0BF2314A14300950738 /* romanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = romanceUITests.swift; sourceTree = "<group>"; };
 		5C1AE0C12314A14300950738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C233884234B718300A321F1 /* Rounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounds.swift; sourceTree = "<group>"; };
 		5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTelaViewController.swift; sourceTree = "<group>"; };
 		5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialDinamica2ViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				1FCCA7BA232DC7C1000FBC48 /* Couple.swift */,
 				1F15CD85233E3C270025FC94 /* UIFeedback.swift */,
 				5CCB47222344F374006190E8 /* Motion.swift */,
+				5C233884234B718300A321F1 /* Rounds.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -604,6 +607,7 @@
 				5CF90AD32329299D00CC96CD /* FrasesRandomicaViewController.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,
 				5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */,
+				5C233885234B718300A321F1 /* Rounds.swift in Sources */,
 				1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */,
 				5C106E85232BD97100E822E0 /* ComunicaoTelaViewController.swift in Sources */,
 				1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */,
