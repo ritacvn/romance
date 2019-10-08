@@ -30,6 +30,7 @@
 		5C1AE0C02314A14300950738 /* romanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0BF2314A14300950738 /* romanceUITests.swift */; };
 		5C233885234B718300A321F1 /* Rounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C233884234B718300A321F1 /* Rounds.swift */; };
 		5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */; };
+		5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */; };
 		5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */; };
 		5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */; };
 		5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94384B2318165500622634 /* TelaCronometroViewController.swift */; };
@@ -110,6 +111,7 @@
 		5C1AE0C12314A14300950738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C233884234B718300A321F1 /* Rounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounds.swift; sourceTree = "<group>"; };
 		5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SliderTimeViewController.swift; path = Model/SliderTimeViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTelaViewController.swift; sourceTree = "<group>"; };
 		5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialDinamica2ViewController.swift; sourceTree = "<group>"; };
 		5C94384B2318165500622634 /* TelaCronometroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaCronometroViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		1F58CE282344F38F002A828F /* Familiarity */ = {
 			isa = PBXGroup;
 			children = (
+				5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */,
 			);
 			path = Familiarity;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */,
 				5CCB47232344F374006190E8 /* Motion.swift in Sources */,
 				5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */,
+				5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */,
 				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
 				1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */,
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
