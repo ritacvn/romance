@@ -28,6 +28,13 @@ class SliderTimeViewController: UIViewController {
     }
     
     @IBAction func playNextView(_ sender: Any) {
+        self.performSegue(withIdentifier: "sliderTime", sender: self)
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sliderTime"{
+            let displayVC = segue.destination as! PlayScreenViewController
+            let time = timeLabel.text
+            displayVC.time = time
+        }
+    }
 }
