@@ -9,10 +9,10 @@
 import UIKit
 
 class CategoriaTableViewCell: UITableViewCell{
-    
+
     @IBOutlet weak var categoriaImage: UIImageView!
     
-    @IBOutlet weak var categoryName: UILabel!
+    
     
     var categoria: Categoria!{
         didSet{
@@ -22,7 +22,5 @@ class CategoriaTableViewCell: UITableViewCell{
     func updateUI(){
         categoriaImage.layer.cornerRadius = 25
         categoriaImage.image = UIImage(named: categoria.image!)
-       // categoryName.text = categoria.nome
-        
     }
 }

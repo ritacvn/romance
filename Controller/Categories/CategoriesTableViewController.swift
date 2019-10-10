@@ -8,14 +8,31 @@
 
 import UIKit
 
-class CategoriesTableViewcontroller: UITableViewController{
-    var categories: [Categoria] = Categoria.fetchCategories()
+
+class CategoriesTableViewController: UIViewController {
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories.count
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    var categories: [Categoria] = Categoria.fetchCategories()
+
+    
+    override func viewDidLoad() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoriaTableViewCell
+}
+
+extension CategoriesTableViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCellId", for: indexPath) as! CategoriaTableViewCell
+        
         let categoria = categories[indexPath.row]
         
         cell.categoria = categoria
@@ -23,7 +40,8 @@ class CategoriesTableViewcontroller: UITableViewController{
         return cell
         
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
         if indexPath.row == 0{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "comunicacao") as! ComunicaoTelaViewController
@@ -41,4 +59,6 @@ class CategoriesTableViewcontroller: UITableViewController{
         }
         
     }
+
+    
 }
