@@ -1,5 +1,6 @@
 PODS:
   - FSPagerView (0.8.3)
+  - MBCircularProgressBar (0.3.5)
   - Motion (3.1.1):
     - Motion/Core (= 3.1.1)
   - Motion/Core (3.1.1)
@@ -7,20 +8,23 @@ PODS:
 
 DEPENDENCIES:
   - FSPagerView
+  - MBCircularProgressBar
   - Motion
   - TextFieldEffects
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - FSPagerView
+    - MBCircularProgressBar
     - Motion
     - TextFieldEffects
 
 SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  MBCircularProgressBar: 0b795b722a5eb5b0923822f90474e2576a1a7855
   Motion: f115b33f36cc52472a25a965daa89b3859817de0
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: d37aced678870ee8ca57b40ff22d877f7f7cba7d
+PODFILE CHECKSUM: 863e4bdf3a117d37f8c422d3f6b4364c813910cc
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.8.3

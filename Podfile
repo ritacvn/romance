@@ -6,11 +6,12 @@ target 'romance' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for romance
+   # Pods for romance
 
     pod 'Motion'
     pod 'FSPagerView'
     pod 'TextFieldEffects'
+    pod	'MBCircularProgressBar' 
  
 
   target 'romanceTests' do
