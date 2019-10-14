@@ -68,11 +68,17 @@ class TelaCronometroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name1Outlet.text = "Get ready \(String(describing: couple!.partnerOne))!"
-        name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
+        #warning("Alterar nomes após aplicar o autoLayout")
+//        name1Outlet.text = "Get ready \(String(describing: couple!.partnerOne))!"
+//        name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
+
+        name1Outlet.text = "Jeff"
+        name2Outlet.text = "Inesistente"
+
         
         updadeTheme()
-        theThemeIsLabel.text = "The theme is: \(String(describing: theme))!"
+        theThemeIsLabel.text = "\(String(describing: theme))!"
+//        theThemeIsLabel.text = "The theme is: \(String(describing: theme))!"
         
         buttonStartOutlet2.isHidden = true
         
@@ -100,8 +106,9 @@ class TelaCronometroViewController: UIViewController {
         
         //Scale ballon B
         animateSize_Scale(ballon: balloonB)
-       
-        theThemeIsLabel.text = "Argue about: \(String(describing: theme))"
+
+        theThemeIsLabel.text = "\(String(describing: theme))"
+//        theThemeIsLabel.text = "Argue about: \(String(describing: theme))"
         name2Outlet.text = "It's your turn: \(String(describing: couple!.partnerTwo))!"
         buttonStartOutlet2.isHidden = true
   
@@ -118,8 +125,9 @@ class TelaCronometroViewController: UIViewController {
         
         animateSize_Scale(ballon: balloonA)
         name1Outlet.text = "It's your turn: \(String(describing: couple!.partnerOne))!"
-        
-        theThemeIsLabel.text = "Argue about the: \(String(describing: theme))!"
+
+        theThemeIsLabel.text = "\(String(describing: theme))!"
+//        theThemeIsLabel.text = "Argue about the: \(String(describing: theme))!"
         buttonStartOutlet2.isHidden = true
         
     }
