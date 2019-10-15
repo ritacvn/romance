@@ -14,13 +14,15 @@ class PlayScreenViewController: UIViewController {
     var timeConverted: Int?
     var minute: Int = 0
     var second: Int = 0
+    var time: String?
     
+
     @IBOutlet weak var labelTime: UILabel!
     @IBOutlet weak var clockLabel: UILabel!
     
     let timeLeftShapeLayer = CAShapeLayer()
     let bgShapeLayer = CAShapeLayer()
-    var timeLeft: TimeInterval = 10
+    var timeLeft: TimeInterval?
     var endTime: Date?
     var timeLabel =  UILabel()
     var timer = Timer()
@@ -29,7 +31,8 @@ class PlayScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        timeConverted = Int(time!)
+        timeLeft = TimeInterval(timeConverted!)
         view.backgroundColor = UIColor(white: 0.94, alpha: 1.0)
         drawBgShape()
         drawTimeLeftShape()
@@ -37,12 +40,12 @@ class PlayScreenViewController: UIViewController {
         // here you define the fromValue, toValue and duration of your animation
         strokeIt.fromValue = 0
         strokeIt.toValue = 1
-        strokeIt.duration = timeLeft
+        strokeIt.duration = timeLeft!
         // add the animation to your timeLeftShapeLayer
         timeLeftShapeLayer.add(strokeIt, forKey: nil)
         // define the future end time by adding the timeLeft to now Date()
-        endTime = Date().addingTimeInterval(timeLeft)
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        endTime = Date().addingTimeInterval(timeLeft!)
+       
     }
     func drawBgShape() {
         bgShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: view.frame.midY), radius:
@@ -64,17 +67,21 @@ class PlayScreenViewController: UIViewController {
     func addTimeLabel() {
         timeLabel = UILabel(frame: CGRect(x: view.frame.midX-50 ,y: view.frame.midY-25, width: 100, height: 50))
         timeLabel.textAlignment = .center
-        timeLabel.text = timeLeft.time
+        timeLabel.text = timeLeft!.time
         view.addSubview(timeLabel)
     }
     @objc func updateTime() {
-        if timeLeft > 0 {
+        if timeLeft! > 0 {
             timeLeft = endTime?.timeIntervalSinceNow ?? 0
-            timeLabel.text = timeLeft.time
+            timeLabel.text = timeLeft!.time
         } else {
             timeLabel.text = "00:00"
             timer.invalidate()
         }
+    }
+    
+    @IBAction func playTime(_ sender: Any) {
+         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
 }
