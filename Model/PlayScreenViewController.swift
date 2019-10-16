@@ -20,11 +20,14 @@ class PlayScreenViewController: UIViewController {
     @IBOutlet weak var labelTime: UILabel!
     @IBOutlet weak var clockLabel: UILabel!
     
+    @IBOutlet weak var timeLabel: UILabel!
     let timeLeftShapeLayer = CAShapeLayer()
     let bgShapeLayer = CAShapeLayer()
     var timeLeft: TimeInterval?
     var endTime: Date?
-    var timeLabel =  UILabel()
+   // var timeLabel =  UILabel()
+    
+    
     var timer = Timer()
     // here you create your basic animation object to animate the strokeEnd
     let strokeIt = CABasicAnimation(keyPath: "strokeEnd")
@@ -36,7 +39,7 @@ class PlayScreenViewController: UIViewController {
         view.backgroundColor = UIColor(white: 0.94, alpha: 1.0)
         drawBgShape()
         drawTimeLeftShape()
-        addTimeLabel()
+        //addTimeLabel()
         // here you define the fromValue, toValue and duration of your animation
         strokeIt.fromValue = 0
         strokeIt.toValue = 1
@@ -64,12 +67,12 @@ class PlayScreenViewController: UIViewController {
         view.layer.addSublayer(timeLeftShapeLayer)
     }
     
-    func addTimeLabel() {
-        timeLabel = UILabel(frame: CGRect(x: view.frame.midX-50 ,y: view.frame.midY-25, width: 100, height: 50))
-        timeLabel.textAlignment = .center
-        timeLabel.text = timeLeft!.time
-        view.addSubview(timeLabel)
-    }
+//    func addTimeLabel() {
+//        timeLabel = UILabel(frame: CGRect(x: view.frame.midX-50 ,y: view.frame.midY-25, width: 100, height: 50))
+//        timeLabel.textAlignment = .center
+//        timeLabel.text = timeLeft!.time
+//        view.addSubview(timeLabel)
+//    }
     @objc func updateTime() {
         if timeLeft! > 0 {
             timeLeft = endTime?.timeIntervalSinceNow ?? 0
