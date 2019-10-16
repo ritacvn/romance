@@ -47,6 +47,10 @@ extension CategoriesTableViewController: UITableViewDataSource, UITableViewDeleg
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "comunicacao") as! ComunicaoTelaViewController
             self.present(vc, animated: true, completion: nil)
         }
+        if indexPath.row == 1{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "conhecimento") as! FamiliarityViewController
+                       self.present(vc, animated: true, completion: nil)
+        }
         else{
             
             let message: String = "Sorry, but this category is not available yet "
