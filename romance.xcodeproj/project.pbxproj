@@ -20,6 +20,7 @@
 		5C106E7F232A94F200E822E0 /* TurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E7E232A94F200E822E0 /* TurnViewController.swift */; };
 		5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */; };
 		5C106E85232BD97100E822E0 /* ComunicaoTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E84232BD97100E822E0 /* ComunicaoTelaViewController.swift */; };
+		5C13600E2357716600A3651D /* EditNamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13600D2357716600A3651D /* EditNamesViewController.swift */; };
 		5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09C2314A14200950738 /* AppDelegate.swift */; };
 		5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */; };
 		5C1AE0A22314A14200950738 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1AE0A02314A14200950738 /* Main.storyboard */; };
@@ -97,6 +98,7 @@
 		5C106E9623310D7000E822E0 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
 		5C106E9723310D7000E822E0 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		5C106E9823310D7000E822E0 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		5C13600D2357716600A3651D /* EditNamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNamesViewController.swift; sourceTree = "<group>"; };
 		5C1AE0992314A14100950738 /* romance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = romance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C1AE09C2314A14200950738 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserirNomesViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				1F58CE262344F2CE002A828F /* Comunnication */,
 				5C106E752329302600E822E0 /* CategoriesTableViewController.swift */,
 				5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */,
+				5C13600D2357716600A3651D /* EditNamesViewController.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
 				1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */,
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
+				5C13600E2357716600A3651D /* EditNamesViewController.swift in Sources */,
 				5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */,
 				5CCC5EC623574E5B00D78D90 /* FamiliarityViewController.swift in Sources */,
 				5C106E7823293B9E00E822E0 /* CategoriaTableViewCell.swift in Sources */,
