@@ -21,34 +21,35 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createData()
-        retrieveData()
-        
+    
         self.name1textfield.delegate = self
         self.name2textfield.delegate = self
+        
     }
     
 
     @IBAction func saveNamesButton(_ sender: Any) {
         if (name1textfield.text?.count)! > 0 && (name2textfield.text?.count)! > 0  {
-            name1Label.text = name1textfield.text
+            //name1Label.text = name1textfield.text
             name2Label.text = name2textfield.text
+            createData()
+            retrieveData()
     }
+   
         
 }
     func createData(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         let managedContext = appDelegate.persistentContainer.viewContext
-        print(managedContext)
         
         let userEntity = NSEntityDescription.entity(forEntityName: "Users", in: managedContext)!
         
-        for i in 0...5{
-            let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
-            user.setValue("rita\(i)", forKey: "name1")
-            user.setValue("eliza\(i)", forKey: "name2")
-        }
+        
+        let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+        user.setValue(name1textfield.text, forKey: "name1")
+        user.setValue(name2textfield.text, forKey: "name2")
+        
         do {
             try managedContext.save()
         }
@@ -67,7 +68,8 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
         do{
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject]{
-                print(data.value(forKey: "name1") as! String)
+                name1Label.text = (data.value(forKey: "name1") as! String)
+                //print(data.value(forKey: "name1") as! String)
                 print(data.value(forKey: "name2") as! String)
                 
             }
@@ -75,6 +77,30 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
             print("Falhou")
         }
         
+        
+    }
+    
+    func updateData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "User")
+        fetchRequest.predicate = NSPredicate(format: "name1 = %@", "rita1")
+        do{
+            let test = try managedContext.fetch(fetchRequest)
+            let objectUpdate = test[0] as! NSManagedObject
+            
+            objectUpdate.setValue("Mateus", forKey: "name1")
+            do{
+                try managedContext.save()
+            }
+            catch{
+                print(error)
+            }
+        }
+        catch{
+            print(error)
+        }
         
     }
     
