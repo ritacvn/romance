@@ -17,6 +17,8 @@ class CardTelaViewController: UIViewController {
     var palavra: Int = 0
     var imagem: Int = 0
     var end: Bool?
+    let name1 = UserDefaults.standard.string(forKey: "name1")
+    let name2 = UserDefaults.standard.string(forKey: "name2")
     
     //Importando classes
         var couple: Couple?

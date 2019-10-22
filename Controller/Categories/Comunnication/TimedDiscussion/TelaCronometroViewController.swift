@@ -18,7 +18,8 @@ class TelaCronometroViewController: UIViewController {
     var endTurn: Bool = false
     var change: Bool = false
     
-    
+    let name1 = UserDefaults.standard.string(forKey: "name1")
+    let name2 = UserDefaults.standard.string(forKey: "name2")
     var i = 0
     
     //Theme variables
@@ -69,11 +70,8 @@ class TelaCronometroViewController: UIViewController {
         super.viewDidLoad()
         
         #warning("Alterar nomes após aplicar o autoLayout")
-//        name1Outlet.text = "Get ready \(String(describing: couple!.partnerOne))!"
-//        name2Outlet.text = "Get ready \(String(describing: couple!.partnerTwo))!"
-
-        name1Outlet.text = "Jeff"
-        name2Outlet.text = "Inesistente"
+        name1Outlet.text = "Get ready \(String(describing: name1!))!"
+        name2Outlet.text = "Get ready \(String(describing: name2!))!"
 
         
         updadeTheme()
@@ -96,7 +94,7 @@ class TelaCronometroViewController: UIViewController {
         //Unscale ballon A
         animateSize_Unscale(ballon: balloonA)
         
-        name1Outlet.text = "Thank you: \(String(describing: couple!.partnerOne))!"
+        name1Outlet.text = "Thank you: \(String(describing: name1!))!"
        
         //Para o Tempo
         timer.invalidate()
@@ -109,7 +107,7 @@ class TelaCronometroViewController: UIViewController {
 
         theThemeIsLabel.text = "\(String(describing: theme))"
 //        theThemeIsLabel.text = "Argue about: \(String(describing: theme))"
-        name2Outlet.text = "It's your turn: \(String(describing: couple!.partnerTwo))!"
+        name2Outlet.text = "It's your turn: \(String(describing: name2!))!"
         buttonStartOutlet2.isHidden = true
   
     }
@@ -124,7 +122,7 @@ class TelaCronometroViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
         
         animateSize_Scale(ballon: balloonA)
-        name1Outlet.text = "It's your turn: \(String(describing: couple!.partnerOne))!"
+        name1Outlet.text = "It's your turn: \(String(describing: name1!))!"
 
         theThemeIsLabel.text = "\(String(describing: theme))!"
 //        theThemeIsLabel.text = "Argue about the: \(String(describing: theme))!"
@@ -194,8 +192,8 @@ class TelaCronometroViewController: UIViewController {
                 //Unscale ballonB
                 animateSize_Unscale(ballon: balloonB)
                 
-                if endTurn == true && name2Outlet.text == "It's your turn: \(String(describing: couple!.partnerTwo))!" {
-                    name2Outlet.text = "Thank you: \(String(describing: couple!.partnerTwo))!"
+                if endTurn == true && name2Outlet.text == "It's your turn: \(String(describing: name1!))!" {
+                    name2Outlet.text = "Thank you: \(String(describing: name2!))!"
                     
                     performSegue(withIdentifier: "endSegue", sender: self)
                 }
