@@ -13,9 +13,10 @@ class FrasesRandomicaViewController: UIViewController {
 //MARK: Varibles and Constants
     
     var frase: Int = 0
-    
     var couple: Couple?
     var endTurn: Int = 0
+    let name1 = UserDefaults.standard.string(forKey: "name1")
+    let name2 = UserDefaults.standard.string(forKey: "name2")
     
     //time variables
     var timer = Timer()
@@ -31,6 +32,7 @@ class FrasesRandomicaViewController: UIViewController {
     
     @IBOutlet weak var namePerson: UILabel!
     @IBOutlet weak var fraseRandomizada: UILabel!
+    
     //Time labels
     @IBOutlet weak var clockLabel: UILabel!
 
@@ -65,7 +67,7 @@ class FrasesRandomicaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        namePerson.text = "Hello, \(String(describing: couple!.partnerOne))!"
+        namePerson.text = "Hello, \(String(describing: name1))!"
         
         randomizarFrase()
         fraseRandomizada.text = "What do you think about the sentence: \n \(fraseTema)."
@@ -74,6 +76,7 @@ class FrasesRandomicaViewController: UIViewController {
         start2outlet.isHidden = true
         
     }
+    
     
     //Func to randomize phrase
     func randomizarFrase(){
@@ -123,7 +126,7 @@ class FrasesRandomicaViewController: UIViewController {
             
             endTurn += 1
             
-            namePerson.text = "Now it's your turn: \(String(describing: couple!.partnerTwo))!"
+            namePerson.text = "Now it's your turn: \(String(describing: name2!))!"
             timer.invalidate()
             
             start2outlet.isEnabled = true

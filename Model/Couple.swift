@@ -10,8 +10,8 @@ import Foundation
 
 
 class Couple {
-    var partnerOne: String
-    var partnerTwo: String
+    var partnerOne = UserDefaults.standard.string(forKey: "name1")
+    var partnerTwo = UserDefaults.standard.string(forKey: "name2")
     var partnerOneHidden: Bool
     var partnerTwoHidden: Bool
     
@@ -32,11 +32,11 @@ class Couple {
         var partner = "";
         
         if(self.partnerOneHidden == false){
-            partner = self.partnerOne;
+            partner = self.partnerOne!;
         }
         
         if(self.partnerTwoHidden == false){
-            partner = self.partnerTwo;
+            partner = self.partnerTwo!;
         }
         return partner;
     }
