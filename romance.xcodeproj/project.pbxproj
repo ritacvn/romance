@@ -13,6 +13,7 @@
 		1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA7BA232DC7C1000FBC48 /* Couple.swift */; };
 		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
 		1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */; };
+		1FF42AEF235F367C001816CC /* QOCTActivityScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF42AEE235F367C001816CC /* QOCTActivityScreenViewController.swift */; };
 		5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E752329302600E822E0 /* CategoriesTableViewController.swift */; };
 		5C106E7823293B9E00E822E0 /* CategoriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */; };
 		5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C106E79232946DE00E822E0 /* Categorias.swift */; };
@@ -69,6 +70,7 @@
 		1FCCA7BA232DC7C1000FBC48 /* Couple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
 		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
 		1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamica03ViewController.swift; sourceTree = "<group>"; };
+		1FF42AEE235F367C001816CC /* QOCTActivityScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QOCTActivityScreenViewController.swift; sourceTree = "<group>"; };
 		21DDF71AD54B0A3EC988AFDA /* Pods-romanceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-romanceUITests.debug.xcconfig"; path = "Target Support Files/Pods-romanceUITests/Pods-romanceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B4D58BDD0AD8AD4343C6BF4 /* Pods_romance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_romance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EB277CB6D9AEB6D431E06A /* Pods_romanceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_romanceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 		1F58CE282344F38F002A828F /* Familiarity */ = {
 			isa = PBXGroup;
 			children = (
+				1FF42AE9235F3574001816CC /* QuestionsOfCoupleTherapy */,
 				5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */,
 				5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */,
 			);
@@ -187,6 +190,14 @@
 			children = (
 			);
 			path = SettingName;
+			sourceTree = "<group>";
+		};
+		1FF42AE9235F3574001816CC /* QuestionsOfCoupleTherapy */ = {
+			isa = PBXGroup;
+			children = (
+				1FF42AEE235F367C001816CC /* QOCTActivityScreenViewController.swift */,
+			);
+			path = QuestionsOfCoupleTherapy;
 			sourceTree = "<group>";
 		};
 		2FE299EC6CE6A901D73B91CD /* Pods */ = {
@@ -619,6 +630,7 @@
 				5CCB47232344F374006190E8 /* Motion.swift in Sources */,
 				5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */,
 				5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */,
+				1FF42AEF235F367C001816CC /* QOCTActivityScreenViewController.swift in Sources */,
 				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
 				1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */,
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
@@ -802,7 +814,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 982MQ94WJG;
+				DEVELOPMENT_TEAM = T9WDNLZLLU;
 				INFOPLIST_FILE = romance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,7 +834,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 982MQ94WJG;
+				DEVELOPMENT_TEAM = T9WDNLZLLU;
 				INFOPLIST_FILE = romance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
