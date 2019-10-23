@@ -24,6 +24,8 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
     
         self.name1textfield.delegate = self
         self.name2textfield.delegate = self
+        name2Label.isHidden = true
+        name1Label.isHidden = true
        
     }
     
@@ -32,9 +34,12 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
         if (name1textfield.text?.count)! > 0 && (name2textfield.text?.count)! > 0  {
             UserDefaults.standard.set(name1textfield.text, forKey: "name1")
             UserDefaults.standard.set(name2textfield.text, forKey: "name2")
-            
+            name1textfield.isHidden = true
+            name2textfield.isHidden = true
+            name2Label.isHidden = false
+            name1Label.isHidden = false
             let name1 = UserDefaults.standard.string(forKey: "name1")
-            let name2 = UserDefaults.standard.string(forKey: "name1")
+            let name2 = UserDefaults.standard.string(forKey: "name2")
             name1Label.text = name1
             name2Label.text = name2
         }

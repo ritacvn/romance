@@ -69,7 +69,7 @@ class TelaCronometroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        #warning("Alterar nomes após aplicar o autoLayout")
+       
         name1Outlet.text = "Get ready \(String(describing: name1!))!"
         name2Outlet.text = "Get ready \(String(describing: name2!))!"
 
