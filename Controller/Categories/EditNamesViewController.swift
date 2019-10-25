@@ -45,7 +45,11 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
         }
 
     }
-
+    
+    @IBAction func exitButton(_ sender: Any) {
+         dismiss(animated: true, completion: nil)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         name1textfield.resignFirstResponder()
         name2textfield.resignFirstResponder()
