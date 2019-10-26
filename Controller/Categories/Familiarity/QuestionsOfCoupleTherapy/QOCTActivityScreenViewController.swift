@@ -20,8 +20,12 @@ class QOCTActivityScreenViewController: UIViewController{
     var minute: Int = 0
     var second: Int = 0
     
+    let name1 = UserDefaults.standard.string(forKey: "name1")
+    let name2 = UserDefaults.standard.string(forKey: "name2")
+    
     @IBOutlet weak var mainThemeOutlet: UILabel!
     @IBOutlet weak var timeOutlet: UILabel!
+    @IBOutlet weak var partnerNameOutlet: UILabel!
     
     override func viewDidLoad() {
         updadeTheme()
@@ -35,10 +39,7 @@ class QOCTActivityScreenViewController: UIViewController{
     }
        
     @IBAction func startButton(_ sender: Any) {
-        
-        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-        
     }
     
     @objc func counter(){

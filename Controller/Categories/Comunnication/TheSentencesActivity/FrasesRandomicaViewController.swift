@@ -38,7 +38,8 @@ class FrasesRandomicaViewController: UIViewController {
 
     @IBOutlet weak var start2outlet: UIButton!
     @IBOutlet weak var start1outlet: UIButton!
-    //MARK: Actions
+
+//MARK: Actions
     
     @IBAction func startActivity(_ sender: Any) {
         
