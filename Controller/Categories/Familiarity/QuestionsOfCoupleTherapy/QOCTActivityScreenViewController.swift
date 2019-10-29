@@ -12,10 +12,11 @@ import UIKit
 class QOCTActivityScreenViewController: UIViewController{
     
     var theme: String = ""
+    var endTurn: Int = 0
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 60
+    var time: Int = 10
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -27,20 +28,45 @@ class QOCTActivityScreenViewController: UIViewController{
     @IBOutlet weak var timeOutlet: UILabel!
     @IBOutlet weak var partnerNameOutlet: UILabel!
     
+    
+    @IBOutlet weak var buttonStart01: UIButton!
+    @IBOutlet weak var buttonStart02: UIButton!
+    
     override func viewDidLoad() {
         updadeTheme()
         mainThemeOutlet.text = "\(String(describing: theme))"
+        partnerNameOutlet.text = "Hello, \(String(describing: name1))!"
+        
     }
     
     //Randomizing the theme
     func updadeTheme(){
-        let randomTheme = Int.random(in: 0 ... 3)
+        let randomTheme = Int.random(in: 0 ... 2)
         theme = arrayOfQuests_Act1F[randomTheme]
     }
        
     @IBAction func startButton(_ sender: Any) {
+        
+        buttonStart01.isEnabled = false
+        buttonStart01.isHidden = true
+        
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+        
+        UIFeedback.hapticFeedback()
     }
+    
+    @IBAction func startButton02(_ sender: Any) {
+       
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
+       
+            buttonStart01.isEnabled = false
+            buttonStart02.isHidden = true
+            
+            UIFeedback.hapticFeedback()
+        
+    }
+    
     
     @objc func counter(){
 
@@ -78,6 +104,25 @@ class QOCTActivityScreenViewController: UIViewController{
          }
          if timeOutlet.text == "00:00" {
              timer.invalidate()
+            
+            endTurn += 1
+            
+            partnerNameOutlet.text = "Now it's your turn: \(String(describing: name2!))!"
+            timer.invalidate()
+            
+             buttonStart02.isEnabled = true
+             buttonStart02.isHidden = false
+            
+            //randomizarFrase()
+            time = 60
+            
+            print(endTurn)
+            
+            if endTurn == 2 {
+                performSegue(withIdentifier: "EndQOCTScreen", sender: self)
+                
+            }
+            
          }
         
      }

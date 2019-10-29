@@ -29,7 +29,7 @@ class SliderTimeViewController: UIViewController {
 //        if  && timeLabel < =50 {
 //            
 //    }
-    }
+//   }
     @IBAction func sliderAction(_ sender: UISlider) {
         sliderValue = lround(Double(sender.value))
         timeLabel.text = String(sliderValue)
