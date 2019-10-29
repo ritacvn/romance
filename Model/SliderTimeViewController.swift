@@ -14,22 +14,14 @@ class SliderTimeViewController: UIViewController {
     
     @IBOutlet weak var sliderTime: UISlider!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var label: UILabel!
-    
-    var timeConverted: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     
     }
     
-//    func sliderLabel(){
-//        timeConverted =  Int(timeLabel.text!) ?? 0
-//        if  && timeLabel < =50 {
-//            
-//    }
-//   }
+   
     @IBAction func sliderAction(_ sender: UISlider) {
         sliderValue = lround(Double(sender.value))
         timeLabel.text = String(sliderValue)
