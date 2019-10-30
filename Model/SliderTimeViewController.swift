@@ -18,13 +18,14 @@ class SliderTimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
+        sliderTime.minimumValue = 0
+        sliderTime.maximumValue = 3
     }
     
    
     @IBAction func sliderAction(_ sender: UISlider) {
         sliderValue = lround(Double(sender.value))
-        timeLabel.text = String(sliderValue)
+        timeLabel.text = "\(String(sliderValue)):00"
     }
     
     @IBAction func playNextView(_ sender: Any) {
