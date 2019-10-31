@@ -35,7 +35,7 @@ class QOCTActivityScreenViewController: UIViewController{
     override func viewDidLoad() {
         updadeTheme()
         mainThemeOutlet.text = "\(String(describing: theme))"
-        partnerNameOutlet.text = "Hello, \(String(describing: name1))!"
+        partnerNameOutlet.text = "It's \(String(describing: name1!)) turn:"
         
     }
     

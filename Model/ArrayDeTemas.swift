@@ -19,4 +19,4 @@ let arrayDeFrases = ["Love is not everthing, we have another needs","We always n
 let arrarCategorias = ["communication","conhecimento","empatia"]
 
 //Array da Dinamica "Perguntas para terapia de casal"
-let arrayOfQuests_Act1F = ["Quest1","Quest2","Quest3"]
+let arrayOfQuests_Act1F = ["Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?","Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?","Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?"]
