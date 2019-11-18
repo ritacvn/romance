@@ -12,7 +12,8 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
 
     var name1: String = ""
     var name2: String = ""
-    
+    var counter = 0
+    let defaults = UserDefaults.standard
     
     @IBOutlet weak var nome1text: UITextField!
     @IBOutlet weak var nome2text: UITextField!
@@ -28,6 +29,7 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
         self.nome1text.delegate = self
         self.nome2text.delegate = self
+        
     }
     
     
@@ -57,10 +59,8 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
         self.name1 = nome1text.text!
         self.name2 = nome2text.text!
 //        self.performSegue(withIdentifier: "SegueToTurnScreen", sender: self)
-    
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "categories") as! CategoriesTableViewController
-//        self.present(vc, animated: true, completion: nil)
         
+       UserDefaults().set(true, forKey: "first")
     }
     
     //Parsing names to the other view
