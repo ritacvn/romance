@@ -58,21 +58,21 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
         self.name2 = nome2text.text!
 //        self.performSegue(withIdentifier: "SegueToTurnScreen", sender: self)
     
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "categories") as! CategoriesTableViewController
-        self.present(vc, animated: true, completion: nil)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "categories") as! CategoriesTableViewController
+//        self.present(vc, animated: true, completion: nil)
         
     }
     
     //Parsing names to the other view
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        
+//
 //        if segue.identifier == "SegueToTurnScreen"{
 //            let displayVC = segue.destination as! TurnViewController
 //            let couple = Couple(partnerOne: self.name1, partnerTwo: self.name2)
 //            displayVC.couple = couple
 //            displayVC.end = false
 //        }
-//        
+//
 //    }
     
 }
