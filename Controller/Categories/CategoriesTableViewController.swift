@@ -14,12 +14,23 @@ class CategoriesTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     
+//    @IBOutlet weak var blurEffect: UIVisualEffectView!
     var categories: [Categoria] = Categoria.fetchCategories()
-
+    var effect: UIVisualEffect!
     
     override func viewDidLoad() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        //self.blurEffect.isHidden = true
+    }
+    
+    @IBAction func editNameButton(_ sender: Any) {
+//        UIView.animate(withDuration: 0.4) {
+//            self.blurEffect.isHidden = false
+//            self.blurEffect.effect = self.effect
+//
+//        
+//        }
     }
 }
 
@@ -36,7 +47,7 @@ extension CategoriesTableViewController: UITableViewDataSource, UITableViewDeleg
         let categoria = categories[indexPath.row]
         
         cell.categoria = categoria
-        
+        cell.selectionStyle = .none
         return cell
         
     }
@@ -45,20 +56,20 @@ extension CategoriesTableViewController: UITableViewDataSource, UITableViewDeleg
        
         if indexPath.row == 0{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "comunicacao") as! ComunicaoTelaViewController
-           // self.present(vc, animated: true, completion: nil)
+
             self.navigationController?.pushViewController(vc, animated: true)
         }
         if indexPath.row == 1{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "conhecimento") as! FamiliarityViewController
-//                       self.present(vc, animated: true, completion: nil)
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
 //        else if indexPath.row != 0 || indexPath.row != 1{
-//            
+//
 //            let message: String = "Sorry, but this category is not available yet "
 //            let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
 //            let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
-//            
+//
 //            alert.addAction(action)
 //            
 //            present(alert, animated: true, completion: nil)
