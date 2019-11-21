@@ -17,11 +17,14 @@ class CardTelaViewController: UIViewController {
     var palavra: Int = 0
     var imagem: Int = 0
     var end: Bool?
-    let name1 = UserDefaults.standard.string(forKey: "name1")
-    let name2 = UserDefaults.standard.string(forKey: "name2")
+    
+    
+//    let name1 = UserDefaults.standard.string(forKey: "initialName01")
+//    let name2 = UserDefaults.standard.string(forKey: "initialName02")
+//
     
     //Importando classes
-        var couple: Couple?
+    var couple: Couple?
    
     @IBOutlet weak var cardFlip: UIView!
     @IBOutlet weak var labelPalavra: UILabel!
@@ -34,14 +37,28 @@ class CardTelaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if end! {
-            nextButtonOutlet.isHidden = true
-            finishButtonOutlet.isHidden = false
-        }else{
-            nextButtonOutlet.isHidden = false
-            finishButtonOutlet.isHidden = true
-        }
+         print("partnerTurn \(couple?.partnerTurn())")
         
+//        if end! {
+//            nextButtonOutlet.isHidden = true
+//            finishButtonOutlet.isHidden = false
+//        }else{
+//            nextButtonOutlet.isHidden = false
+//            finishButtonOutlet.isHidden = true
+//        }
+//
+        
+        if couple?.partnerTurn() == 1 {
+            
+                   nextButtonOutlet.isHidden = true
+                   finishButtonOutlet.isHidden = false
+            
+        }else if couple?.partnerTurn() == 1{
+            
+                   nextButtonOutlet.isHidden = false
+                   finishButtonOutlet.isHidden = true
+        }
+               
             //labelPalavra.isHidden = true
             // labelGenerica.isHidden = true
             
@@ -66,21 +83,44 @@ class CardTelaViewController: UIViewController {
         cardImage.image = arrayImagens[imagem]
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
-       
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
+//
+//        if segue.identifier == "backToTurnVC"{
+//
+//            let displayVC = segue.destination as! TurnViewController
+//            couple?.switchCouple()
+//            displayVC.couple = self.couple
+//            //displayVC.end = !self.end!
+//
+//        }
+//
+//
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "backToTurnVC"{
+            
             let displayVC = segue.destination as! TurnViewController
             couple?.switchCouple()
             displayVC.couple = self.couple
-            displayVC.end = !self.end!
+            
         }
+          
 
     }
     
    
     @IBAction func nextButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "backToTurnVC", sender: self)
+        
+       //performSegue(withIdentifier: "backToTurnVC", sender: self)
         UIFeedback.hapticFeedback()
+        
+        let name = Notification.Name(rawValue: finishButonNotificationKey)
+        NotificationCenter.default.post(name: name, object: nil)
+        
+        performSegue(withIdentifier: "backToTurnVC", sender: self)
+        
     }
     
     
@@ -88,6 +128,8 @@ class CardTelaViewController: UIViewController {
         performSegue(withIdentifier: "goToEndVCSegue", sender: self)
         UIFeedback.hapticFeedback()
     }
+    
+    
     
     
 }

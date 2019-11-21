@@ -15,8 +15,10 @@ class FrasesRandomicaViewController: UIViewController {
     var frase: Int = 0
     var couple: Couple?
     var endTurn: Int = 0
-    let name1 = UserDefaults.standard.string(forKey: "name1")
-    let name2 = UserDefaults.standard.string(forKey: "name2")
+    
+    let name1 = UserDefaults.standard.string(forKey: "initialName01")
+    let name2 = UserDefaults.standard.string(forKey: "initialName02")
+    
     
     //time variables
     var timer = Timer()

@@ -18,8 +18,8 @@ class TelaCronometroViewController: UIViewController {
     var endTurn: Bool = false
     var change: Bool = false
     
-    let name1 = UserDefaults.standard.string(forKey: "name1")
-    let name2 = UserDefaults.standard.string(forKey: "name2")
+//    let name1 = UserDefaults.standard.string(forKey: "name1")
+//    let name2 = UserDefaults.standard.string(forKey: "name2")
     var i = 0
     
     //Theme variables
@@ -27,11 +27,11 @@ class TelaCronometroViewController: UIViewController {
     
     //Importing classes
     
-        //Name from set name Screen
-        var couple: Couple?
+    //Name from set name Screen
+    //var couple: Couple?
     
-        
-    
+    let name1 = UserDefaults.standard.string(forKey: "initialName01")
+    let name2 = UserDefaults.standard.string(forKey: "initialName02")
     
     var randomTheme: Int = 0
     var countVariable: Int = 0
@@ -70,9 +70,8 @@ class TelaCronometroViewController: UIViewController {
         super.viewDidLoad()
         
        
-        name1Outlet.text = "Get ready \(String(describing: name1!))!"
-        name2Outlet.text = "Get ready \(String(describing: name2!))!"
-
+        name1Outlet.text = "Get ready \(String(describing: name1!))"
+        name2Outlet.text = "Get ready \(String(describing: name2!))"
         
         updadeTheme()
         theThemeIsLabel.text = "\(String(describing: theme))!"

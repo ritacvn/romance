@@ -188,6 +188,8 @@
 		1F58CE292344F446002A828F /* SettingName */ = {
 			isa = PBXGroup;
 			children = (
+				5C13600D2357716600A3651D /* EditNamesViewController.swift */,
+				5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */,
 			);
 			path = SettingName;
 			sourceTree = "<group>";
@@ -231,7 +233,6 @@
 				1F58CE262344F2CE002A828F /* Comunnication */,
 				5C106E752329302600E822E0 /* CategoriesTableViewController.swift */,
 				5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */,
-				5C13600D2357716600A3651D /* EditNamesViewController.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -372,7 +373,6 @@
 		5CF90AD0232928A100CC96CD /* FunnySpeach */ = {
 			isa = PBXGroup;
 			children = (
-				5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */,
 				5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */,
 				5C106E7E232A94F200E822E0 /* TurnViewController.swift */,
 				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,

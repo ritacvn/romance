@@ -10,16 +10,17 @@ import Foundation
 
 
 class Couple {
-    var partnerOne = UserDefaults.standard.string(forKey: "name1")
-    var partnerTwo = UserDefaults.standard.string(forKey: "name2")
+    
+    let partnerOne = UserDefaults.standard.string(forKey: "initialName01")
+    let partnerTwo = UserDefaults.standard.string(forKey: "initialName02")
     var partnerOneHidden: Bool
     var partnerTwoHidden: Bool
+    //var partnerNumb = 0
     
-    init(partnerOne: String, partnerTwo: String) {
-        self.partnerOne = partnerOne;
-        self.partnerTwo = partnerTwo;
+    init(partnerOne: String, partnerTwo: String, partnerNumb: Int) {
         self.partnerOneHidden = false;
         self.partnerTwoHidden = true;
+       // self.partnerNumb = 0
     }
     
     func switchCouple() -> Void {
@@ -27,18 +28,22 @@ class Couple {
         self.partnerTwoHidden = !self.partnerTwoHidden;
     }
     
-    func partnerTurn() -> String {
+    func partnerTurn() -> Int {
         
-        var partner = "";
+        var partnerNumb: Int = 1
+        
         
         if(self.partnerOneHidden == false){
-            partner = self.partnerOne!;
+//            partner = partnerOne!;
+            partnerNumb = 1
         }
         
         if(self.partnerTwoHidden == false){
-            partner = self.partnerTwo!;
+//           partner = partnerTwo!;
+            partnerNumb = 2
         }
-        return partner;
+        
+        return partnerNumb
     }
     
     

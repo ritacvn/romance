@@ -16,17 +16,16 @@ class Dinamica03ViewController: UIViewController {
     var couple: Couple?
     
     // MARK: Outlets
-    @IBOutlet weak var name1label: UILabel!
-    @IBOutlet weak var name2label: UILabel!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        name1label.text = "Get ready \(String(describing: couple?.partnerOne))"
-        name2label.text = "Get ready \(String(describing: couple?.partnerTwo))"
-        
-        name2label.isHidden = true
-        name1label.isHidden = true
+//        name1label.text = "Get ready \(String(describing: couple?.partnerOne))"
+//        name2label.text = "Get ready \(String(describing: couple?.partnerTwo))"
+//        
+//        name2label.isHidden = true
+//        name1label.isHidden = true
     }
     
     //Shake to go next page
@@ -34,14 +33,14 @@ class Dinamica03ViewController: UIViewController {
         self.performSegue(withIdentifier: "DisplayNameSegue", sender: self)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "DisplayNameSegue" {
-            let displayVC = segue.destination as! TelaCronometroViewController
-            displayVC.couple = self.couple
-        }
-      
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        if segue.identifier == "DisplayNameSegue" {
+//            let displayVC = segue.destination as! TelaCronometroViewController
+//            displayVC.couple = self.couple
+//        }
+//
+//    }
     
     
     //  @IBAction func randomizeTheme(_ sender: Any) {
