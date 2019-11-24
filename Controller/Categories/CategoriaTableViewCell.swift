@@ -20,7 +20,7 @@ class CategoriaTableViewCell: UITableViewCell{
         }
     }
     func updateUI(){
-        categoriaImage.layer.cornerRadius = 25
+        categoriaImage.layer.cornerRadius = 7
         categoriaImage.image = UIImage(named: categoria.image!)
     }
 }
