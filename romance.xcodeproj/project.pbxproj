@@ -31,6 +31,9 @@
 		5C1AE0B52314A14300950738 /* romanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0B42314A14300950738 /* romanceTests.swift */; };
 		5C1AE0C02314A14300950738 /* romanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1AE0BF2314A14300950738 /* romanceUITests.swift */; };
 		5C233885234B718300A321F1 /* Rounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C233884234B718300A321F1 /* Rounds.swift */; };
+		5C4F2F92238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F91238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift */; };
+		5C4F2F94238D6481003C9433 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F93238D6481003C9433 /* Activities.swift */; };
+		5C4F2F96238D6DBE003C9433 /* TimedDiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */; };
 		5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */; };
 		5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */; };
 		5C72C4D0234CE1F800CA99A4 /* PlayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */; };
@@ -116,6 +119,9 @@
 		5C1AE0BF2314A14300950738 /* romanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = romanceUITests.swift; sourceTree = "<group>"; };
 		5C1AE0C12314A14300950738 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C233884234B718300A321F1 /* Rounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounds.swift; sourceTree = "<group>"; };
+		5C4F2F91238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCommunicationTableViewCell.swift; sourceTree = "<group>"; };
+		5C4F2F93238D6481003C9433 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
+		5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedDiscussionViewController.swift; sourceTree = "<group>"; };
 		5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SliderTimeViewController.swift; path = Model/SliderTimeViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayScreenViewController.swift; path = Model/PlayScreenViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -164,6 +170,7 @@
 				5CF90AD1232928DE00CC96CD /* TheSentencesActivity */,
 				5CF90AD0232928A100CC96CD /* FunnySpeach */,
 				5CF90ACF2329287600CC96CD /* TimedDiscussion */,
+				5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */,
 			);
 			path = Comunnication;
 			sourceTree = "<group>";
@@ -233,6 +240,7 @@
 				1F58CE262344F2CE002A828F /* Comunnication */,
 				5C106E752329302600E822E0 /* CategoriesTableViewController.swift */,
 				5C106E7723293B9E00E822E0 /* CategoriaTableViewCell.swift */,
+				5C4F2F91238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 				1F15CD85233E3C270025FC94 /* UIFeedback.swift */,
 				5CCB47222344F374006190E8 /* Motion.swift */,
 				5C233884234B718300A321F1 /* Rounds.swift */,
+				5C4F2F93238D6481003C9433 /* Activities.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -618,6 +627,9 @@
 				5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */,
 				5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */,
 				5C72C4D0234CE1F800CA99A4 /* PlayScreenViewController.swift in Sources */,
+				5C4F2F96238D6DBE003C9433 /* TimedDiscussionViewController.swift in Sources */,
+				5C4F2F94238D6481003C9433 /* Activities.swift in Sources */,
+				5C4F2F92238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift in Sources */,
 				5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */,
 				5CF90AD32329299D00CC96CD /* FrasesRandomicaViewController.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,

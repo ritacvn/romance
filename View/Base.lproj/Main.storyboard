@@ -134,17 +134,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="Heart-LightGreen" translatesAutoresizingMaskIntoConstraints="NO" id="jUk-GK-P5C">
-                                <rect key="frame" x="20" y="161.99999999999997" width="334" height="333.00000000000006"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-u7-I0J">
                                 <rect key="frame" x="242" y="16" width="117" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="117" id="LN5-ZI-82g"/>
                                     <constraint firstAttribute="height" constant="43" id="h0E-h0-m5E"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
-                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-u9-jjV">
@@ -169,8 +164,9 @@
                                     <action selector="startButton02:" destination="GSY-xC-upK" eventType="touchUpInside" id="lgk-U4-CC4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9S-VT-X0m">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9S-VT-X0m">
                                 <rect key="frame" x="16" y="217.5" width="343" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?">
                                         <attributes>
@@ -183,8 +179,9 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-Ln-DXe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-Ln-DXe">
                                 <rect key="frame" x="16" y="115" width="343" height="38.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Eliza's turn">
                                         <attributes>
@@ -279,9 +276,6 @@
                                 <rect key="frame" x="128" y="542" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="GotIt"/>
-                                <connections>
-                                    <segue destination="vWI-rP-sGb" kind="presentation" id="V1h-NK-N2W"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IlustrationSoundOfSilence" translatesAutoresizingMaskIntoConstraints="NO" id="guI-mn-bk4">
                                 <rect key="frame" x="-21" y="53" width="421" height="243"/>
@@ -827,22 +821,6 @@ We need this to set turns right for your and your partner!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-3c-RLM">
-                                <rect key="frame" x="17" y="521" width="119" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinamica 1" image="FINALActivity_DircCron"/>
-                                <connections>
-                                    <segue destination="IQD-64-xW6" kind="presentation" id="7Vv-CC-Svr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nth-1H-qbP" userLabel="Dinamica3">
-                                <rect key="frame" x="17" y="460" width="261" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="TheSentencesActivity"/>
-                                <connections>
-                                    <segue destination="9hG-LH-gax" kind="presentation" id="gS6-Me-VRb"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NavBackground_Com" translatesAutoresizingMaskIntoConstraints="NO" id="rb6-vk-YG9">
                                 <rect key="frame" x="0.0" y="-3" width="375" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -861,13 +839,6 @@ We need this to set turns right for your and your partner!</string>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-0k-Bze">
-                                <rect key="frame" x="16" y="410" width="301" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
-                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="A process by which information is exchanged between individuals through a common system of symbols, signs, or behavior." adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
                                 <rect key="frame" x="17" y="310" width="337" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -881,19 +852,49 @@ We need this to set turns right for your and your partner!</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.76862745098039209" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6k-Jj-UIj">
-                                <rect key="frame" x="159" y="521" width="119" height="126"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="auL-dh-9IZ">
+                                <rect key="frame" x="0.0" y="424" width="375" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinâmica 2" image="FINALActivity_DeclDiv"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="activities" rowHeight="111" id="CWz-8i-05L" customClass="ActivitiesCommunicationTableViewCell" customModule="romance" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CWz-8i-05L" id="1vb-qS-wFm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyV-cY-uul">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityImage" destination="JyV-cY-uul" id="N6O-oN-uoZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <segue destination="bG2-3S-PJu" kind="presentation" id="wwB-cT-8KP"/>
+                                    <outlet property="dataSource" destination="lBF-HX-uKY" id="KQp-vs-YCC"/>
+                                    <outlet property="delegate" destination="lBF-HX-uKY" id="Egl-d9-GIf"/>
                                 </connections>
-                            </button>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-0k-Bze">
+                                <rect key="frame" x="16" y="388" width="301" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
+                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="feZ-rQ-uG9"/>
                     </view>
                     <navigationItem key="navigationItem" id="OwU-yC-3Cx"/>
+                    <connections>
+                        <outlet property="tableView" destination="auL-dh-9IZ" id="UoN-M1-GAy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hil-Rz-5DW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -995,7 +996,7 @@ We need this to set turns right for your and your partner!</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPt-ea-2B7">
-                                <rect key="frame" x="323" y="0.0" width="36" height="37.5"/>
+                                <rect key="frame" x="321" y="0.0" width="38" height="38.5"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <attributedString key="attributedText">
                                     <fragment content="05">
@@ -1007,7 +1008,7 @@ We need this to set turns right for your and your partner!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K71-Ro-idg">
-                                <rect key="frame" x="16" y="69.5" width="343" height="37.5"/>
+                                <rect key="frame" x="16" y="70.5" width="343" height="38.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="It's your turn Rita!">
                                         <attributes>
@@ -1097,10 +1098,10 @@ We need this to set turns right for your and your partner!</string>
             </objects>
             <point key="canvasLocation" x="414" y="319"/>
         </scene>
-        <!--View Controller-->
+        <!--Timed Discussion View Controller-->
         <scene sceneID="WSy-yq-Y5i">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="IQD-64-xW6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="timedDiscussion" modalPresentationStyle="fullScreen" id="IQD-64-xW6" customClass="TimedDiscussionViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETR-LG-G2B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1148,8 +1149,9 @@ We need this to set turns right for your and your partner!</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrS-vk-vOM">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrS-vk-vOM">
                                 <rect key="frame" x="32" y="181" width="311" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TwoQuests" translatesAutoresizingMaskIntoConstraints="NO" id="QsN-Lv-pPU">
                                         <rect key="frame" x="28" y="13" width="254" height="196"/>
@@ -1158,22 +1160,23 @@ We need this to set turns right for your and your partner!</string>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Form1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Bqg-wC-Rhg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Form1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Bqg-wC-Rhg">
                                 <rect key="frame" x="-220" y="-361" width="450" height="478"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="G3X-se-Aym"/>
                                     <constraint firstAttribute="height" constant="478" id="hL2-kn-7xq"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Form1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="dyW-cp-DNH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Form1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="dyW-cp-DNH">
                                 <rect key="frame" x="98" y="505" width="450" height="478"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="wQs-Z1-w7h"/>
                                     <constraint firstAttribute="height" constant="478" id="wrs-31-XkY"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-ND-Bwy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-ND-Bwy">
                                 <rect key="frame" x="32" y="464" width="311" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Shake your phone to receive  theme">
                                         <attributes>
@@ -1215,31 +1218,31 @@ We need this to set turns right for your and your partner!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balao1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-Lx-TUc">
-                                <rect key="frame" x="16" y="24" width="396" height="408"/>
+                                <rect key="frame" x="16" y="24" width="198" height="204"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U3C-Lx-TUc" secondAttribute="height" multiplier="33:34" id="bx8-PF-ISC"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balao2_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-QF-sxT">
-                                <rect key="frame" x="-37" y="235" width="396" height="408"/>
+                                <rect key="frame" x="161" y="439" width="198" height="204"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-9B-ZdX" userLabel="clockLabel">
-                                <rect key="frame" x="298.5" y="32" width="60.5" height="28"/>
+                                <rect key="frame" x="291" y="32" width="68" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BCI-pg-NxG">
-                                <rect key="frame" x="262" y="297" width="130" height="65.5"/>
+                                <rect key="frame" x="64" y="93" width="121" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-0N-egS">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome01!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-7d-8ag">
-                                        <rect key="frame" x="0.0" y="28" width="130" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="121" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1247,16 +1250,16 @@ We need this to set turns right for your and your partner!</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q7B-NL-olu">
-                                <rect key="frame" x="183" y="302" width="130" height="65.5"/>
+                                <rect key="frame" x="183" y="504" width="125.5" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-ee-Bbm">
-                                        <rect key="frame" x="12.5" y="0.0" width="105" height="28"/>
+                                        <rect key="frame" x="11.5" y="0.0" width="103" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome02!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-0k-8DP">
-                                        <rect key="frame" x="0.0" y="28" width="130" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="125.5" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1264,16 +1267,16 @@ We need this to set turns right for your and your partner!</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TAp-4l-6Ib">
-                                <rect key="frame" x="97" y="300" width="181.5" height="67.5"/>
+                                <rect key="frame" x="106" y="299" width="163" height="69.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The theme is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-We-peH">
-                                        <rect key="frame" x="18" y="0.0" width="145" height="28"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="142.5" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Piece" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-bj-lCj">
-                                        <rect key="frame" x="0.0" y="30" width="181.5" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="31" width="163" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1281,14 +1284,14 @@ We need this to set turns right for your and your partner!</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-c2-3Wu">
-                                <rect key="frame" x="141.5" y="385.5" width="92" height="92"/>
+                                <rect key="frame" x="164.5" y="386.5" width="46" height="46"/>
                                 <state key="normal" image="StartButton"/>
                                 <connections>
                                     <action selector="startButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="Xjf-0A-VGy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu6-7Y-GOf">
-                                <rect key="frame" x="141.5" y="385.5" width="92" height="92"/>
+                                <rect key="frame" x="164.5" y="386.5" width="46" height="46"/>
                                 <state key="normal" image="StartButton"/>
                                 <connections>
                                     <action selector="startButton2:" destination="QRi-ft-NKl" eventType="touchUpInside" id="QcV-tF-gEF"/>
@@ -1399,35 +1402,33 @@ We need this to set turns right for your and your partner!</string>
     <resources>
         <image name="BackButton" width="13" height="22"/>
         <image name="BackOfCard_Din2" width="342" height="487"/>
+        <image name="Background" width="375" height="667"/>
+        <image name="BackgroundBlue" width="375" height="667"/>
         <image name="Balao1_ShakeScreen" width="198" height="204"/>
         <image name="Balao2_ShakeScreen" width="198" height="204"/>
         <image name="Coca3" width="388" height="481"/>
         <image name="Coracao1" width="436" height="405"/>
         <image name="Coracao2" width="375" height="349"/>
         <image name="Divisória" width="344" height="1"/>
-        <image name="FINALActivity_DeclDiv" width="120" height="135"/>
-        <image name="FINALActivity_DircCron" width="120" height="135"/>
         <image name="Finish" width="123" height="38"/>
         <image name="FinishButton2" width="162" height="56"/>
         <image name="FinishSpeechButton_Hightlighted" width="146" height="40"/>
         <image name="FinishSpeechButton_Unable" width="146" height="40"/>
+        <image name="Form1_ShakeScreen" width="470" height="465"/>
         <image name="FormClara" width="469" height="465"/>
         <image name="FormEscura" width="388" height="482"/>
         <image name="GotIt" width="123" height="38"/>
         <image name="IlustrationSoundOfSilence" width="375" height="243"/>
         <image name="IlustrationTimedDiscussion" width="342" height="246"/>
-        <image name="LeftBlueBalloon" width="198" height="204"/>
         <image name="NavBackground_Com" width="375" height="240"/>
         <image name="NavBackground_Fam" width="375" height="232"/>
         <image name="NextButton" width="138" height="46"/>
         <image name="NextButton2" width="162" height="56"/>
         <image name="QuestionsOfCoupleTherapy" width="280" height="44"/>
         <image name="Rectangle" width="47" height="696"/>
-        <image name="RightBlueBalloon" width="198" height="204"/>
         <image name="SoundOfSilence" width="198" height="43"/>
         <image name="StartButton" width="46" height="46"/>
         <image name="StartNovo" width="123" height="38"/>
-        <image name="TheSentencesActivity" width="242" height="44"/>
         <image name="TwoHearts" width="293" height="174"/>
         <image name="TwoQuests" width="250" height="196"/>
         <image name="backButton" width="36" height="60"/>
@@ -1441,6 +1442,6 @@ We need this to set turns right for your and your partner!</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yWU-7L-poj"/>
-        <segue reference="ik5-FZ-rwT"/>
+        <segue reference="Sxa-Qw-5AC"/>
     </inferredMetricsTieBreakers>
 </document>
