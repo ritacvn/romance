@@ -17,6 +17,8 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var name1Label: UILabel!
     @IBOutlet weak var name2Label: UILabel!
    
+    @IBOutlet weak var popUpView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -24,6 +26,7 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
         self.name2textfield.delegate = self
         name2Label.isHidden = true
         name1Label.isHidden = true
+        popUpView.layer.cornerRadius = 15
       
     }
     
