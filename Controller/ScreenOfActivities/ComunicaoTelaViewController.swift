@@ -34,7 +34,7 @@ class ComunicaoTelaViewController: UIViewController, UITableViewDataSource, UITa
         let activity = activities[indexPath.row]
         
         cell.activity = activities[indexPath.row]
-        
+        cell.selectionStyle = .none
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -42,7 +42,14 @@ class ComunicaoTelaViewController: UIViewController, UITableViewDataSource, UITa
             let vc = self.storyboard?.instantiateViewController(identifier: "timedDiscussion") as! TimedDiscussionViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
+        if indexPath.row == 1{
+            let vc = self.storyboard?.instantiateViewController(identifier: "funnySpeach") as! FunnySpeachViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if indexPath.row == 2{
+            let vc = self.storyboard?.instantiateViewController(identifier: "sentences") as! SentencesActivityViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
    
 

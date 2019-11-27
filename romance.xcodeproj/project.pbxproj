@@ -34,6 +34,8 @@
 		5C4F2F92238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F91238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift */; };
 		5C4F2F94238D6481003C9433 /* Activities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F93238D6481003C9433 /* Activities.swift */; };
 		5C4F2F96238D6DBE003C9433 /* TimedDiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */; };
+		5C4F2F98238D7553003C9433 /* FunnySpeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */; };
+		5C4F2F9A238D75F4003C9433 /* SentencesActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F99238D75F4003C9433 /* SentencesActivityViewController.swift */; };
 		5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */; };
 		5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */; };
 		5C72C4D0234CE1F800CA99A4 /* PlayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */; };
@@ -122,6 +124,8 @@
 		5C4F2F91238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesCommunicationTableViewCell.swift; sourceTree = "<group>"; };
 		5C4F2F93238D6481003C9433 /* Activities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activities.swift; sourceTree = "<group>"; };
 		5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedDiscussionViewController.swift; sourceTree = "<group>"; };
+		5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySpeachViewController.swift; sourceTree = "<group>"; };
+		5C4F2F99238D75F4003C9433 /* SentencesActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesActivityViewController.swift; sourceTree = "<group>"; };
 		5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SliderTimeViewController.swift; path = Model/SliderTimeViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayScreenViewController.swift; path = Model/PlayScreenViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -385,6 +389,7 @@
 				5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */,
 				5C106E7E232A94F200E822E0 /* TurnViewController.swift */,
 				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,
+				5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */,
 			);
 			path = FunnySpeach;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 			children = (
 				5CF90AD22329299D00CC96CD /* FrasesRandomicaViewController.swift */,
 				5C106E80232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift */,
+				5C4F2F99238D75F4003C9433 /* SentencesActivityViewController.swift */,
 			);
 			path = TheSentencesActivity;
 			sourceTree = "<group>";
@@ -641,6 +647,7 @@
 				1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */,
 				5CCB47232344F374006190E8 /* Motion.swift in Sources */,
 				5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */,
+				5C4F2F9A238D75F4003C9433 /* SentencesActivityViewController.swift in Sources */,
 				5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */,
 				1FF42AEF235F367C001816CC /* QOCTActivityScreenViewController.swift in Sources */,
 				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
@@ -648,6 +655,7 @@
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
 				5C13600E2357716600A3651D /* EditNamesViewController.swift in Sources */,
 				5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */,
+				5C4F2F98238D7553003C9433 /* FunnySpeachViewController.swift in Sources */,
 				5CCC5EC623574E5B00D78D90 /* FamiliarityViewController.swift in Sources */,
 				5C106E7823293B9E00E822E0 /* CategoriaTableViewCell.swift in Sources */,
 			);
@@ -826,7 +834,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T9WDNLZLLU;
+				DEVELOPMENT_TEAM = 982MQ94WJG;
 				INFOPLIST_FILE = romance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -846,7 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T9WDNLZLLU;
+				DEVELOPMENT_TEAM = 982MQ94WJG;
 				INFOPLIST_FILE = romance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
