@@ -720,17 +720,17 @@
                         <viewLayoutGuide key="safeArea" id="MlZ-Yz-ggB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="wdQ-AK-HzA">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" style="plain" id="4H3-DM-Vpx">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rzu-Rx-9MQ">
-                                <rect key="frame" x="313" y="13" width="46" height="30"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="4H3-DM-Vpx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rzu-Rx-9MQ">
+                                <rect key="frame" x="313" y="13" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="Button"/>
                                 <connections>
                                     <action selector="editNameButton:" destination="w5A-aS-m2f" eventType="touchUpInside" id="gGC-5f-A5c"/>
                                     <segue destination="fE8-UK-Fsn" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="pm8-uM-2d1"/>
                                 </connections>
                             </button>
-                            <color key="tintColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1457,6 +1457,7 @@
         <image name="BackgroundBlue" width="375" height="667"/>
         <image name="Balao1_ShakeScreen" width="198" height="204"/>
         <image name="Balao2_ShakeScreen" width="198" height="204"/>
+        <image name="Button" width="25" height="25"/>
         <image name="Coca3" width="388" height="481"/>
         <image name="Coracao1" width="436" height="405"/>
         <image name="Coracao2" width="375" height="349"/>
@@ -1487,7 +1488,6 @@
         <image name="backButton" width="36" height="60"/>
         <image name="coracaoFin1" width="254" height="231"/>
         <image name="coracaoFin2" width="196" height="182"/>
-        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
         <image name="􀊖" width="49" height="50"/>
         <namedColor name="DarkMode">
             <color red="0.28400000929832458" green="0.28400000929832458" blue="0.29199999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
