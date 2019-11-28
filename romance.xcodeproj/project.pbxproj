@@ -174,7 +174,6 @@
 				5CF90AD1232928DE00CC96CD /* TheSentencesActivity */,
 				5CF90AD0232928A100CC96CD /* FunnySpeach */,
 				5CF90ACF2329287600CC96CD /* TimedDiscussion */,
-				5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */,
 			);
 			path = Comunnication;
 			sourceTree = "<group>";
@@ -375,6 +374,7 @@
 		5CF90ACF2329287600CC96CD /* TimedDiscussion */ = {
 			isa = PBXGroup;
 			children = (
+				5C4F2F95238D6DBE003C9433 /* TimedDiscussionViewController.swift */,
 				1F8F2567231C959500C4E083 /* EndGameViewController.swift */,
 				5C1AE09E2314A14200950738 /* InserirNomesViewController.swift */,
 				1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */,
