@@ -75,7 +75,7 @@ class TelaCronometroViewController: UIViewController {
         
         updadeTheme()
         theThemeIsLabel.text = "\(String(describing: theme))!"
-//        theThemeIsLabel.text = "The theme is: \(String(describing: theme))!"
+
         
         buttonStartOutlet2.isHidden = true
         
