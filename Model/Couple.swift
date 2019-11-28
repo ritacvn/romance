@@ -1,26 +1,18 @@
-//
-//  Couple.swift
-//  romance
-//
-//  Created by Eliza Maria Porto de Carvalho on 14/09/19.
-//  Copyright © 2019 Rita de Cássia Vasconcelos do Nascimento. All rights reserved.
-//
 
 import Foundation
 
 
 class Couple {
-    
-    let partnerOne = UserDefaults.standard.string(forKey: "initialName01")
-    let partnerTwo = UserDefaults.standard.string(forKey: "initialName02")
+    var partnerOne: String
+    var partnerTwo: String
     var partnerOneHidden: Bool
     var partnerTwoHidden: Bool
-    //var partnerNumb = 0
     
-    init(partnerOne: String, partnerTwo: String, partnerNumb: Int) {
+    init(partnerOne: String, partnerTwo: String) {
+        self.partnerOne = partnerOne;
+        self.partnerTwo = partnerTwo;
         self.partnerOneHidden = false;
         self.partnerTwoHidden = true;
-       // self.partnerNumb = 0
     }
     
     func switchCouple() -> Void {
@@ -28,22 +20,18 @@ class Couple {
         self.partnerTwoHidden = !self.partnerTwoHidden;
     }
     
-    func partnerTurn() -> Int {
+    func partnerTurn() -> String {
         
-        var partnerNumb: Int = 1
-        
+        var partner = "";
         
         if(self.partnerOneHidden == false){
-//            partner = partnerOne!;
-            partnerNumb = 1
+            partner = self.partnerOne;
         }
         
         if(self.partnerTwoHidden == false){
-//           partner = partnerTwo!;
-            partnerNumb = 2
+            partner = self.partnerTwo;
         }
-        
-        return partnerNumb
+        return partner;
     }
     
     

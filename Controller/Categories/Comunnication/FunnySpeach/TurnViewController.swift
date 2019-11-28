@@ -13,12 +13,7 @@ class TurnViewController: UIViewController {
     
     var couple: Couple?
     var end: Bool?
-    
-    let finishButton = Notification.Name(rawValue: finishButonNotificationKey)
-    
-//    let name1 = UserDefaults.standard.string(forKey: "initialName01")
-//    let name2 = UserDefaults.standard.string(forKey: "initialName02")
-    
+      
     let name1 = UserDefaults.standard.string(forKey: "initialName01")
     let name2 = UserDefaults.standard.string(forKey: "initialName02")
 
@@ -28,9 +23,7 @@ class TurnViewController: UIViewController {
     @IBOutlet weak var parterName: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
+   
     
    
     override func viewDidLoad() {
@@ -38,16 +31,7 @@ class TurnViewController: UIViewController {
         
         print("partnerTurn \(String(describing: couple?.partnerTurn()))")
         
-        createObserves()
-        if couple?.partnerTurn() == 1 {
-            
-            parterName.text = "It's your turn:  \(String(describing: name1))!"
-            
-        } else if couple?.partnerTurn() == 2 {
-            
-            parterName.text = "It's your turn:  \(String(describing: name2))!"
-        }
-        
+        parterName.text = "It's your turn \(String(describing: couple?.partnerTurn()))"
         
         //Time
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
@@ -72,23 +56,15 @@ class TurnViewController: UIViewController {
 //        displayVC.couple = self.couple
 //        //displayVC.end = self.end
 //    }
-//
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let displayVC = segue.destination as! CardTelaViewController
         displayVC.couple = self.couple
+        displayVC.end = self.end
+     
     }
     
-    func createObserves(){
-           
-           //Check if finishButton waas tapped
-           NotificationCenter.default.addObserver(self, selector: #selector(TurnViewController.updadeName(notification:)), name: finishButton, object: nil)
-           
-    }
-    
-    @objc func updadeName(notification: NSNotification){
-        
-        
-    }
+
     
 }
   
