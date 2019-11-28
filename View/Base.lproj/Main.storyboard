@@ -990,16 +990,16 @@
             </objects>
             <point key="canvasLocation" x="-3148" y="724.58770614692662"/>
         </scene>
-        <!--View Controller-->
+        <!--Funny Speach View Controller-->
         <scene sceneID="GJf-iJ-OdQ">
             <objects>
-                <viewController storyboardIdentifier="fuunySpeach" id="pWk-We-tug" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="funnySpeech" id="pWk-We-tug" customClass="FunnySpeachViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqJ-Rh-rnP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FunnySpeech-INTRO-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
-                                <rect key="frame" x="25" y="112" width="325" height="443.00000000000011"/>
+                                <rect key="frame" x="-137.5" y="-109.5" width="650" height="886"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-S2-F5w">
                                 <rect key="frame" x="126" y="592" width="123" height="38"/>
@@ -1442,7 +1442,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackOfCard_Din2" width="342" height="487"/>
+        <image name="BackOfCard_Din2" width="335" height="475"/>
         <image name="Background" width="375" height="667"/>
         <image name="BackgroundBlue" width="375" height="667"/>
         <image name="Balao1_ShakeScreen" width="198" height="204"/>

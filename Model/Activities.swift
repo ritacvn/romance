@@ -14,8 +14,9 @@ struct Activities {
     
     static func fetchActivitiesCommunication() -> [Activities]{
         let timedDiscussion = Activities(title: "Timed Discussion", image: "TimedDiscussion")
-        let funnySpeach = Activities(title: "FunnySpeach", image: "FunnySpeech")
+        let funnySpeach = Activities(title: "FunnySpeech", image: "FunnySpeech")
         let theSentencesActivity = Activities(title: "TimedDiscussion", image: "TheSentencesActivity")
+
         
         return [timedDiscussion,funnySpeach,theSentencesActivity]
     }

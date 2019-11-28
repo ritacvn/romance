@@ -21,7 +21,6 @@ class CardTelaViewController: UIViewController {
     
 //    let name1 = UserDefaults.standard.string(forKey: "initialName01")
 //    let name2 = UserDefaults.standard.string(forKey: "initialName02")
-//
     
     //Importando classes
     var couple: Couple?
@@ -37,30 +36,13 @@ class CardTelaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         print("partnerTurn \(couple?.partnerTurn())")
-        
-//        if end! {
-//            nextButtonOutlet.isHidden = true
-//            finishButtonOutlet.isHidden = false
-//        }else{
-//            nextButtonOutlet.isHidden = false
-//            finishButtonOutlet.isHidden = true
-//        }
-//
-        
-        if couple?.partnerTurn() == 1 {
-            
-                   nextButtonOutlet.isHidden = true
-                   finishButtonOutlet.isHidden = false
-            
-        }else if couple?.partnerTurn() == 1{
-            
-                   nextButtonOutlet.isHidden = false
-                   finishButtonOutlet.isHidden = true
+        if end! {
+            nextButtonOutlet.isHidden = true
+            finishButtonOutlet.isHidden = false
+        }else{
+            nextButtonOutlet.isHidden = false
+            finishButtonOutlet.isHidden = true
         }
-               
-            //labelPalavra.isHidden = true
-            // labelGenerica.isHidden = true
             
     }
     
@@ -74,53 +56,32 @@ class CardTelaViewController: UIViewController {
         UIFeedback.hapticFeedback()
     }
     
-//    @IBAction func showPalavra(_ sender: Any) {
-//        updateImage()
-//    }
+    @IBAction func showPalavra(_ sender: Any) {
+        updateImage()
+    }
     
     func updateImage(){
         imagem = Int.random(in: 0 ... 4)
         cardImage.image = arrayImagens[imagem]
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
-//
-//        if segue.identifier == "backToTurnVC"{
-//
-//            let displayVC = segue.destination as! TurnViewController
-//            couple?.switchCouple()
-//            displayVC.couple = self.couple
-//            //displayVC.end = !self.end!
-//
-//        }
-//
-//
-//    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "backToTurnVC"{
-            
             let displayVC = segue.destination as! TurnViewController
             couple?.switchCouple()
             displayVC.couple = self.couple
-            
+            displayVC.end = !self.end!
         }
-          
-
+        
     }
     
    
     @IBAction func nextButton(_ sender: UIButton) {
-        
-       //performSegue(withIdentifier: "backToTurnVC", sender: self)
         UIFeedback.hapticFeedback()
-        
-        let name = Notification.Name(rawValue: finishButonNotificationKey)
-        NotificationCenter.default.post(name: name, object: nil)
-        
         performSegue(withIdentifier: "backToTurnVC", sender: self)
-        
     }
     
     

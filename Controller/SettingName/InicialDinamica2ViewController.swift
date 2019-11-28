@@ -13,6 +13,8 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
     var initialName01: String = ""
     var initialName02: String = ""
     var counter = 0
+    var couple: Couple?
+    
     let defaults = UserDefaults.standard
     
     @IBOutlet weak var nome1text: UITextField!
@@ -86,7 +88,11 @@ class InicialDinamica2ViewController: UIViewController, UITextFieldDelegate {
                   
             UserDefaults.standard.set(nome1text.text, forKey: "initialName01")
             UserDefaults.standard.set(nome2text.text, forKey: "initialName02")
-        
+            
+            self.initialName01 = nome1text.text!
+            self.initialName02 = nome2text.text!
+            
+            _ = Couple(partnerOne: self.initialName01, partnerTwo: self.initialName02)
         }
         
         //Saving Names

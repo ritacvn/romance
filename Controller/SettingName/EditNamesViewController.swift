@@ -11,6 +11,8 @@ import CoreData
 
 class EditNamesViewController: UIViewController, UITextFieldDelegate {
 
+    var initialName01: String = ""
+    var initialName02: String = ""
     
     @IBOutlet weak var name1textfield: UITextField!
     @IBOutlet weak var name2textfield: UITextField!
@@ -32,19 +34,7 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func saveNamesButton(_ sender: Any) {
         
-        if name1textfield.text == "" || name2textfield.text == ""{
-                
-                let message: String = "You didin't fill all the fields"
-                let alert = UIAlertController(title:title,message: message, preferredStyle: .alert)
-                let action = UIAlertAction(title: "Ok",style: .default, handler: nil)
-                
-                alert.addAction(action)
-                
-                present(alert, animated: true, completion: nil)
-            
-                
-                
-        }else if (name1textfield.text?.count)! > 0 && (name2textfield.text?.count)! > 0  {
+       if (name1textfield.text?.count)! > 0 && (name2textfield.text?.count)! > 0  {
             
             UserDefaults.standard.set(name1textfield.text, forKey: "initialName01")
             UserDefaults.standard.set(name2textfield.text, forKey: "initialName02")
@@ -56,8 +46,14 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
             
             let name1 = UserDefaults.standard.string(forKey: "initialName01")
             let name2 = UserDefaults.standard.string(forKey: "initialName02")
+            
             name1Label.text = name1
             name2Label.text = name2
+        
+            self.initialName01 = name1textfield.text!
+            self.initialName02 = name2textfield.text!
+                 
+            _ = Couple(partnerOne: self.initialName01, partnerTwo: self.initialName02)
             
         }
 

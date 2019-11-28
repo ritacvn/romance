@@ -23,4 +23,5 @@ class CategoriaTableViewCell: UITableViewCell{
         categoriaImage.layer.cornerRadius = 7
         categoriaImage.image = UIImage(named: categoria.image!)
     }
+    
 }

@@ -43,7 +43,7 @@ class ComunicaoTelaViewController: UIViewController, UITableViewDataSource, UITa
             self.navigationController?.pushViewController(vc, animated: true)
         }
         if indexPath.row == 1{
-            let vc = self.storyboard?.instantiateViewController(identifier: "funnySpeach") as! FunnySpeachViewController
+            let vc = self.storyboard?.instantiateViewController(identifier: "funnySpeech") as! FunnySpeachViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
         if indexPath.row == 2{
