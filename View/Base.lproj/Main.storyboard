@@ -494,13 +494,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IlustracaoWelcome" translatesAutoresizingMaskIntoConstraints="NO" id="Oth-Qg-5ek">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IllustrationINICIAL" translatesAutoresizingMaskIntoConstraints="NO" id="Oth-Qg-5ek">
+                                <rect key="frame" x="-22" y="-41.5" width="419" height="750"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="750" id="cOM-lP-Qm3"/>
+                                    <constraint firstAttribute="width" constant="419" id="u98-BI-BoK"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-7z-yQa">
-                                <rect key="frame" x="23" y="231" width="329" height="373"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-7z-yQa">
+                                <rect key="frame" x="23" y="231" width="329" height="205"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Partner Two" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbD-oV-to2" customClass="AkiraTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="0.0" y="223" width="329" height="70"/>
@@ -570,6 +572,14 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oth-Qg-5ek" firstAttribute="centerX" secondItem="eYH-CS-PEf" secondAttribute="centerX" id="QgB-RX-hbB"/>
+                            <constraint firstItem="mkc-7z-yQa" firstAttribute="centerX" secondItem="eYH-CS-PEf" secondAttribute="centerX" id="Rlj-an-NeK"/>
+                            <constraint firstItem="mkc-7z-yQa" firstAttribute="leading" secondItem="OL4-JV-bev" secondAttribute="leading" constant="23" id="lkS-il-V46"/>
+                            <constraint firstItem="mkc-7z-yQa" firstAttribute="top" secondItem="OL4-JV-bev" secondAttribute="top" constant="231" id="rvK-Yu-LzR"/>
+                            <constraint firstItem="Oth-Qg-5ek" firstAttribute="centerY" secondItem="eYH-CS-PEf" secondAttribute="centerY" id="tLI-xT-Nug"/>
+                            <constraint firstItem="mkc-7z-yQa" firstAttribute="centerY" secondItem="eYH-CS-PEf" secondAttribute="centerY" id="tYP-iR-HJk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OL4-JV-bev"/>
                     </view>
                     <navigationItem key="navigationItem" id="CSD-4H-8ds"/>
@@ -896,7 +906,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerX" secondItem="fLX-R9-NDt" secondAttribute="centerX" id="ENv-VG-1ED"/>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerY" secondItem="fLX-R9-NDt" secondAttribute="centerY" id="WBg-T7-One"/>
@@ -929,7 +939,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
-                                <rect key="frame" x="17" y="200" width="293.5" height="47"/>
+                                <rect key="frame" x="17" y="200" width="294" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Comunnication  ">
                                         <attributes>
@@ -942,14 +952,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="A process by which information is exchanged between individuals through a common system of symbols, signs, or behavior." adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
-                                <rect key="frame" x="17" y="269" width="341" height="73.5"/>
+                                <rect key="frame" x="17" y="270" width="341" height="73.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-QH-ec4">
-                                <rect key="frame" x="15.5" y="350.5" width="344" height="1"/>
+                                <rect key="frame" x="15.5" y="351.5" width="344" height="1"/>
                                 <color key="tintColor" red="0.76862745098039209" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="344" id="N3A-oR-fS3"/>
@@ -957,7 +967,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="auL-dh-9IZ">
-                                <rect key="frame" x="0.0" y="383" width="375" height="284"/>
+                                <rect key="frame" x="0.0" y="384" width="375" height="283"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="activities" rowHeight="111" id="CWz-8i-05L" customClass="ActivitiesCommunicationTableViewCell" customModule="romance" customModuleProvider="target">
@@ -991,7 +1001,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-0k-Bze">
-                                <rect key="frame" x="14" y="356.5" width="347" height="28"/>
+                                <rect key="frame" x="14" y="357.5" width="347" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1103,7 +1113,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FunnySpeech-INTRO-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
-                                <rect key="frame" x="-137.5" y="-109.5" width="650" height="886"/>
+                                <rect key="frame" x="25" y="112" width="325" height="443.00000000000011"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-S2-F5w">
                                 <rect key="frame" x="126" y="592" width="123" height="38"/>
@@ -1156,7 +1166,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPt-ea-2B7">
-                                <rect key="frame" x="323" y="0.0" width="36" height="37.5"/>
+                                <rect key="frame" x="321" y="0.0" width="38" height="38.5"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <attributedString key="attributedText">
                                     <fragment content="05">
@@ -1168,7 +1178,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K71-Ro-idg">
-                                <rect key="frame" x="16" y="69.5" width="343" height="37.5"/>
+                                <rect key="frame" x="16" y="70.5" width="343" height="38.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="It's your turn Rita!">
                                         <attributes>
@@ -1366,16 +1376,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BCI-pg-NxG">
-                                <rect key="frame" x="262" y="297" width="130" height="65.5"/>
+                                <rect key="frame" x="262" y="297" width="121" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-0N-egS">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome01!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-7d-8ag">
-                                        <rect key="frame" x="0.0" y="28" width="130" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="121" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1383,16 +1393,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q7B-NL-olu">
-                                <rect key="frame" x="183" y="302" width="130" height="65.5"/>
+                                <rect key="frame" x="183" y="302" width="125.5" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-ee-Bbm">
-                                        <rect key="frame" x="12.5" y="0.0" width="105" height="28"/>
+                                        <rect key="frame" x="11.5" y="0.0" width="103" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome02!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-0k-8DP">
-                                        <rect key="frame" x="0.0" y="28" width="130" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="125.5" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1400,16 +1410,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TAp-4l-6Ib">
-                                <rect key="frame" x="97" y="300" width="181.5" height="67.5"/>
+                                <rect key="frame" x="97" y="300" width="163" height="69.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The theme is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-We-peH">
-                                        <rect key="frame" x="18.5" y="0.0" width="145" height="28"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="142.5" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Piece" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-bj-lCj">
-                                        <rect key="frame" x="0.0" y="30" width="181.5" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="31" width="163" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1531,7 +1541,7 @@
         <image name="FinishButton2" width="162" height="56"/>
         <image name="FunnySpeech-INTRO-Screen" width="325" height="443"/>
         <image name="GotIt" width="123" height="38"/>
-        <image name="IlustracaoWelcome" width="375" height="667"/>
+        <image name="IllustrationINICIAL" width="419" height="750"/>
         <image name="IlustrationSoundOfSilence" width="375" height="243"/>
         <image name="IlustrationTimedDiscussion" width="342" height="246"/>
         <image name="NavBackground_Com" width="375" height="240"/>
