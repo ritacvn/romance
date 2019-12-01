@@ -10,6 +10,8 @@
 		1F15CD86233E3C270025FC94 /* UIFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F15CD85233E3C270025FC94 /* UIFeedback.swift */; };
 		1F8F2568231C959500C4E083 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F2567231C959500C4E083 /* EndGameViewController.swift */; };
 		1FBB7C68232DF30200C4A8C2 /* EndActivityTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */; };
+		1FBEB4A1239401340077ADA4 /* SecondTurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBEB4A0239401340077ADA4 /* SecondTurnViewController.swift */; };
+		1FBEB4A32394015A0077ADA4 /* SecondCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBEB4A22394015A0077ADA4 /* SecondCardViewController.swift */; };
 		1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA7BA232DC7C1000FBC48 /* Couple.swift */; };
 		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
 		1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */; };
@@ -72,6 +74,8 @@
 		1F15CD85233E3C270025FC94 /* UIFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFeedback.swift; sourceTree = "<group>"; };
 		1F8F2567231C959500C4E083 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndActivityTwoViewController.swift; sourceTree = "<group>"; };
+		1FBEB4A0239401340077ADA4 /* SecondTurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTurnViewController.swift; sourceTree = "<group>"; };
+		1FBEB4A22394015A0077ADA4 /* SecondCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCardViewController.swift; sourceTree = "<group>"; };
 		1FCCA7BA232DC7C1000FBC48 /* Couple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
 		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
 		1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamica03ViewController.swift; sourceTree = "<group>"; };
@@ -390,6 +394,8 @@
 				5C106E7E232A94F200E822E0 /* TurnViewController.swift */,
 				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,
 				5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */,
+				1FBEB4A0239401340077ADA4 /* SecondTurnViewController.swift */,
+				1FBEB4A22394015A0077ADA4 /* SecondCardViewController.swift */,
 			);
 			path = FunnySpeach;
 			sourceTree = "<group>";
@@ -634,8 +640,10 @@
 				5C1AE09D2314A14200950738 /* AppDelegate.swift in Sources */,
 				5C72C4D0234CE1F800CA99A4 /* PlayScreenViewController.swift in Sources */,
 				5C4F2F96238D6DBE003C9433 /* TimedDiscussionViewController.swift in Sources */,
+				1FBEB4A32394015A0077ADA4 /* SecondCardViewController.swift in Sources */,
 				5C4F2F94238D6481003C9433 /* Activities.swift in Sources */,
 				5C4F2F92238D5E19003C9433 /* ActivitiesCommunicationTableViewCell.swift in Sources */,
+				1FBEB4A1239401340077ADA4 /* SecondTurnViewController.swift in Sources */,
 				5C94384C2318165500622634 /* TelaCronometroViewController.swift in Sources */,
 				5CF90AD32329299D00CC96CD /* FrasesRandomicaViewController.swift in Sources */,
 				5C1AE0A52314A14200950738 /* romance.xcdatamodeld in Sources */,
