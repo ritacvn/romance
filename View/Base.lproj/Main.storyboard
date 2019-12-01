@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXg-B1-hmp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2335.1999999999998" y="1082.608695652174"/>
+            <point key="canvasLocation" x="-2298" y="1083"/>
         </scene>
         <!--Frases Randomica View Controller-->
         <scene sceneID="l6D-Bo-xnm">
@@ -427,20 +427,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-2B-zDh">
-                                <rect key="frame" x="106.66666666666669" y="524" width="162" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="FinishButton2"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="finalScreenTheSentencesActivity" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-dO-YSe">
+                                <rect key="frame" x="34" y="151" width="307" height="359"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-2B-zDh">
+                                <rect key="frame" x="126" y="574" width="123" height="38"/>
+                                <state key="normal" image="Finish"/>
                                 <connections>
                                     <segue destination="lBF-HX-uKY" kind="presentation" id="ik5-FZ-rwT"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="finalScreenTheSentencesActivity" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-dO-YSe">
-                                <rect key="frame" x="38" y="96" width="305" height="359"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UJ0-dO-YSe" firstAttribute="leading" secondItem="ldi-Gk-jsZ" secondAttribute="leading" constant="34" id="OK1-13-ogA"/>
+                            <constraint firstItem="dwu-2B-zDh" firstAttribute="centerX" secondItem="UJ0-dO-YSe" secondAttribute="centerX" id="fmv-Xt-te1"/>
+                            <constraint firstItem="ldi-Gk-jsZ" firstAttribute="trailing" secondItem="UJ0-dO-YSe" secondAttribute="trailing" constant="34" id="uDS-rU-27l"/>
+                            <constraint firstItem="dwu-2B-zDh" firstAttribute="top" secondItem="UJ0-dO-YSe" secondAttribute="bottom" constant="64" id="vp5-Kg-RlV"/>
+                            <constraint firstItem="UJ0-dO-YSe" firstAttribute="top" secondItem="ldi-Gk-jsZ" secondAttribute="top" constant="151" id="xsW-Ls-gra"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ldi-Gk-jsZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="QRp-Kf-YId"/>
@@ -1188,13 +1193,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FinalScreenOfFunnySpeech" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-pq-PpK">
-                                <rect key="frame" x="34" y="107" width="307" height="305"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FinalScreenOfFunnySpeech" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-pq-PpK">
+                                <rect key="frame" x="34" y="151" width="307" height="305"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dz-Odf">
-                                <rect key="frame" x="125" y="534" width="124" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dz-Odf">
+                                <rect key="frame" x="126" y="520" width="123" height="38"/>
                                 <state key="normal" title="Sair" image="Finish"/>
                                 <connections>
                                     <segue destination="lBF-HX-uKY" kind="show" id="Sxa-Qw-5AC"/>
@@ -1202,13 +1205,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Koe-pq-PpK" firstAttribute="top" secondItem="xWz-0p-GRm" secondAttribute="top" constant="151" id="HCN-UF-ZtG"/>
+                            <constraint firstItem="lJu-Dz-Odf" firstAttribute="top" secondItem="Koe-pq-PpK" secondAttribute="bottom" constant="64" id="bcD-M9-X5o"/>
+                            <constraint firstItem="lJu-Dz-Odf" firstAttribute="centerX" secondItem="Koe-pq-PpK" secondAttribute="centerX" id="dM6-VZ-6yk"/>
+                            <constraint firstItem="Koe-pq-PpK" firstAttribute="leading" secondItem="xWz-0p-GRm" secondAttribute="leading" constant="34" id="h51-7j-RBX"/>
+                            <constraint firstItem="lJu-Dz-Odf" firstAttribute="leading" secondItem="xWz-0p-GRm" secondAttribute="leading" constant="126" id="l9r-SG-uK3"/>
+                            <constraint firstItem="xWz-0p-GRm" firstAttribute="trailing" secondItem="Koe-pq-PpK" secondAttribute="trailing" constant="34" id="r8y-4J-JbG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xWz-0p-GRm"/>
                     </view>
                     <navigationItem key="navigationItem" id="oYQ-Za-iVO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeG-w0-fgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5999999999999" y="318.89055472263868"/>
+            <point key="canvasLocation" x="1783" y="318"/>
         </scene>
         <!--Timed Discussion View Controller-->
         <scene sceneID="WSy-yq-Y5i">
@@ -1390,20 +1401,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-ev-Hga">
-                                <rect key="frame" x="126" y="536" width="123" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FinalScreenOfTimedDiscussion" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-1A-HS7">
+                                <rect key="frame" x="34" y="151" width="307" height="340"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-ev-Hga">
+                                <rect key="frame" x="126" y="555" width="123" height="38"/>
                                 <state key="normal" image="Finish"/>
                                 <connections>
                                     <segue destination="lBF-HX-uKY" kind="show" id="G2F-qe-EWU"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FinalScreenOfTimedDiscussion" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-1A-HS7">
-                                <rect key="frame" x="35" y="94" width="305" height="340"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uq7-1A-HS7" firstAttribute="leading" secondItem="FTW-kv-keK" secondAttribute="leading" constant="34" id="Kx8-pl-bQ9"/>
+                            <constraint firstItem="izZ-ev-Hga" firstAttribute="top" secondItem="uq7-1A-HS7" secondAttribute="bottom" constant="64" id="erm-Mo-0et"/>
+                            <constraint firstItem="uq7-1A-HS7" firstAttribute="top" secondItem="FTW-kv-keK" secondAttribute="top" constant="151" id="keU-Q4-V3k"/>
+                            <constraint firstItem="izZ-ev-Hga" firstAttribute="centerX" secondItem="uq7-1A-HS7" secondAttribute="centerX" id="kfg-mV-1Fz"/>
+                            <constraint firstItem="FTW-kv-keK" firstAttribute="trailing" secondItem="uq7-1A-HS7" secondAttribute="trailing" constant="34" id="ki0-Ou-CFH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FTW-kv-keK"/>
                     </view>
                     <navigationItem key="navigationItem" id="cvr-6s-0gn"/>
@@ -1446,7 +1462,6 @@
         <image name="FinalScreenOfFunnySpeech" width="307" height="305"/>
         <image name="FinalScreenOfTimedDiscussion" width="305" height="340"/>
         <image name="Finish" width="123" height="38"/>
-        <image name="FinishButton2" width="162" height="56"/>
         <image name="FunnySpeech-INTRO-Screen" width="325" height="443"/>
         <image name="GotIt" width="123" height="38"/>
         <image name="IllustrationINICIAL" width="419" height="750"/>
