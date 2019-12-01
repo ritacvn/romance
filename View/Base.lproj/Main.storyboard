@@ -1258,32 +1258,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="timedDiscussionIlustration" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-q7-coh">
+                                <rect key="frame" x="16" y="82" width="342" height="403"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68u-VM-aX5">
-                                <rect key="frame" x="126" y="561" width="123" height="38"/>
+                                <rect key="frame" x="126" y="554" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="GotIt"/>
                                 <connections>
                                     <segue destination="fbl-sZ-TIu" kind="presentation" id="blD-AP-D7A"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IlustrationTimedDiscussion" translatesAutoresizingMaskIntoConstraints="NO" id="XRc-di-dF4">
-                                <rect key="frame" x="16" y="55" width="342" height="268"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timed Discussion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDr-qa-gVm">
-                                <rect key="frame" x="17" y="366" width="342" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="40"/>
-                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try to hear your partner’s voice and let them hear your. Everything in time. It’s important to listen and talk." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gv-Le-56n">
-                                <rect key="frame" x="17" y="431" width="341" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xuX-40-rYo"/>
@@ -1301,36 +1287,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrS-vk-vOM">
-                                <rect key="frame" x="32" y="181" width="311" height="223"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TwoQuests" translatesAutoresizingMaskIntoConstraints="NO" id="QsN-Lv-pPU">
-                                        <rect key="frame" x="28" y="13" width="254" height="196"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dU-ND-Bwy">
-                                <rect key="frame" x="32" y="464" width="311" height="126"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="shakeYourPhoneIlustration" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-J3-Jlc">
+                                <rect key="frame" x="53" y="168" width="269" height="331"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Shake your phone to receive  theme">
-                                        <attributes>
-                                            <color key="NSColor" red="0.27058823529999998" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="32" name="SFProDisplay-Semibold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="zrS-vk-vOM" firstAttribute="centerX" secondItem="dPG-pE-b0f" secondAttribute="centerX" id="D9T-0t-Yrw"/>
-                            <constraint firstItem="zrS-vk-vOM" firstAttribute="centerY" secondItem="dPG-pE-b0f" secondAttribute="centerY" id="ZrU-q4-cgL"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1T0-Ld-ofe"/>
                     </view>
                     <navigationItem key="navigationItem" id="LL3-0S-0Th">
@@ -1541,7 +1503,6 @@
         <image name="GotIt" width="123" height="38"/>
         <image name="IllustrationINICIAL" width="419" height="750"/>
         <image name="IlustrationSoundOfSilence" width="375" height="243"/>
-        <image name="IlustrationTimedDiscussion" width="342" height="246"/>
         <image name="NavBackground_Com" width="375" height="240"/>
         <image name="NavBackground_Fam" width="375" height="232"/>
         <image name="NextButtonNEW" width="123" height="38"/>
@@ -1556,6 +1517,8 @@
         <image name="WelcomeToCoupliePhrase" width="295" height="116"/>
         <image name="backButton" width="36" height="60"/>
         <image name="groupOfHearts" width="375" height="430"/>
+        <image name="shakeYourPhoneIlustration" width="269" height="331"/>
+        <image name="timedDiscussionIlustration" width="342" height="403"/>
         <image name="􀊖" width="49" height="50"/>
         <namedColor name="DarkMode">
             <color red="0.28400000929832458" green="0.28400000929832458" blue="0.29199999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

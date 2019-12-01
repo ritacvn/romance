@@ -38,7 +38,7 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 60
+    var time: Int = 10
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -179,7 +179,7 @@ class TelaCronometroViewController: UIViewController {
                         buttonStartOutlet2.isEnabled = true
                         second = 0
                         minute = 0
-                        time = 60
+                        time = 10
             clockLabel.text = "01:00"
             
             
