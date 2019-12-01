@@ -62,13 +62,7 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
 
     }
     
-    @IBAction func editNames(_ sender: Any) {
-        name1textfield.isHidden = false
-        name2textfield.isHidden = false
-        name1Label.isHidden = true
-        name2Label.isHidden = true
-    }
-    
+
     @IBAction func exitButton(_ sender: Any) {
          dismiss(animated: true, completion: nil)
     }

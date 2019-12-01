@@ -832,13 +832,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3u-lq-jJr">
                                 <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="PopUpBackgrounf-1" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-Bt-IbH">
-                                        <rect key="frame" x="-0.5" y="-0.5" width="300" height="300"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="PopUpBackgrounf-1" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-Bt-IbH">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How does you and your partner like to be called?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssT-Ek-N2B">
-                                        <rect key="frame" x="12" y="40" width="277" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does you and your partner like to be called?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssT-Ek-N2B">
+                                        <rect key="frame" x="12" y="46" width="276" height="57.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -849,14 +847,6 @@
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="saveNamesButton:" destination="fE8-UK-Fsn" eventType="touchUpInside" id="XRp-yQ-yCI"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-C9-pZT">
-                                        <rect key="frame" x="43" y="249" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Edit"/>
-                                        <connections>
-                                            <action selector="editNames:" destination="fE8-UK-Fsn" eventType="touchUpInside" id="WON-aN-Jy0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I31-pe-oI9">
@@ -870,8 +860,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="1i2-ir-28H"/>
+                                    <constraint firstItem="pCT-Bt-IbH" firstAttribute="centerY" secondItem="p3u-lq-jJr" secondAttribute="centerY" id="Epc-2u-bkP"/>
+                                    <constraint firstItem="pCT-Bt-IbH" firstAttribute="centerX" secondItem="p3u-lq-jJr" secondAttribute="centerX" id="HMc-bC-16b"/>
                                     <constraint firstItem="I31-pe-oI9" firstAttribute="top" secondItem="p3u-lq-jJr" secondAttribute="top" constant="8" id="HhG-Fr-A0L"/>
+                                    <constraint firstAttribute="trailing" secondItem="ssT-Ek-N2B" secondAttribute="trailing" constant="12" id="IBY-y3-ew5"/>
                                     <constraint firstAttribute="trailing" secondItem="I31-pe-oI9" secondAttribute="trailing" constant="8" id="P6J-0w-3kg"/>
+                                    <constraint firstItem="ssT-Ek-N2B" firstAttribute="leading" secondItem="p3u-lq-jJr" secondAttribute="leading" constant="12" id="RcO-cb-63S"/>
+                                    <constraint firstItem="ssT-Ek-N2B" firstAttribute="top" secondItem="I31-pe-oI9" secondAttribute="bottom" constant="8" id="tbs-id-hJt"/>
                                     <constraint firstAttribute="width" constant="300" id="zie-XU-kas"/>
                                 </constraints>
                             </view>
