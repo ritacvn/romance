@@ -14,9 +14,6 @@
         <array key="SF-Pro-Display-Light.otf">
             <string>SFProDisplay-Light</string>
         </array>
-        <array key="SF-Pro-Display-Medium.otf">
-            <string>SFProDisplay-Medium</string>
-        </array>
         <array key="SF-Pro-Display-Regular.otf">
             <string>SFProDisplay-Regular</string>
         </array>
@@ -430,33 +427,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sg7-QR-rcK">
-                                <rect key="frame" x="24" y="289" width="327" height="214"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="5mH-cp-sL3"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Now that you two got to see what  you both think about some especific sentences, we hope you work that in your relationship so that becomes always better.</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="17" name="SFProDisplay-Light"/>
-                                            <real key="NSKern" value="0.69999999999999996"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vkj-QU-LMP">
-                                <rect key="frame" x="40" y="275" width="295" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="67" id="DPW-rk-e9H"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="32"/>
-                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-2B-zDh">
                                 <rect key="frame" x="106.66666666666669" y="524" width="162" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -465,19 +435,12 @@
                                     <segue destination="lBF-HX-uKY" kind="presentation" id="ik5-FZ-rwT"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TwoQuests" translatesAutoresizingMaskIntoConstraints="NO" id="PBw-hU-bnV">
-                                <rect key="frame" x="62" y="65" width="250" height="196"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="finalScreenTheSentencesActivity" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-dO-YSe">
+                                <rect key="frame" x="38" y="96" width="305" height="359"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Vkj-QU-LMP" firstAttribute="leading" secondItem="ldi-Gk-jsZ" secondAttribute="leading" constant="40" id="49V-St-Kdv"/>
-                            <constraint firstItem="sg7-QR-rcK" firstAttribute="leading" secondItem="ldi-Gk-jsZ" secondAttribute="leading" constant="24" id="OBh-Xk-2gI"/>
-                            <constraint firstItem="sg7-QR-rcK" firstAttribute="centerX" secondItem="I5m-Wb-Cfl" secondAttribute="centerX" id="Rtj-3r-2iW"/>
-                            <constraint firstItem="sg7-QR-rcK" firstAttribute="centerX" secondItem="Vkj-QU-LMP" secondAttribute="centerX" id="VHN-En-wN0"/>
-                            <constraint firstItem="sg7-QR-rcK" firstAttribute="top" secondItem="I5m-Wb-Cfl" secondAttribute="top" constant="253" id="kKX-BJ-stp"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ldi-Gk-jsZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="QRp-Kf-YId"/>
@@ -1225,17 +1188,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Love is as much good as being loved, we hope that you two can feel it now!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxi-Dd-O0G">
-                                <rect key="frame" x="53" y="403" width="268" height="121"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FinalScreenOfFunnySpeech" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-pq-PpK">
+                                <rect key="frame" x="34" y="107" width="307" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
-                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dz-Odf">
-                                <rect key="frame" x="103" y="555" width="162" height="67"/>
+                                <rect key="frame" x="125" y="534" width="124" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sair" image="FinishButton2"/>
+                                <state key="normal" title="Sair" image="Finish"/>
                                 <connections>
                                     <segue destination="lBF-HX-uKY" kind="show" id="Sxa-Qw-5AC"/>
                                 </connections>
@@ -1248,7 +1208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeG-w0-fgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="319"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="318.89055472263868"/>
         </scene>
         <!--Timed Discussion View Controller-->
         <scene sceneID="WSy-yq-Y5i">
@@ -1438,22 +1398,8 @@
                                     <segue destination="lBF-HX-uKY" kind="show" id="G2F-qe-EWU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Everyone has an opnion about something, but it is your choice to understand it, accept it, or simply do not!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dt-gw-6l5">
-                                <rect key="frame" x="37" y="383" width="301" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
-                                <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejl-Sm-fZK">
-                                <rect key="frame" x="59" y="336" width="251" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TwoQuests" translatesAutoresizingMaskIntoConstraints="NO" id="TzG-FF-6ho">
-                                <rect key="frame" x="60" y="103" width="254" height="209"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FinalScreenOfTimedDiscussion" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-1A-HS7">
+                                <rect key="frame" x="35" y="94" width="305" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1497,6 +1443,8 @@
         <image name="Coracao1" width="436" height="405"/>
         <image name="Coracao2" width="375" height="349"/>
         <image name="Divisória" width="344" height="1"/>
+        <image name="FinalScreenOfFunnySpeech" width="307" height="305"/>
+        <image name="FinalScreenOfTimedDiscussion" width="305" height="340"/>
         <image name="Finish" width="123" height="38"/>
         <image name="FinishButton2" width="162" height="56"/>
         <image name="FunnySpeech-INTRO-Screen" width="325" height="443"/>
@@ -1513,9 +1461,9 @@
         <image name="StartButtonWelcome" width="329" height="51"/>
         <image name="StartNovo" width="123" height="38"/>
         <image name="TwoHearts" width="293" height="174"/>
-        <image name="TwoQuests" width="250" height="196"/>
         <image name="WelcomeToCoupliePhrase" width="295" height="116"/>
         <image name="backButton" width="36" height="60"/>
+        <image name="finalScreenTheSentencesActivity" width="305" height="359"/>
         <image name="groupOfHearts" width="375" height="430"/>
         <image name="shakeYourPhoneIlustration" width="269" height="331"/>
         <image name="timedDiscussionIlustration" width="342" height="403"/>
@@ -1525,6 +1473,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sxa-Qw-5AC"/>
+        <segue reference="G2F-qe-EWU"/>
     </inferredMetricsTieBreakers>
 </document>
