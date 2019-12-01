@@ -39,7 +39,6 @@
 		5C4F2F98238D7553003C9433 /* FunnySpeachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */; };
 		5C4F2F9A238D75F4003C9433 /* SentencesActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F2F99238D75F4003C9433 /* SentencesActivityViewController.swift */; };
 		5C593AA3231FF8FD00588B01 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */; };
-		5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */; };
 		5C72C4D0234CE1F800CA99A4 /* PlayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */; };
 		5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */; };
 		5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */; };
@@ -131,7 +130,6 @@
 		5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnySpeachViewController.swift; sourceTree = "<group>"; };
 		5C4F2F99238D75F4003C9433 /* SentencesActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesActivityViewController.swift; sourceTree = "<group>"; };
 		5C593AA2231FF8FD00588B01 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
-		5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SliderTimeViewController.swift; path = Model/SliderTimeViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayScreenViewController.swift; path = Model/PlayScreenViewController.swift; sourceTree = SOURCE_ROOT; };
 		5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTelaViewController.swift; sourceTree = "<group>"; };
 		5C851010231DFB9500C1A74B /* InicialDinamica2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicialDinamica2ViewController.swift; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				1FF42AE9235F3574001816CC /* QuestionsOfCoupleTherapy */,
-				5C72C4CD234CC0A400CA99A4 /* SliderTimeViewController.swift */,
 				5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */,
 			);
 			path = Familiarity;
@@ -656,7 +653,6 @@
 				5CCB47232344F374006190E8 /* Motion.swift in Sources */,
 				5C106E762329302600E822E0 /* CategoriesTableViewController.swift in Sources */,
 				5C4F2F9A238D75F4003C9433 /* SentencesActivityViewController.swift in Sources */,
-				5C72C4CE234CC0A400CA99A4 /* SliderTimeViewController.swift in Sources */,
 				1FF42AEF235F367C001816CC /* QOCTActivityScreenViewController.swift in Sources */,
 				5C106E81232BC7DC00E822E0 /* InserirNomesDinamica3ViewController.swift in Sources */,
 				1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */,

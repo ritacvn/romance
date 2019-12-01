@@ -14,13 +14,15 @@ class PlayScreenViewController: UIViewController {
     var timeConverted: Int?
     var minute: Int = 0
     var second: Int = 0
-    var time: String?
+    var time = 60 // 3 minutos
     var timeLeft: TimeInterval?
     var timer = Timer()
     var endTime: Date?
     @IBOutlet weak var labelTime: UILabel!
     @IBOutlet weak var clockLabel: UILabel!
     
+    @IBOutlet weak var exitOutlet: UIButton!
+    @IBOutlet weak var playTimeOutlet: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     let timeLeftShapeLayer = CAShapeLayer()
    
@@ -29,9 +31,10 @@ class PlayScreenViewController: UIViewController {
         super.viewDidLoad()
         timeLeftCircle()
         circleShape()
-        timeConverted = Int(time!)
+        timeConverted = time
         timeLeft = TimeInterval(timeConverted!)
         endTime = Date().addingTimeInterval(timeLeft!)
+        exitOutlet.isHidden = true
     }
     
     func timeLeftCircle(){
@@ -40,8 +43,8 @@ class PlayScreenViewController: UIViewController {
         100, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
                      trackLayer.path = circularPath
                      trackLayer.fillColor = UIColor.clear.cgColor
-                     trackLayer.strokeColor = UIColor.lightGray.cgColor
-                     trackLayer.lineWidth = 10
+        trackLayer.strokeColor = UIColor.backgroundDark.cgColor
+        trackLayer.lineWidth = 1.0
                      
                      trackLayer.lineCap = CAShapeLayerLineCap.round
                view.layer.addSublayer(trackLayer)
@@ -52,7 +55,7 @@ class PlayScreenViewController: UIViewController {
          100, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
         shapeLayer.path = circularPath
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = UIColor.purple.cgColor
+        shapeLayer.strokeColor = UIColor.pinkCircle.cgColor
         shapeLayer.lineWidth = 10
         
         shapeLayer.lineCap = CAShapeLayerLineCap.round
@@ -66,10 +69,12 @@ class PlayScreenViewController: UIViewController {
         } else {
             timeLabel.text = "00:00"
             timer.invalidate()
+            exitOutlet.isHidden = false
         }
     }
 
     @IBAction func playTime(_ sender: Any) {
+        playTimeOutlet.isHidden = true
          timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         handleTap()
     }
@@ -96,3 +101,4 @@ extension Int {
         return CGFloat(self) * .pi / 180
     }
 }
+
