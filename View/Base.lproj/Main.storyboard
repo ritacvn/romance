@@ -593,7 +593,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhP-NM-5No">
                                 <rect key="frame" x="32" y="60" width="311" height="418"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackOfCard_Din2" translatesAutoresizingMaskIntoConstraints="NO" id="Z0C-or-KbT">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackOfCard_Din2_NEW" translatesAutoresizingMaskIntoConstraints="NO" id="Z0C-or-KbT">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="418"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-zX-jzg">
@@ -615,44 +615,27 @@
                                     <constraint firstItem="1Rt-zX-jzg" firstAttribute="width" secondItem="Z0C-or-KbT" secondAttribute="width" id="f3p-cB-kie"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t32-oZ-ThU">
-                                <rect key="frame" x="103.5" y="538" width="168" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="168" id="bmD-Gg-LEJ"/>
-                                    <constraint firstAttribute="height" constant="56" id="boA-wn-1Nm"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="NextButton2"/>
-                                <state key="disabled" backgroundImage="FinishSpeechButton_Unable"/>
-                                <state key="highlighted" backgroundImage="FinishSpeechButton_Hightlighted"/>
-                                <connections>
-                                    <action selector="finishButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="tDi-Zz-Lms"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-yI-n1N">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-yI-n1N">
                                 <rect key="frame" x="103.5" y="538" width="168" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="q3w-BX-mww"/>
                                     <constraint firstAttribute="width" constant="168" id="uvr-Z1-0Ae"/>
                                 </constraints>
-                                <state key="normal" image="NextButton2"/>
+                                <state key="normal" image="NextButtonNEW"/>
                                 <connections>
                                     <action selector="nextButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="Ss7-wd-Wei"/>
-                                    <segue destination="3dl-ei-8fK" kind="show" id="o3W-Km-Zhr"/>
+                                    <segue destination="3dl-ei-8fK" kind="show" identifier="SecondTurnVC" animates="NO" id="o3W-Km-Zhr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QhP-NM-5No" firstAttribute="top" secondItem="FkN-St-viW" secondAttribute="top" constant="60" id="5Ji-Wv-WoK"/>
-                            <constraint firstItem="t32-oZ-ThU" firstAttribute="leading" secondItem="EtQ-yI-n1N" secondAttribute="leading" id="5jS-mi-GGu"/>
                             <constraint firstItem="EtQ-yI-n1N" firstAttribute="top" secondItem="QhP-NM-5No" secondAttribute="bottom" constant="60" id="8TW-w9-gT4"/>
                             <constraint firstItem="FkN-St-viW" firstAttribute="trailing" secondItem="QhP-NM-5No" secondAttribute="trailing" constant="32" id="AjP-cx-BNf"/>
-                            <constraint firstItem="t32-oZ-ThU" firstAttribute="centerX" secondItem="QhP-NM-5No" secondAttribute="centerX" id="NP2-ck-HhN"/>
                             <constraint firstItem="FkN-St-viW" firstAttribute="bottom" secondItem="EtQ-yI-n1N" secondAttribute="bottom" constant="73" id="Tg0-y9-uWf"/>
                             <constraint firstItem="QhP-NM-5No" firstAttribute="centerX" secondItem="7zL-Uv-i8J" secondAttribute="centerX" id="XQe-9z-ckl"/>
-                            <constraint firstItem="FkN-St-viW" firstAttribute="bottom" secondItem="t32-oZ-ThU" secondAttribute="bottom" constant="73" id="hg5-7Y-CcM"/>
                             <constraint firstItem="QhP-NM-5No" firstAttribute="leading" secondItem="FkN-St-viW" secondAttribute="leading" constant="32" id="r9u-r2-MHm"/>
-                            <constraint firstItem="t32-oZ-ThU" firstAttribute="top" secondItem="QhP-NM-5No" secondAttribute="bottom" constant="60" id="sG4-Rb-AAo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FkN-St-viW"/>
                     </view>
@@ -660,7 +643,6 @@
                     <connections>
                         <outlet property="cardFlip" destination="QhP-NM-5No" id="S3G-A6-Vv2"/>
                         <outlet property="cardImage" destination="Z0C-or-KbT" id="k0r-ip-z5J"/>
-                        <outlet property="finishButtonOutlet" destination="t32-oZ-ThU" id="xpt-Fu-B4U"/>
                         <outlet property="nextButtonOutlet" destination="EtQ-yI-n1N" id="jZm-qq-nOQ"/>
                     </connections>
                 </viewController>
@@ -675,14 +657,39 @@
                     <view key="view" contentMode="scaleToFill" id="JsR-5O-oEv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="groupOfHearts" translatesAutoresizingMaskIntoConstraints="NO" id="GyD-xC-PH4">
+                                <rect key="frame" x="0.0" y="240" width="375" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-FL-05s">
+                                <rect key="frame" x="53" y="85" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxq-Tr-uGF">
+                                <rect key="frame" x="255" y="20" width="104" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="v6G-rd-gAG"/>
                     </view>
                     <navigationItem key="navigationItem" id="Dnj-1w-2LO"/>
+                    <connections>
+                        <outlet property="secondPartnerLabel" destination="XP6-FL-05s" id="cwn-Yi-BB2"/>
+                        <outlet property="secondTimerLabel" destination="jxq-Tr-uGF" id="AQ3-wa-vE8"/>
+                        <segue destination="OXd-Kp-hq0" kind="show" identifier="secondCardVC" id="y2I-ws-Lea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kg-Jo-wqX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="319"/>
+            <point key="canvasLocation" x="285.60000000000002" y="318.89055472263868"/>
         </scene>
         <!--Second Card Tela View Controller-->
         <scene sceneID="co0-B3-OWf">
@@ -693,22 +700,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-an-40P">
-                                <rect key="frame" x="164" y="527" width="46" height="30"/>
+                                <rect key="frame" x="126" y="559" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="NextButtonNEW"/>
                                 <connections>
-                                    <segue destination="igY-58-YhP" kind="show" id="dn4-jR-mT9"/>
+                                    <action selector="nextButton:" destination="OXd-Kp-hq0" eventType="touchUpInside" id="jfG-PZ-8jb"/>
+                                    <segue destination="igY-58-YhP" kind="show" identifier="finalFunnySpeechSegue" id="Vny-go-tFR"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fc0-k1-M0C">
+                                <rect key="frame" x="37" y="47" width="301" height="442"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="BackOfCard_Din2_NEW" translatesAutoresizingMaskIntoConstraints="NO" id="ZR4-rm-NvU">
+                                        <rect key="frame" x="0.0" y="0.0" width="301" height="442"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuZ-00-AoC">
+                                        <rect key="frame" x="8" y="8" width="285" height="426"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ANv-M3-N8k"/>
                     </view>
                     <navigationItem key="navigationItem" id="0uH-Gc-rSX"/>
+                    <connections>
+                        <outlet property="cardFlip" destination="fc0-k1-M0C" id="a4X-p6-ljc"/>
+                        <outlet property="cardImage" destination="ZR4-rm-NvU" id="uCJ-cP-80N"/>
+                        <outlet property="finishButtonOutlet" destination="LuZ-00-AoC" id="6Wm-aP-zPI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtE-e0-x4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="319"/>
+            <point key="canvasLocation" x="1036" y="318.89055472263868"/>
         </scene>
         <!--Categories-->
         <scene sceneID="LVa-Zq-719">
@@ -1077,7 +1105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FunnySpeech-INTRO-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
-                                <rect key="frame" x="25" y="112" width="325" height="443.00000000000011"/>
+                                <rect key="frame" x="-137.5" y="-109.5" width="650" height="886"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-S2-F5w">
                                 <rect key="frame" x="126" y="592" width="123" height="38"/>
@@ -1340,16 +1368,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BCI-pg-NxG">
-                                <rect key="frame" x="262" y="297" width="130" height="65.5"/>
+                                <rect key="frame" x="262" y="297" width="121" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZn-0N-egS">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="28"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome01!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-7d-8ag">
-                                        <rect key="frame" x="0.0" y="28" width="130" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="121" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1357,16 +1385,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q7B-NL-olu">
-                                <rect key="frame" x="183" y="302" width="130" height="65.5"/>
+                                <rect key="frame" x="183" y="302" width="125.5" height="67.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-ee-Bbm">
-                                        <rect key="frame" x="12.5" y="0.0" width="105" height="28"/>
+                                        <rect key="frame" x="11.5" y="0.0" width="103" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome02!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-0k-8DP">
-                                        <rect key="frame" x="0.0" y="28" width="130" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="125.5" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1374,16 +1402,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TAp-4l-6Ib">
-                                <rect key="frame" x="97" y="300" width="181.5" height="67.5"/>
+                                <rect key="frame" x="97" y="300" width="163" height="69.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The theme is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-We-peH">
-                                        <rect key="frame" x="18.5" y="0.0" width="145" height="28"/>
+                                        <rect key="frame" x="10.5" y="0.0" width="142.5" height="29"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Piece" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-bj-lCj">
-                                        <rect key="frame" x="0.0" y="30" width="181.5" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="31" width="163" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1491,7 +1519,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BackOfCard_Din2" width="342" height="487"/>
+        <image name="BackOfCard_Din2_NEW" width="335" height="475"/>
         <image name="Background" width="375" height="667"/>
         <image name="BackgroundBlue" width="375" height="667"/>
         <image name="Balao1_ShakeScreen" width="198" height="204"/>
@@ -1503,8 +1531,6 @@
         <image name="Divisória" width="344" height="1"/>
         <image name="Finish" width="123" height="38"/>
         <image name="FinishButton2" width="162" height="56"/>
-        <image name="FinishSpeechButton_Hightlighted" width="146" height="40"/>
-        <image name="FinishSpeechButton_Unable" width="146" height="40"/>
         <image name="FunnySpeech-INTRO-Screen" width="325" height="443"/>
         <image name="GotIt" width="123" height="38"/>
         <image name="IlustracaoWelcome" width="375" height="667"/>
@@ -1512,7 +1538,7 @@
         <image name="IlustrationTimedDiscussion" width="342" height="246"/>
         <image name="NavBackground_Com" width="375" height="240"/>
         <image name="NavBackground_Fam" width="375" height="232"/>
-        <image name="NextButton2" width="162" height="56"/>
+        <image name="NextButtonNEW" width="123" height="38"/>
         <image name="PopUpBackgrounf-1" width="300" height="300"/>
         <image name="QuestionsOfCoupleTherapy" width="280" height="44"/>
         <image name="SoundOfSilence" width="198" height="43"/>
@@ -1523,12 +1549,13 @@
         <image name="TwoQuests" width="250" height="196"/>
         <image name="WelcomeToCoupliePhrase" width="295" height="116"/>
         <image name="backButton" width="36" height="60"/>
+        <image name="groupOfHearts" width="375" height="430"/>
         <image name="􀊖" width="49" height="50"/>
         <namedColor name="DarkMode">
             <color red="0.28400000929832458" green="0.28400000929832458" blue="0.29199999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ik5-FZ-rwT"/>
+        <segue reference="Sxa-Qw-5AC"/>
     </inferredMetricsTieBreakers>
 </document>

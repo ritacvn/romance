@@ -12,10 +12,7 @@ import UIKit
 
 
 class EndActivityTwoViewController: UIViewController {
-    
-   
-    
-  
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -390,12 +390,12 @@
 		5CF90AD0232928A100CC96CD /* FunnySpeach */ = {
 			isa = PBXGroup;
 			children = (
-				5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */,
 				5C106E7E232A94F200E822E0 /* TurnViewController.swift */,
-				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,
-				5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */,
+				5C85100E231DFB3F00C1A74B /* CardTelaViewController.swift */,
 				1FBEB4A0239401340077ADA4 /* SecondTurnViewController.swift */,
 				1FBEB4A22394015A0077ADA4 /* SecondCardViewController.swift */,
+				1FBB7C67232DF30200C4A8C2 /* EndActivityTwoViewController.swift */,
+				5C4F2F97238D7553003C9433 /* FunnySpeachViewController.swift */,
 			);
 			path = FunnySpeach;
 			sourceTree = "<group>";

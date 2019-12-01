@@ -11,39 +11,18 @@ import UIKit
 
 
 class SecondCardTelaViewController: UIViewController {
-    
-    
+
     var isopen = false
-    var palavra: Int = 0
     var imagem: Int = 0
-    var end: Bool?
-    
-    
-//    let name1 = UserDefaults.standard.string(forKey: "initialName01")
-//    let name2 = UserDefaults.standard.string(forKey: "initialName02")
-    
+  
     //Importando classes
     var couple: Couple?
    
     @IBOutlet weak var cardFlip: UIView!
-    @IBOutlet weak var labelPalavra: UILabel!
-    @IBOutlet weak var labelGenerica: UILabel!
     @IBOutlet weak var cardImage: UIImageView!
-    
-    @IBOutlet weak var finishButtonOutlet: UIButton!
-    @IBOutlet weak var nextButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if end! {
-            nextButtonOutlet.isHidden = true
-            finishButtonOutlet.isHidden = false
-        }else{
-            nextButtonOutlet.isHidden = false
-            finishButtonOutlet.isHidden = true
-        }
-            
     }
     
     @IBAction func flipButton(_ sender: Any) {
@@ -65,33 +44,11 @@ class SecondCardTelaViewController: UIViewController {
         cardImage.image = arrayImagens[imagem]
     }
     
-
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "backToTurnVC"{
-            let displayVC = segue.destination as! TurnViewController
-            couple?.switchCouple()
-            displayVC.couple = self.couple
-            displayVC.end = !self.end!
-        }
-        
-    }
-    
-   
     @IBAction func nextButton(_ sender: UIButton) {
         UIFeedback.hapticFeedback()
-        performSegue(withIdentifier: "backToTurnVC", sender: self)
+        performSegue(withIdentifier: "finalFunnySpeechSegue", sender: self)
     }
     
-    
-    @IBAction func finishButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToEndVCSegue", sender: self)
-        UIFeedback.hapticFeedback()
-    }
-    
-    
-    
-    
+
 }
 

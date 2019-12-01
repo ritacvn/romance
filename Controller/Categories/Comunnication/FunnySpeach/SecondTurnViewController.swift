@@ -10,64 +10,38 @@ import Foundation
 
 
 import UIKit
-let finishButonNotificationKey = "finishButtonTapped"
-
 class SecondTurnViewController: UIViewController {
     
-    var couple: Couple?
-    var end: Bool?
-      
-    let name1 = UserDefaults.standard.string(forKey: "initialName01")
     let name2 = UserDefaults.standard.string(forKey: "initialName02")
 
     var timer = Timer()
-    var time = 5
+    var time = 10
     
-    @IBOutlet weak var parterName: UILabel!
-    @IBOutlet weak var timerLabel: UILabel!
-    
-   
+    @IBOutlet weak var secondTimerLabel: UILabel!
+    @IBOutlet weak var secondPartnerLabel: UILabel!
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("partnerTurn \(String(describing: couple?.partnerTurn()))")
-        
-        parterName.text = "It's your turn \(String(describing: couple?.partnerTurn()))"
+       secondPartnerLabel.text = "It's your turn \(String(describing: name2!))"
         
         //Time
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
     }
     
-   
-    
+
     @objc func counter(){
         
         time -= 1
-        timerLabel.text = "\(time)"
+        secondTimerLabel.text = "\(time)"
         
         if time <= 0 {
             self.timer.invalidate()
-            performSegue(withIdentifier: "goToActivitySegue", sender: self)
+            performSegue(withIdentifier: "secondCardVC", sender: self)
         }
-        
-    }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let displayVC = segue.destination as! CardTelaViewController
-//        displayVC.couple = self.couple
-//        //displayVC.end = self.end
-//    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! CardTelaViewController
-        displayVC.couple = self.couple
-        displayVC.end = self.end
-     
     }
-    
-
     
 }
   

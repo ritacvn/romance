@@ -7,38 +7,30 @@
 //
 
 import UIKit
-let finishButonNotificationKey = "finishButtonTapped"
+
 
 class TurnViewController: UIViewController {
-    
-    var couple: Couple?
-    var end: Bool?
-      
+   
     let name1 = UserDefaults.standard.string(forKey: "initialName01")
-    let name2 = UserDefaults.standard.string(forKey: "initialName02")
-
+   
     var timer = Timer()
     var time = 5
     
     @IBOutlet weak var parterName: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     
-   
     
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("partnerTurn \(String(describing: couple?.partnerTurn()))")
         
-        parterName.text = "It's your turn \(String(describing: couple?.partnerTurn()))"
+        parterName.text = "It's your turn \(String(describing: name1!))"
         
         //Time
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
     }
     
-   
-    
+
     @objc func counter(){
         
         time -= 1
@@ -50,21 +42,6 @@ class TurnViewController: UIViewController {
         }
         
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let displayVC = segue.destination as! CardTelaViewController
-//        displayVC.couple = self.couple
-//        //displayVC.end = self.end
-//    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let displayVC = segue.destination as! CardTelaViewController
-        displayVC.couple = self.couple
-        displayVC.end = self.end
-     
-    }
-    
-
     
 }
   

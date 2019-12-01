@@ -70,7 +70,7 @@ class FrasesRandomicaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        namePerson.text = "Hello, \(String(describing: name1))!"
+        namePerson.text = "Hello, \(String(describing: name1!))!"
         
         randomizarFrase()
         fraseRandomizada.text = "What do you think about the sentence: \n \(fraseTema)."
