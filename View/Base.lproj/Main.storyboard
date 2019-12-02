@@ -866,7 +866,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerX" secondItem="fLX-R9-NDt" secondAttribute="centerX" id="ENv-VG-1ED"/>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerY" secondItem="fLX-R9-NDt" secondAttribute="centerY" id="WBg-T7-One"/>
