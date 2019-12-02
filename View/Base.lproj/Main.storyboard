@@ -1035,7 +1035,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Divisória" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-k5-QHA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-k5-QHA">
                                 <rect key="frame" x="16" y="426" width="344" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1046,7 +1046,7 @@
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Divisória" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-Ob-B2P">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-Ob-B2P">
                                 <rect key="frame" x="17" y="569" width="344" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1460,6 +1460,7 @@
         <image name="Coracao1" width="436" height="405"/>
         <image name="Coracao2" width="375" height="349"/>
         <image name="Divisória" width="344" height="1"/>
+        <image name="Divisória-1" width="344" height="1"/>
         <image name="FinalScreenOfFunnySpeech" width="307" height="305"/>
         <image name="FinalScreenOfTimedDiscussion" width="305" height="340"/>
         <image name="Finish" width="123" height="38"/>
