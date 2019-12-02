@@ -32,7 +32,7 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 10
+    var time: Int = 60
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -71,11 +71,10 @@ class TelaCronometroViewController: UIViewController {
         name1Outlet.text = "Get ready \(String(describing: name1!))"
         name2Outlet.text = "Get ready \(String(describing: name2!))"
         
-        clockLabel.text = "1:00"
+        balloonA.image = UIImage(named: "balao1W")
+        balloonB.image = UIImage(named: "balao2W")
         
-//        if clockLabel.text == "00:05" {
-//            animateSize_Unscale(ballon: balloonA)
-//        }
+        clockLabel.text = "1:00"
         
     }
     
@@ -87,7 +86,8 @@ class TelaCronometroViewController: UIViewController {
     }
        
     @IBAction func startButton(_ sender: Any) {
-            
+        
+        balloonA.image = UIImage(named: "balao1B")
         name1Outlet.text = "It's your turn \(String(describing: name1!))!"
         
         timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
@@ -96,17 +96,6 @@ class TelaCronometroViewController: UIViewController {
         
         buttonStartOutlet2.isHidden = true
         
-//            UIFeedback.hapticFeedback()
-//            buttonStartOutlet.isHidden = true
-//            timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-//
-//            animateSize_Scale(ballon: balloonA)
-//            name1Outlet.text = "It's your turn: \(String(describing: name1!))!"
-//
-//            theThemeIsLabel.text = "\(String(describing: theme))!"
-//    //        theThemeIsLabel.text = "Argue about the: \(String(describing: theme))!"
-//            buttonStartOutlet2.isHidden = true
-            
     }
     
     @IBAction func startButton2(_ sender: Any) {
@@ -116,29 +105,6 @@ class TelaCronometroViewController: UIViewController {
         buttonStartOutlet2.isHidden = true
                    
         UIFeedback.hapticFeedback()
-    
-//        //Haptic feedback
-//        UIFeedback.hapticFeedback()
-//
-//        //Unscale ballon A
-//        animateSize_Unscale(ballon: balloonA)
-//
-//        name1Outlet.text = "Thank you: \(String(describing: name1!))!"
-//
-//        //Para o Tempo
-//        timer.invalidate()
-//
-//        //Reinicia o tempo
-//        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(TelaCronometroViewController.counter), userInfo: nil, repeats: true)
-//
-//        //Scale ballon B
-//        animateSize_Scale(ballon: balloonB)
-//
-//        theThemeIsLabel.text = "\(String(describing: theme))"
-////        theThemeIsLabel.text = "Argue about: \(String(describing: theme))"
-//        name2Outlet.text = "It's your turn: \(String(describing: name2!))!"
-//        buttonStartOutlet2.isHidden = true
-  
     }
 
 @objc func counter(){
@@ -181,7 +147,11 @@ class TelaCronometroViewController: UIViewController {
             endTurn += 1
             
             clockLabel.text = "1:00"
+            
+            balloonB.image = UIImage(named: "balao2B")
             name2Outlet.text = "It's your turn \(String(describing: name2!))!"
+            
+            balloonA.image = UIImage(named: "balao1W")
             name1Outlet.text = "Thank you \(String(describing: name1!))!"
            
             buttonStartOutlet2.isHidden = false
@@ -189,66 +159,15 @@ class TelaCronometroViewController: UIViewController {
             
             timer.invalidate()
             
-            time = 10
+            time = 60
             
             if endTurn == 2 {
                 performSegue(withIdentifier: "endSegue", sender: self)
                            
             }
             
-//            animateSize_Unscale(ballon: balloonA)
-//            timer.invalidate()
-//                        buttonStartOutlet.isHidden = true
-//                        buttonStartOutlet2.isHidden = false
-//                        buttonStartOutlet2.isEnabled = true
-//                        second = 0
-//                        minute = 0
-//                        time = 10
-//            clockLabel.text = "01:00"
-//
-            
-//            if clockLabel.text == "01:00" && buttonStartOutlet2.isEnabled == true{
-//
-//                animateSize_Unscale(ballon: balloonA)
-//
-//                //Unscale ballonB
-//                animateSize_Unscale(ballon: balloonB)
-//
-//                if endTurn == true && name2Outlet.text == "It's your turn: \(String(describing: name1!))!" {
-//                    name2Outlet.text = "Thank you: \(String(describing: name2!))!"
-//
-//                    performSegue(withIdentifier: "endSegue", sender: self)
-//                }
-//
-//            }
         }
         
     }
-    
-    
-//MARK: Animation
-    
-//    func animateSize_Scale(ballon: UIImageView) {
-//
-//        ballon.animate( [.delay(1),
-//                           .duration(0.5),
-//                           .size(CGSize(width: 244, height: 251))
-//                            ]
-//        )
-//    }
-//
-//    func animateSize_Unscale(ballon: UIImageView) {
-//
-//        ballon.animate(.delay(1),.duration(0.5),.size(CGSize(width: 198, height: 204)))
-//
-//        if ballon == balloonB{
-//             endTurn = true
-//        }
-//
-//        if ballon == balloonA{
-//            change = true
-//        }
-//
-//    }
 
 }
