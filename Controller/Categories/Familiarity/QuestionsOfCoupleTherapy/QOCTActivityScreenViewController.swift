@@ -38,7 +38,9 @@ class QOCTActivityScreenViewController: UIViewController{
         buttonStart02.isHidden = true
         
         mainThemeOutlet.text = "Tap start to receive a question!"
+        
         partnerNameOutlet.text = "Hello, \(String(describing: name1!)) and \(String(describing: name2!))!"
+        
         timeOutlet.text = "1:00"
         
     }
