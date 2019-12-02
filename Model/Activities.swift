@@ -11,7 +11,7 @@ import Foundation
 struct Activities {
     let title: String?
     let image: String?
-    
+ 
     static func fetchActivitiesCommunication() -> [Activities]{
         let timedDiscussion = Activities(title: "Timed Discussion", image: "TimedDiscussion")
         let funnySpeach = Activities(title: "FunnySpeech", image: "FunnySpeech")

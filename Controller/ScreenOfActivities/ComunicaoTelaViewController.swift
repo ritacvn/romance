@@ -35,7 +35,8 @@ class ComunicaoTelaViewController: UIViewController, UITableViewDataSource, UITa
         
         cell.activity = activities[indexPath.row]
         cell.selectionStyle = .none
-        self.tableView.rowHeight = 70
+        self.tableView.rowHeight = 80
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
