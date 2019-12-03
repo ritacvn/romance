@@ -19,4 +19,4 @@ let arrayDeFrases = ["Love is not everthing, we have another needs","We always n
 let arrarCategorias = ["communication","conhecimento","empatia"]
 
 //Array da Dinamica "Perguntas para terapia de casal"
-let arrayOfQuests_Act1F = ["Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?","Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?","Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?"]
+let arrayOfQuests_Act1F = ["What are the main changes that happen in your life after joing a love relationship?","Do you think the partner should change some behavior towards you?","Do you consider that changes can be made in a love relationship to improve coexistence?","Do you have dreams to fulfill with your partner? Talk a little about it.", "What is your feeling about your relationship?"]
