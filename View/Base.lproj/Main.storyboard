@@ -917,7 +917,7 @@
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-QH-ec4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-QH-ec4">
                                 <rect key="frame" x="15.5" y="251.5" width="344" height="1"/>
                                 <color key="tintColor" red="0.76862745098039209" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -1383,7 +1383,6 @@
         <image name="Balao1_ShakeScreen" width="198" height="204"/>
         <image name="Balao2_ShakeScreen" width="198" height="204"/>
         <image name="Button" width="25" height="25"/>
-        <image name="Divisória" width="344" height="1"/>
         <image name="Divisória-1" width="344" height="1"/>
         <image name="FinalScreenOfFunnySpeech" width="307" height="305"/>
         <image name="FinalScreenOfTimedDiscussion" width="305" height="340"/>
