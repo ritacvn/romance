@@ -30,21 +30,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sentences Activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97X-yU-7xN">
-                                <rect key="frame" x="116" y="323" width="142" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkp-KO-EpV">
-                                <rect key="frame" x="172" y="479" width="30" height="30"/>
+                                <rect key="frame" x="126" y="557" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go"/>
+                                <state key="normal" backgroundImage="StartNovo"/>
                                 <connections>
                                     <segue destination="9hG-LH-gax" kind="presentation" id="eQx-ph-N5b"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TheSentencesActivityIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
+                                <rect key="frame" x="23" y="59" width="328" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gFo-xz-G2l"/>
@@ -1064,11 +1061,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FunnySpeech-INTRO-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
-                                <rect key="frame" x="25" y="84" width="325" height="443.00000000000011"/>
+                                <rect key="frame" x="25" y="59" width="325" height="443.00000000000011"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-S2-F5w">
-                                <rect key="frame" x="126" y="566" width="123" height="38"/>
+                                <rect key="frame" x="126" y="546" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="StartNovo"/>
                                 <connections>
@@ -1402,6 +1399,7 @@
         <image name="SoundOfSilence" width="198" height="43"/>
         <image name="StartButtonWelcome" width="329" height="51"/>
         <image name="StartNovo" width="123" height="38"/>
+        <image name="TheSentencesActivityIllustration" width="328" height="454"/>
         <image name="TwoHearts" width="293" height="174"/>
         <image name="WelcomeToCoupliePhrase" width="295" height="116"/>
         <image name="backButton" width="36" height="60"/>
