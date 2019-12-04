@@ -38,7 +38,7 @@
                                     <segue destination="9hG-LH-gax" kind="presentation" id="eQx-ph-N5b"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TheSentencesActivityIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="IlustrationTSA" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
                                 <rect key="frame" x="23" y="59" width="328" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1060,7 +1060,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="FunnySpeech-INTRO-Screen" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="illustrationFS" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
                                 <rect key="frame" x="25" y="59" width="325" height="443.00000000000011"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1386,10 +1386,10 @@
         <image name="FinalScreenOfFunnySpeech" width="307" height="305"/>
         <image name="FinalScreenOfTimedDiscussion" width="305" height="340"/>
         <image name="Finish" width="123" height="38"/>
-        <image name="FunnySpeech-INTRO-Screen" width="325" height="443"/>
         <image name="GotIt" width="123" height="38"/>
         <image name="IllustrationINICIAL" width="419" height="750"/>
         <image name="IlustrationSoundOfSilence" width="375" height="243"/>
+        <image name="IlustrationTSA" width="342" height="454"/>
         <image name="NavBackground_Com" width="375" height="240"/>
         <image name="NavBackground_Fam" width="375" height="232"/>
         <image name="NextButtonNEW" width="123" height="38"/>
@@ -1399,12 +1399,12 @@
         <image name="SoundOfSilence" width="198" height="43"/>
         <image name="StartButtonWelcome" width="329" height="51"/>
         <image name="StartNovo" width="123" height="38"/>
-        <image name="TheSentencesActivityIllustration" width="328" height="454"/>
         <image name="TwoHearts" width="293" height="174"/>
         <image name="WelcomeToCoupliePhrase" width="295" height="116"/>
         <image name="backButton" width="36" height="60"/>
         <image name="finalScreenTheSentencesActivity" width="305" height="359"/>
         <image name="groupOfHeartsNEW" width="606" height="523"/>
+        <image name="illustrationFS" width="327" height="462"/>
         <image name="saveNew-1" width="140" height="44"/>
         <image name="shakeYourPhoneIlustration" width="269" height="331"/>
         <image name="timedDiscussionIlustration" width="342" height="403"/>
