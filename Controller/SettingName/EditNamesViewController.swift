@@ -42,22 +42,16 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(name1textfield.text, forKey: "initialName01")
             UserDefaults.standard.set(name2textfield.text, forKey: "initialName02")
             
-            name1textfield.isHidden = true
-            name2textfield.isHidden = true
-           // name2Label.isHidden = false
-           // name1Label.isHidden = false
+           // let name1 = UserDefaults.standard.string(forKey: "initialName01")
+           // let name2 = UserDefaults.standard.string(forKey: "initialName02")
             
-            let name1 = UserDefaults.standard.string(forKey: "initialName01")
-            let name2 = UserDefaults.standard.string(forKey: "initialName02")
-            
-           // name1Label.text = name1
-           // name2Label.text = name2
-        
             self.initialName01 = name1textfield.text!
             self.initialName02 = name2textfield.text!
                  
             _ = Couple(partnerOne: self.initialName01, partnerTwo: self.initialName02)
             
+            dismiss(animated: true, completion: nil)
+        
         }
 
     }
