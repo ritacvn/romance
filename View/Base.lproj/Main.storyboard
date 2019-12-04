@@ -70,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKb-hc-yfP">
-                                <rect key="frame" x="159" y="454" width="65" height="100"/>
+                                <rect key="frame" x="159" y="454" width="65" height="50"/>
                                 <state key="normal" image="PlayNew"/>
                                 <connections>
                                     <action selector="startActivity2:" destination="9hG-LH-gax" eventType="touchUpInside" id="WcV-dE-kcd"/>
@@ -102,13 +102,13 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coracaodaDireita_Comunicacao" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-Lt-39P">
-                                <rect key="frame" x="185" y="540" width="508" height="246"/>
+                                <rect key="frame" x="185" y="540" width="254" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="246" id="fe8-gk-HY2"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsS-BZ-wWy">
-                                <rect key="frame" x="159" y="454" width="65" height="100"/>
+                                <rect key="frame" x="159" y="454" width="65" height="50"/>
                                 <state key="normal" image="PlayNew"/>
                                 <connections>
                                     <action selector="startActivity:" destination="9hG-LH-gax" eventType="touchUpInside" id="EKB-TZ-4oR"/>
@@ -375,6 +375,9 @@
                                 <rect key="frame" x="326" y="20" width="29" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" backgroundImage="x"/>
+                                <connections>
+                                    <segue destination="nbV-vp-OTY" kind="presentation" id="Pdo-Jn-Q3I"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxK-Ew-DUi">
                                 <rect key="frame" x="166.5" y="323.5" width="42" height="20"/>
@@ -403,6 +406,14 @@
                                     <constraint firstAttribute="height" constant="246" id="NhC-gR-Paj"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHG-rV-8fn">
+                                <rect key="frame" x="126" y="527" width="123" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Finish"/>
+                                <connections>
+                                    <segue destination="gZb-rS-j6c" kind="presentation" id="k1D-ay-rLE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -428,6 +439,7 @@
                     </view>
                     <connections>
                         <outlet property="exitOutlet" destination="F9W-hl-wgK" id="K7M-yX-VTg"/>
+                        <outlet property="finishButton" destination="xHG-rV-8fn" id="Iqq-cp-7wp"/>
                         <outlet property="playTimeOutlet" destination="5fT-Cb-ZqE" id="ALg-uA-JC4"/>
                         <outlet property="timeLabel" destination="gxK-Ew-DUi" id="mzm-zk-Sc3"/>
                     </connections>
@@ -435,6 +447,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4W-22-Rl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3148" y="2692.8035982008996"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="J8g-fn-Htz">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gZb-rS-j6c" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pa7-gn-hI8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlO-c2-l5x">
+                                <rect key="frame" x="126" y="506" width="123" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Finish"/>
+                                <connections>
+                                    <segue destination="nbV-vp-OTY" kind="presentation" id="4B9-mm-jeK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vrq-BS-0pE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-yo-GaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2378" y="2693"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gKj-i0-BxX">
@@ -1061,7 +1098,7 @@
             <objects>
                 <viewController storyboardIdentifier="conhecimento" modalPresentationStyle="fullScreen" id="nbV-vp-OTY" customClass="FamiliarityViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SEa-DF-sX4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-a5-Iwi">
@@ -1305,10 +1342,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balao1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-Lx-TUc">
-                                <rect key="frame" x="16" y="24" width="396" height="408"/>
+                                <rect key="frame" x="16" y="24" width="198" height="204"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balao2_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-QF-sxT">
-                                <rect key="frame" x="-37" y="235" width="396" height="408"/>
+                                <rect key="frame" x="161" y="439" width="198" height="204"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-9B-ZdX" userLabel="clockLabel">
                                 <rect key="frame" x="291" y="32" width="68" height="29"/>
@@ -1483,7 +1520,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0DR-Ry-B3t"/>
+        <segue reference="Pdo-Jn-Q3I"/>
         <segue reference="ik5-FZ-rwT"/>
     </inferredMetricsTieBreakers>
 </document>

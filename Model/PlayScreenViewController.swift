@@ -14,7 +14,7 @@ class PlayScreenViewController: UIViewController {
     var timeConverted: Int?
     var minute: Int = 0
     var second: Int = 0
-    var time = 60 // 3 minutos
+    var time = 180 // 3 minutos
     var timeLeft: TimeInterval?
     var timer = Timer()
     var endTime: Date?
@@ -25,7 +25,8 @@ class PlayScreenViewController: UIViewController {
     @IBOutlet weak var playTimeOutlet: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     let timeLeftShapeLayer = CAShapeLayer()
-   
+    @IBOutlet var finishButton: UIButton!
+    
     let shapeLayer = CAShapeLayer()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,11 @@ class PlayScreenViewController: UIViewController {
         timeConverted = time
         timeLeft = TimeInterval(timeConverted!)
         endTime = Date().addingTimeInterval(timeLeft!)
-        exitOutlet.isHidden = true
+        //exitOutlet.isHidden = true
+        
+        finishButton.isHidden = true
+        
+        timeLabel.text = "3:00"
     }
     
     func timeLeftCircle(){
@@ -69,7 +74,8 @@ class PlayScreenViewController: UIViewController {
         } else {
             timeLabel.text = "00:00"
             timer.invalidate()
-            exitOutlet.isHidden = false
+            //exitOutlet.isHidden = false
+            finishButton.isHidden = false
         }
     }
 
