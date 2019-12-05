@@ -28,6 +28,7 @@ class PlayScreenViewController: UIViewController {
     @IBOutlet var finishButton: UIButton!
     
     let shapeLayer = CAShapeLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         timeLeftCircle()
@@ -40,6 +41,9 @@ class PlayScreenViewController: UIViewController {
         finishButton.isHidden = true
         
         timeLabel.text = "3:00"
+        
+        navigationController?.navigationBar.isHidden = true
+        
     }
     
     func timeLeftCircle(){

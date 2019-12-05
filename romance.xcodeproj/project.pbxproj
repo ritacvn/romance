@@ -14,6 +14,8 @@
 		1FBEB4A32394015A0077ADA4 /* SecondCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBEB4A22394015A0077ADA4 /* SecondCardViewController.swift */; };
 		1FCCA7BB232DC7C1000FBC48 /* Couple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA7BA232DC7C1000FBC48 /* Couple.swift */; };
 		1FD1B7E32398C625004FBA59 /* EndVcOfTheSentencesActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD1B7E22398C625004FBA59 /* EndVcOfTheSentencesActivity.swift */; };
+		1FD1B7E52398CD43004FBA59 /* EndVcOfQOCT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD1B7E42398CD43004FBA59 /* EndVcOfQOCT.swift */; };
+		1FD1B7E72398CD73004FBA59 /* EndVcOfSoundOfSilence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD1B7E62398CD73004FBA59 /* EndVcOfSoundOfSilence.swift */; };
 		1FEBDC3B23176EBC00646F06 /* ArrayDeTemas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */; };
 		1FEBDC3D23176F0400646F06 /* Dinamica03ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */; };
 		1FF42AEF235F367C001816CC /* QOCTActivityScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF42AEE235F367C001816CC /* QOCTActivityScreenViewController.swift */; };
@@ -94,6 +96,8 @@
 		1FBEB4A22394015A0077ADA4 /* SecondCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCardViewController.swift; sourceTree = "<group>"; };
 		1FCCA7BA232DC7C1000FBC48 /* Couple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Couple.swift; sourceTree = "<group>"; };
 		1FD1B7E22398C625004FBA59 /* EndVcOfTheSentencesActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndVcOfTheSentencesActivity.swift; sourceTree = "<group>"; };
+		1FD1B7E42398CD43004FBA59 /* EndVcOfQOCT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndVcOfQOCT.swift; sourceTree = "<group>"; };
+		1FD1B7E62398CD73004FBA59 /* EndVcOfSoundOfSilence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndVcOfSoundOfSilence.swift; sourceTree = "<group>"; };
 		1FEBDC3A23176EBC00646F06 /* ArrayDeTemas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDeTemas.swift; sourceTree = "<group>"; };
 		1FEBDC3C23176F0400646F06 /* Dinamica03ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dinamica03ViewController.swift; sourceTree = "<group>"; };
 		1FF42AEE235F367C001816CC /* QOCTActivityScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QOCTActivityScreenViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 			children = (
 				1FF42AE9235F3574001816CC /* QuestionsOfCoupleTherapy */,
 				5C72C4CF234CE1F800CA99A4 /* PlayScreenViewController.swift */,
+				1FD1B7E62398CD73004FBA59 /* EndVcOfSoundOfSilence.swift */,
 			);
 			path = Familiarity;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF42AEE235F367C001816CC /* QOCTActivityScreenViewController.swift */,
+				1FD1B7E42398CD43004FBA59 /* EndVcOfQOCT.swift */,
 			);
 			path = QuestionsOfCoupleTherapy;
 			sourceTree = "<group>";
@@ -665,6 +671,7 @@
 				5C85100F231DFB3F00C1A74B /* CardTelaViewController.swift in Sources */,
 				5C106E7F232A94F200E822E0 /* TurnViewController.swift in Sources */,
 				1F15CD86233E3C270025FC94 /* UIFeedback.swift in Sources */,
+				1FD1B7E52398CD43004FBA59 /* EndVcOfQOCT.swift in Sources */,
 				1FBB7C68232DF30200C4A8C2 /* EndActivityTwoViewController.swift in Sources */,
 				5C851011231DFB9500C1A74B /* InicialDinamica2ViewController.swift in Sources */,
 				5C1AE09F2314A14200950738 /* InserirNomesViewController.swift in Sources */,
@@ -693,6 +700,7 @@
 				5C106E7A232946DE00E822E0 /* Categorias.swift in Sources */,
 				5C13600E2357716600A3651D /* EditNamesViewController.swift in Sources */,
 				5C106E7D232A82C200E822E0 /* SegueFromRight.swift in Sources */,
+				1FD1B7E72398CD73004FBA59 /* EndVcOfSoundOfSilence.swift in Sources */,
 				5C4F2F98238D7553003C9433 /* FunnySpeachViewController.swift in Sources */,
 				5CCC5EC623574E5B00D78D90 /* FamiliarityViewController.swift in Sources */,
 				5C106E7823293B9E00E822E0 /* CategoriaTableViewCell.swift in Sources */,

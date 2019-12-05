@@ -43,6 +43,9 @@ class QOCTActivityScreenViewController: UIViewController{
         
         timeOutlet.text = "1:00"
         
+        navigationController?.navigationBar.isHidden = true
+        
+        
     }
     
     //Randomizing the theme

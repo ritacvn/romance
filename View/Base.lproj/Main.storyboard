@@ -289,10 +289,10 @@
             </objects>
             <point key="canvasLocation" x="-3911.1999999999998" y="1970.4647676161921"/>
         </scene>
-        <!--View Controller-->
+        <!--End Vc OfQOCT-->
         <scene sceneID="nkD-3J-pR4">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="RYl-uv-IkF" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="RYl-uv-IkF" customClass="EndVcOfQOCT" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X2k-VO-sLz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="FinishNew"/>
                                 <connections>
-                                    <segue destination="nbV-vp-OTY" kind="show" id="0DR-Ry-B3t"/>
+                                    <action selector="dismissQOCTAction:" destination="RYl-uv-IkF" eventType="touchUpInside" id="NTp-CJ-tsI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -492,10 +492,10 @@
             </objects>
             <point key="canvasLocation" x="-3148" y="2692.8035982008996"/>
         </scene>
-        <!--View Controller-->
+        <!--End Vc Of Sound Of Silence-->
         <scene sceneID="J8g-fn-Htz">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gZb-rS-j6c" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gZb-rS-j6c" customClass="EndVcOfSoundOfSilence" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pa7-gn-hI8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,7 +505,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="FinishNew"/>
                                 <connections>
-                                    <segue destination="nbV-vp-OTY" kind="show" id="4B9-mm-jeK"/>
+                                    <action selector="dismissSoundOfSilence:" destination="gZb-rS-j6c" eventType="touchUpInside" id="CK8-m5-9Zh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1669,6 +1669,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4B9-mm-jeK"/>
+        <segue reference="7CG-eE-hh2"/>
     </inferredMetricsTieBreakers>
 </document>
