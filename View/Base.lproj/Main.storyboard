@@ -901,7 +901,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7c-5A-IzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3911.1999999999998" y="-9.4452773613193415"/>
+            <point key="canvasLocation" x="-3911" y="-9"/>
         </scene>
         <!--Edit Names View Controller-->
         <scene sceneID="bxd-cD-gZL">
@@ -1023,7 +1023,7 @@
         <!--Comunicao Tela View Controller-->
         <scene sceneID="L2g-Wz-KW8">
             <objects>
-                <viewController storyboardIdentifier="comunicacao" modalPresentationStyle="fullScreen" id="lBF-HX-uKY" customClass="ComunicaoTelaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="comunicacao" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lBF-HX-uKY" customClass="ComunicaoTelaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ge3-LD-W8s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1342,7 +1342,7 @@
                                 <rect key="frame" x="126" y="565" width="123" height="38"/>
                                 <state key="normal" backgroundImage="GotIt"/>
                                 <connections>
-                                    <segue destination="fbl-sZ-TIu" kind="presentation" id="blD-AP-D7A"/>
+                                    <segue destination="fbl-sZ-TIu" kind="show" id="blD-AP-D7A"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="timedDiscussionIlustration" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-q7-coh">
@@ -1392,7 +1392,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="QRi-ft-NKl" kind="presentation" identifier="DisplayNameSegue" id="YOh-YM-yqn"/>
+                        <segue destination="QRi-ft-NKl" kind="show" identifier="DisplayNameSegue" id="YOh-YM-yqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VH6-ru-gdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1525,6 +1525,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hXS-HM-p4H"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nVT-NG-v2l"/>
                     <connections>
                         <outlet property="balloonA" destination="U3C-Lx-TUc" id="rwZ-tA-wfq"/>
                         <outlet property="balloonB" destination="7CP-QF-sxT" id="JIV-Xp-Cdy"/>
@@ -1556,7 +1557,7 @@
                                 <rect key="frame" x="126" y="555" width="123" height="38"/>
                                 <state key="normal" image="Finish"/>
                                 <connections>
-                                    <segue destination="lBF-HX-uKY" kind="show" id="G2F-qe-EWU"/>
+                                    <action selector="dismissDiscussion:" destination="O9T-ol-uEL" eventType="touchUpInside" id="Ibm-AQ-8kK"/>
                                 </connections>
                             </button>
                         </subviews>

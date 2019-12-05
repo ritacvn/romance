@@ -42,9 +42,6 @@ class EditNamesViewController: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(name1textfield.text, forKey: "initialName01")
             UserDefaults.standard.set(name2textfield.text, forKey: "initialName02")
             
-           // let name1 = UserDefaults.standard.string(forKey: "initialName01")
-           // let name2 = UserDefaults.standard.string(forKey: "initialName02")
-            
             self.initialName01 = name1textfield.text!
             self.initialName02 = name2textfield.text!
                  

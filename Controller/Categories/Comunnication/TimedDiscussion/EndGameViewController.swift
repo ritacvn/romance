@@ -11,5 +11,12 @@ import UIKit
 
 class EndGameViewController: UIViewController {
     
+    @IBAction func dismissDiscussion(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
     
 }

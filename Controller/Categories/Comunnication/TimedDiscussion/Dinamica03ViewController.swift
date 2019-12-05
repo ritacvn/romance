@@ -28,6 +28,11 @@ class Dinamica03ViewController: UIViewController {
 //        name1label.isHidden = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     //Shake to go next page
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         self.performSegue(withIdentifier: "DisplayNameSegue", sender: self)
