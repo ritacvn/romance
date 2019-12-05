@@ -37,7 +37,7 @@
                                     <segue destination="9hG-LH-gax" kind="show" id="eQx-ph-N5b"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IlustrationTSA" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IlustrationTSA1.0" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
                                 <rect key="frame" x="16.5" y="67" width="342" height="454"/>
                             </imageView>
                         </subviews>
@@ -526,7 +526,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="finalScreenTheSentencesActivity" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-dO-YSe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="finalScreenTheSentencesActivity1.0" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-dO-YSe">
                                 <rect key="frame" x="34" y="-10" width="307" height="359"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-2B-zDh">
@@ -605,8 +605,8 @@
                                             <segue destination="btx-Kl-MNS" kind="show" id="cso-fb-vKO"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="WelcomeToCoupliePhrase" translatesAutoresizingMaskIntoConstraints="NO" id="98k-3p-lsW">
-                                        <rect key="frame" x="-12" y="13" width="320" height="116"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="WelcomeToCoupliePhrase1.0" translatesAutoresizingMaskIntoConstraints="NO" id="98k-3p-lsW">
+                                        <rect key="frame" x="0.0" y="13" width="320" height="116"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Partner One" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ke0-JG-Hi2" customClass="AkiraTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="3" y="145" width="329" height="70"/>
@@ -641,11 +641,11 @@
                                 <constraints>
                                     <constraint firstItem="Ke0-JG-Hi2" firstAttribute="leading" secondItem="mkc-7z-yQa" secondAttribute="leading" constant="3" id="Ag1-qy-RQX"/>
                                     <constraint firstAttribute="trailing" secondItem="Ke0-JG-Hi2" secondAttribute="trailing" id="Dqv-gO-bgb"/>
-                                    <constraint firstAttribute="trailing" secondItem="98k-3p-lsW" secondAttribute="trailing" constant="24" id="Ivf-pJ-XKe"/>
+                                    <constraint firstAttribute="trailing" secondItem="98k-3p-lsW" secondAttribute="trailing" constant="12" id="Ivf-pJ-XKe"/>
                                     <constraint firstItem="EbD-oV-to2" firstAttribute="leading" secondItem="mkc-7z-yQa" secondAttribute="leading" id="R9d-mF-WmD"/>
                                     <constraint firstAttribute="height" constant="378" id="RgS-Hi-5V3"/>
                                     <constraint firstItem="98k-3p-lsW" firstAttribute="top" secondItem="mkc-7z-yQa" secondAttribute="top" constant="13" id="TZv-vJ-Ytn"/>
-                                    <constraint firstItem="98k-3p-lsW" firstAttribute="leading" secondItem="mkc-7z-yQa" secondAttribute="leading" constant="-12" id="WFT-md-2YI"/>
+                                    <constraint firstItem="98k-3p-lsW" firstAttribute="leading" secondItem="mkc-7z-yQa" secondAttribute="leading" id="WFT-md-2YI"/>
                                     <constraint firstItem="ovs-TB-6xa" firstAttribute="top" secondItem="EbD-oV-to2" secondAttribute="bottom" constant="22" id="WqJ-yb-Lqr"/>
                                     <constraint firstAttribute="width" constant="332" id="aaa-tK-mOz"/>
                                     <constraint firstItem="EbD-oV-to2" firstAttribute="top" secondItem="Ke0-JG-Hi2" secondAttribute="bottom" constant="8" id="dIk-rM-Wlf"/>
@@ -1372,7 +1372,7 @@
                                     <segue destination="fbl-sZ-TIu" kind="show" id="blD-AP-D7A"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="timedDiscussionIlustration" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-q7-coh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="timedDiscussionIlustration1.0" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-q7-coh">
                                 <rect key="frame" x="16.5" y="118" width="342" height="403"/>
                             </imageView>
                         </subviews>
@@ -1639,7 +1639,7 @@
         <image name="GotIt" width="123" height="38"/>
         <image name="IllustrationINICIAL" width="419" height="750"/>
         <image name="IlustrationSoundOfSilence" width="375" height="243"/>
-        <image name="IlustrationTSA" width="342" height="454"/>
+        <image name="IlustrationTSA1.0" width="342" height="454"/>
         <image name="NavBackground_Com" width="375" height="240"/>
         <image name="NavBackground_Fam" width="375" height="232"/>
         <image name="NextButtonNEW" width="123" height="38"/>
@@ -1650,19 +1650,19 @@
         <image name="StartButtonWelcome" width="329" height="51"/>
         <image name="StartNovo" width="123" height="38"/>
         <image name="TwoHearts" width="293" height="174"/>
-        <image name="WelcomeToCoupliePhrase" width="295" height="116"/>
+        <image name="WelcomeToCoupliePhrase1.0" width="311" height="116"/>
         <image name="atv3_c" width="237" height="43"/>
         <image name="backButton" width="36" height="60"/>
         <image name="coracaDaDireita_Familiarity" width="254" height="246"/>
         <image name="coracaDaEsquerda_Familiarity" width="254" height="246"/>
         <image name="coracaodaDireita_Comunicacao" width="254" height="246"/>
         <image name="coracaodaEsquerda_Comunicacao" width="254" height="246"/>
-        <image name="finalScreenTheSentencesActivity" width="305" height="359"/>
+        <image name="finalScreenTheSentencesActivity1.0" width="305" height="359"/>
         <image name="groupOfHearts" width="375" height="430"/>
         <image name="illustrationFS" width="327" height="462"/>
         <image name="saveNew-1" width="140" height="44"/>
         <image name="shakeYourPhoneIlustration" width="269" height="331"/>
-        <image name="timedDiscussionIlustration" width="342" height="403"/>
+        <image name="timedDiscussionIlustration1.0" width="342" height="403"/>
         <image name="x" width="17" height="18"/>
         <namedColor name="DarkMode">
             <color red="0.28400000929832458" green="0.28400000929832458" blue="0.29199999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
