@@ -10,7 +10,7 @@ import UIKit
 
 let arrayDeTemas_Dinamica03 = ["Love","Communication","Dishes","Affection","Jealous","Trust"]
 
-let arrayImagens: [UIImage] = [UIImage(named: "CardA")!, UIImage(named: "CardE")!, UIImage(named: "CardI")!,UIImage(named: "CardO")!, UIImage(named: "CardU")!]
+let arrayImagens: [UIImage] = [UIImage(named: "CardA_NEW")!, UIImage(named: "CardE_NEW")!, UIImage(named: "CardI_NEW")!,UIImage(named: "CardO_NEW")!, UIImage(named: "CardU_NEW")!]
 
 let arrayDeFrases = ["Love is not everthing, we have another needs","We always need to be prepared for a break up","Trust is everthing","We need first to be happy alone to than be happy with each other"]
 
