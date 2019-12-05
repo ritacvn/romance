@@ -46,6 +46,10 @@ class PlayScreenViewController: UIViewController {
         
     }
     
+    @IBAction func closeButton(_ sender: Any) {
+        print("aaaaaa")
+        navigationController?.popoverPresentationController
+    }
     func timeLeftCircle(){
         let trackLayer = CAShapeLayer()
         let circularPath = UIBezierPath(arcCenter: CGPoint(x: view.frame.midX , y: view.frame.midY), radius:

@@ -460,7 +460,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" backgroundImage="x"/>
                                 <connections>
-                                    <segue destination="nbV-vp-OTY" kind="show" id="Pdo-Jn-Q3I"/>
+                                    <segue destination="nbV-vp-OTY" kind="presentation" id="F2c-S2-xLN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -498,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4W-22-Rl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3148" y="2692.8035982008996"/>
+            <point key="canvasLocation" x="-3082" y="2693"/>
         </scene>
         <!--End Vc Of Sound Of Silence-->
         <scene sceneID="J8g-fn-Htz">
@@ -543,7 +543,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-yo-GaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2378" y="2693"/>
+            <point key="canvasLocation" x="-2233" y="2693"/>
         </scene>
         <!--End Vc Of The Sentences Activity-->
         <scene sceneID="gKj-i0-BxX">
@@ -1695,6 +1695,6 @@
         <image name="x" width="17" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pdo-Jn-Q3I"/>
+        <segue reference="F2c-S2-xLN"/>
     </inferredMetricsTieBreakers>
 </document>
