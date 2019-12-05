@@ -34,7 +34,7 @@
                                 <rect key="frame" x="126" y="565" width="123" height="38"/>
                                 <state key="normal" backgroundImage="StartNovo"/>
                                 <connections>
-                                    <segue destination="9hG-LH-gax" kind="presentation" id="eQx-ph-N5b"/>
+                                    <segue destination="9hG-LH-gax" kind="show" id="eQx-ph-N5b"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IlustrationTSA" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
@@ -158,6 +158,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQW-uV-tk0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1508" y="1082.608695652174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g2p-rc-KFU">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="yeT-ab-YN2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vmb-sw-Nl6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0K-Kp-4Cb">
+                                <rect key="frame" x="126" y="525" width="123" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="GotIt"/>
+                                <connections>
+                                    <segue destination="GSY-xC-upK" kind="show" id="tmv-p6-XIe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ryn-du-jD0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TUr-nw-CHX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wjc-nX-6SG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4655" y="1970"/>
         </scene>
         <!--Activity Screen View Controller-->
         <scene sceneID="Fit-lH-bVU">
@@ -419,7 +445,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="Finish"/>
                                 <connections>
-                                    <segue destination="gZb-rS-j6c" kind="presentation" id="k1D-ay-rLE"/>
+                                    <segue destination="gZb-rS-j6c" kind="show" id="k1D-ay-rLE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9W-hl-wgK">
@@ -486,6 +512,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="vrq-BS-0pE"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sy8-VE-5pj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-yo-GaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -506,7 +533,7 @@
                                 <rect key="frame" x="126" y="574" width="123" height="38"/>
                                 <state key="normal" image="Finish"/>
                                 <connections>
-                                    <segue destination="lBF-HX-uKY" kind="presentation" id="ik5-FZ-rwT"/>
+                                    <segue destination="lBF-HX-uKY" kind="push" id="ik5-FZ-rwT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1152,7 +1179,7 @@
                                 <rect key="frame" x="31" y="404" width="280" height="44"/>
                                 <state key="normal" backgroundImage="QuestionsOfCoupleTherapy"/>
                                 <connections>
-                                    <segue destination="GSY-xC-upK" kind="presentation" id="tKh-9A-eIo"/>
+                                    <segue destination="yeT-ab-YN2" kind="show" id="iT8-ge-4yN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close acquaintance with or knowledge of something." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRg-tl-Qje">
@@ -1639,7 +1666,8 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uCI-9h-TSw"/>
         <segue reference="0DR-Ry-B3t"/>
-        <segue reference="Sxa-Qw-5AC"/>
+        <segue reference="ik5-FZ-rwT"/>
     </inferredMetricsTieBreakers>
 </document>
