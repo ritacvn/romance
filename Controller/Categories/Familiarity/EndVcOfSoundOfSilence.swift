@@ -12,6 +12,7 @@ import UIKit
 class EndVcOfSoundOfSilence: UIViewController{
     
     @IBAction func dismissSoundOfSilence(_ sender: Any) {
+        
         navigationController?.popToRootViewController(animated: true)
         
     }
