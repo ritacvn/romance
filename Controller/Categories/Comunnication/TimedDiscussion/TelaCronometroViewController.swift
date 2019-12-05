@@ -74,7 +74,7 @@ class TelaCronometroViewController: UIViewController {
         balloonA.image = UIImage(named: "balao1W")
         balloonB.image = UIImage(named: "balao2W")
         
-        clockLabel.text = "1:00"
+        clockLabel.text = "01:00"
         
     }
     
@@ -95,6 +95,7 @@ class TelaCronometroViewController: UIViewController {
         UIFeedback.hapticFeedback()
         
         buttonStartOutlet2.isHidden = true
+        buttonStartOutlet.isHidden = true
         
     }
     
@@ -146,7 +147,7 @@ class TelaCronometroViewController: UIViewController {
             
             endTurn += 1
             
-            clockLabel.text = "1:00"
+            clockLabel.text = "01:00"
             
             balloonB.image = UIImage(named: "balao2B")
             name2Outlet.text = "It's your turn \(String(describing: name2!))!"
