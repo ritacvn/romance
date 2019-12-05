@@ -48,7 +48,8 @@ class PlayScreenViewController: UIViewController {
     
     @IBAction func closeButton(_ sender: Any) {
         print("aaaaaa")
-        navigationController?.popoverPresentationController
+navigationController?.popToRootViewController(animated: true)
+        
     }
     func timeLeftCircle(){
         let trackLayer = CAShapeLayer()

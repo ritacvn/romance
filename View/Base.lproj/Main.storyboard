@@ -166,7 +166,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qoctIntroScreen1.0" translatesAutoresizingMaskIntoConstraints="NO" id="rg4-6B-Od3">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qoctIntroScreen2.0" translatesAutoresizingMaskIntoConstraints="NO" id="rg4-6B-Od3">
                                 <rect key="frame" x="0.0" y="51" width="375" height="456"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0K-Kp-4Cb">
@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNr-aW-c0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3148" y="1971.3643178410796"/>
+            <point key="canvasLocation" x="-3148" y="1970"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0CC-eE-MQ5">
@@ -366,11 +366,11 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="GotIt"/>
                                 <connections>
-                                    <segue destination="Vg7-ht-sba" kind="presentation" id="7CG-eE-hh2"/>
+                                    <segue destination="Vg7-ht-sba" kind="show" id="7CG-eE-hh2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IlustrationSoundOfSilence" translatesAutoresizingMaskIntoConstraints="NO" id="guI-mn-bk4">
-                                <rect key="frame" x="0.0" y="53" width="375" height="243"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="243"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound of Silence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-OQ-959">
                                 <rect key="frame" x="35" y="309.5" width="305" height="48"/>
@@ -396,11 +396,12 @@
                             <constraint firstItem="w5A-zL-ckt" firstAttribute="top" secondItem="OeO-OQ-959" secondAttribute="bottom" constant="23.5" id="Ljo-UM-pUz"/>
                             <constraint firstItem="OeO-OQ-959" firstAttribute="centerX" secondItem="yAX-s9-cQE" secondAttribute="centerX" id="PXZ-VG-FWm"/>
                             <constraint firstItem="aQC-Pw-Jhc" firstAttribute="centerX" secondItem="Hz8-co-8zB" secondAttribute="centerX" id="QXq-az-cPq"/>
-                            <constraint firstItem="guI-mn-bk4" firstAttribute="top" secondItem="Hz8-co-8zB" secondAttribute="top" constant="53" id="e4o-l5-3yY"/>
+                            <constraint firstItem="guI-mn-bk4" firstAttribute="top" secondItem="Hz8-co-8zB" secondAttribute="top" id="e4o-l5-3yY"/>
                             <constraint firstItem="w5A-zL-ckt" firstAttribute="leading" secondItem="Hz8-co-8zB" secondAttribute="leading" constant="24" id="gMs-KA-L74"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hz8-co-8zB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="keo-cx-yzJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaY-jk-uUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -460,7 +461,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" backgroundImage="x"/>
                                 <connections>
-                                    <segue destination="nbV-vp-OTY" kind="presentation" id="F2c-S2-xLN"/>
+                                    <action selector="closeButton:" destination="Vg7-ht-sba" eventType="touchUpInside" id="oc8-QT-WM7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -489,6 +490,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kTj-kB-SU3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1mK-RJ-LCV"/>
                     <connections>
                         <outlet property="exitOutlet" destination="F9W-hl-wgK" id="K7M-yX-VTg"/>
                         <outlet property="finishButton" destination="xHG-rV-8fn" id="Iqq-cp-7wp"/>
@@ -498,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4W-22-Rl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3082" y="2693"/>
+            <point key="canvasLocation" x="-3148" y="2693"/>
         </scene>
         <!--End Vc Of Sound Of Silence-->
         <scene sceneID="J8g-fn-Htz">
@@ -543,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRE-yo-GaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2233" y="2693"/>
+            <point key="canvasLocation" x="-2298" y="2693"/>
         </scene>
         <!--End Vc Of The Sentences Activity-->
         <scene sceneID="gKj-i0-BxX">
@@ -1056,7 +1058,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerX" secondItem="fLX-R9-NDt" secondAttribute="centerX" id="ENv-VG-1ED"/>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerY" secondItem="fLX-R9-NDt" secondAttribute="centerY" id="WBg-T7-One"/>
@@ -1196,15 +1198,15 @@
                                 <rect key="frame" x="0.0" y="-140" width="375" height="232"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-a5-Iwi">
-                                <rect key="frame" x="31" y="317.5" width="198" height="43"/>
+                                <rect key="frame" x="31" y="316.5" width="198" height="43"/>
                                 <state key="normal" backgroundImage="SoundOfSilence"/>
                                 <connections>
-                                    <segue destination="Bbu-XY-oVH" kind="presentation" id="O9j-pq-rsj"/>
+                                    <segue destination="Bbu-XY-oVH" kind="show" id="O9j-pq-rsj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sx-ZT-xy8">
-                                <rect key="frame" x="31" y="406" width="280" height="44"/>
-                                <state key="normal" backgroundImage="QuestionsOfCoupleTherapy"/>
+                                <rect key="frame" x="31" y="404" width="208" height="46"/>
+                                <state key="normal" backgroundImage="Activity2_2.0"/>
                                 <connections>
                                     <segue destination="yeT-ab-YN2" kind="show" id="iT8-ge-4yN"/>
                                 </connections>
@@ -1222,16 +1224,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-k5-QHA">
-                                <rect key="frame" x="-156.5" y="238.5" width="688" height="2"/>
+                                <rect key="frame" x="15.5" y="238.5" width="344" height="1"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-dt-tgb">
-                                <rect key="frame" x="17" y="258.5" width="102" height="29"/>
+                                <rect key="frame" x="17" y="257.5" width="102" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-Ob-B2P">
-                                <rect key="frame" x="-156.5" y="383" width="688" height="2"/>
+                                <rect key="frame" x="15.5" y="382" width="344" height="1"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1655,6 +1657,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Activity2_2.0" width="208" height="46"/>
         <image name="BackOfCard_Din2_NEW" width="335" height="475"/>
         <image name="Balao1_ShakeScreen" width="198" height="204"/>
         <image name="Balao2_ShakeScreen" width="198" height="204"/>
@@ -1673,7 +1676,6 @@
         <image name="NextButtonNEW" width="123" height="38"/>
         <image name="PlayNew" width="49" height="50"/>
         <image name="PopUpBackgrounf-1" width="300" height="300"/>
-        <image name="QuestionsOfCoupleTherapy" width="280" height="44"/>
         <image name="SoundOfSilence" width="198" height="43"/>
         <image name="StartButtonWelcome" width="329" height="51"/>
         <image name="StartNovo" width="123" height="38"/>
@@ -1688,13 +1690,10 @@
         <image name="finalScreenTheSentencesActivity1.0" width="305" height="359"/>
         <image name="groupOfHearts" width="375" height="430"/>
         <image name="illustrationFS" width="327" height="462"/>
-        <image name="qoctIntroScreen1.0" width="375" height="456"/>
+        <image name="qoctIntroScreen2.0" width="375" height="456"/>
         <image name="saveNew-1" width="140" height="44"/>
         <image name="shakeYourPhoneIlustration" width="269" height="331"/>
         <image name="timedDiscussionIlustration1.0" width="342" height="403"/>
         <image name="x" width="17" height="18"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="F2c-S2-xLN"/>
-    </inferredMetricsTieBreakers>
 </document>
