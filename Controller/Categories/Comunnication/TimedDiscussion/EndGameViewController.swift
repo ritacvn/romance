@@ -11,8 +11,14 @@ import UIKit
 
 class EndGameViewController: UIViewController {
     
+    @IBOutlet var dismissDiscussionOutlet: UIButton!
+    
     @IBAction func dismissDiscussion(_ sender: Any) {
        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    override func viewDidLoad() {
+       dismissDiscussionOutlet.setImage(UIImage(named: "FinishNew"), for: .normal)
     }
 //    override func viewWillDisappear(_ animated: Bool) {
 //        super.viewWillDisappear(animated)

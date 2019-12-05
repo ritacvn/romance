@@ -318,7 +318,7 @@
                                     <constraint firstAttribute="height" constant="38" id="cQu-NC-o5m"/>
                                     <constraint firstAttribute="width" constant="123" id="yRT-O4-KUw"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="Finish"/>
+                                <state key="normal" backgroundImage="FinishNew"/>
                                 <connections>
                                     <segue destination="nbV-vp-OTY" kind="show" id="0DR-Ry-B3t"/>
                                 </connections>
@@ -443,7 +443,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHG-rV-8fn">
                                 <rect key="frame" x="126" y="527" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Finish"/>
+                                <state key="normal" backgroundImage="FinishNew"/>
                                 <connections>
                                     <segue destination="gZb-rS-j6c" kind="show" id="k1D-ay-rLE"/>
                                 </connections>
@@ -503,7 +503,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlO-c2-l5x">
                                 <rect key="frame" x="126" y="506" width="123" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Finish"/>
+                                <state key="normal" backgroundImage="FinishNew"/>
                                 <connections>
                                     <segue destination="nbV-vp-OTY" kind="show" id="4B9-mm-jeK"/>
                                 </connections>
@@ -531,7 +531,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-2B-zDh">
                                 <rect key="frame" x="126" y="413" width="123" height="38"/>
-                                <state key="normal" image="Finish"/>
+                                <state key="normal" image="FinishNew"/>
                                 <connections>
                                     <action selector="dismissActivityTSA:" destination="3sy-bA-0Cd" eventType="touchUpInside" id="KuW-BP-vo8"/>
                                 </connections>
@@ -1334,7 +1334,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dz-Odf">
                                 <rect key="frame" x="126" y="520" width="123" height="38"/>
-                                <state key="normal" title="Sair" image="Finish"/>
+                                <state key="normal" title="Sair" image="FinishNew"/>
                                 <connections>
                                     <action selector="dismissFunnySpeech:" destination="igY-58-YhP" eventType="touchUpInside" id="Ufb-rg-AXu"/>
                                 </connections>
@@ -1578,11 +1578,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FinalScreenOfTimedDiscussion" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-1A-HS7">
-                                <rect key="frame" x="34" y="151" width="307" height="340"/>
+                                <rect key="frame" x="34" y="120" width="307" height="340"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-ev-Hga">
-                                <rect key="frame" x="126" y="555" width="123" height="38"/>
-                                <state key="normal" image="Finish"/>
+                                <rect key="frame" x="126" y="524" width="123" height="38"/>
+                                <state key="normal" image="FinishNew"/>
                                 <connections>
                                     <action selector="dismissDiscussion:" destination="O9T-ol-uEL" eventType="touchUpInside" id="zZw-hu-hdg"/>
                                 </connections>
@@ -1592,13 +1592,16 @@
                         <constraints>
                             <constraint firstItem="uq7-1A-HS7" firstAttribute="leading" secondItem="FTW-kv-keK" secondAttribute="leading" constant="34" id="Kx8-pl-bQ9"/>
                             <constraint firstItem="izZ-ev-Hga" firstAttribute="top" secondItem="uq7-1A-HS7" secondAttribute="bottom" constant="64" id="erm-Mo-0et"/>
-                            <constraint firstItem="uq7-1A-HS7" firstAttribute="top" secondItem="FTW-kv-keK" secondAttribute="top" constant="151" id="keU-Q4-V3k"/>
+                            <constraint firstItem="uq7-1A-HS7" firstAttribute="top" secondItem="FTW-kv-keK" secondAttribute="top" constant="120" id="keU-Q4-V3k"/>
                             <constraint firstItem="izZ-ev-Hga" firstAttribute="centerX" secondItem="uq7-1A-HS7" secondAttribute="centerX" id="kfg-mV-1Fz"/>
                             <constraint firstItem="FTW-kv-keK" firstAttribute="trailing" secondItem="uq7-1A-HS7" secondAttribute="trailing" constant="34" id="ki0-Ou-CFH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FTW-kv-keK"/>
                     </view>
                     <navigationItem key="navigationItem" id="cvr-6s-0gn"/>
+                    <connections>
+                        <outlet property="dismissDiscussionOutlet" destination="izZ-ev-Hga" id="f89-9L-vtX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ps-Zc-Mkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1632,7 +1635,7 @@
         <image name="Divisória-1" width="344" height="1"/>
         <image name="FinalScreenOfFunnySpeech" width="307" height="305"/>
         <image name="FinalScreenOfTimedDiscussion" width="305" height="340"/>
-        <image name="Finish" width="123" height="38"/>
+        <image name="FinishNew" width="123" height="38"/>
         <image name="GotIt" width="123" height="38"/>
         <image name="IllustrationINICIAL" width="419" height="750"/>
         <image name="IlustrationSoundOfSilence" width="375" height="243"/>
@@ -1666,6 +1669,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0DR-Ry-B3t"/>
+        <segue reference="4B9-mm-jeK"/>
     </inferredMetricsTieBreakers>
 </document>
