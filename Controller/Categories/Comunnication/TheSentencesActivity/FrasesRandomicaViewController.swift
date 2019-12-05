@@ -22,7 +22,7 @@ class FrasesRandomicaViewController: UIViewController {
     
     //time variables
     var timer = Timer()
-    var time: Int = 60
+    var time: Int = 5
     
     var fraseTema: String = ""
     
@@ -78,6 +78,7 @@ class FrasesRandomicaViewController: UIViewController {
         start2outlet.isEnabled = false
         start2outlet.isHidden = true
         
+        navigationController?.navigationBar.isHidden = false
     }
     
     
@@ -136,7 +137,7 @@ class FrasesRandomicaViewController: UIViewController {
             start2outlet.isHidden = false
             
             //randomizarFrase()
-            time = 60
+            time = 5
             
             print(endTurn)
             

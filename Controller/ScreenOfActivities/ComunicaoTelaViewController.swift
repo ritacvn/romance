@@ -20,7 +20,7 @@ class ComunicaoTelaViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-       
+        navigationController?.navigationBar.isHidden = false
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

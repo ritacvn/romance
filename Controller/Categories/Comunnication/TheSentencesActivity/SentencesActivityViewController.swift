@@ -13,7 +13,7 @@ class SentencesActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+         navigationController?.navigationBar.isHidden = false
     }
     
 }

@@ -22,6 +22,7 @@ class CategoriesTableViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         //self.blurEffect.isHidden = true
+        navigationController?.navigationBar.isHidden = false
     }
     
     @IBAction func editNameButton(_ sender: Any) {
