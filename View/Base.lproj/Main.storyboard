@@ -179,6 +179,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Ryn-du-jD0" firstAttribute="bottom" secondItem="X0K-Kp-4Cb" secondAttribute="bottom" constant="78" id="24h-Yq-V2o"/>
                             <constraint firstItem="X0K-Kp-4Cb" firstAttribute="leading" secondItem="Ryn-du-jD0" secondAttribute="leading" constant="127" id="TAP-6J-zzg"/>
                             <constraint firstItem="X0K-Kp-4Cb" firstAttribute="top" secondItem="rg4-6B-Od3" secondAttribute="bottom" constant="44" id="bX1-qT-Mig"/>
                             <constraint firstItem="rg4-6B-Od3" firstAttribute="centerX" secondItem="vmb-sw-Nl6" secondAttribute="centerX" id="dXh-5Q-W0M"/>
