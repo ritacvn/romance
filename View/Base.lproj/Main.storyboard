@@ -1002,7 +1002,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerX" secondItem="fLX-R9-NDt" secondAttribute="centerX" id="ENv-VG-1ED"/>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerY" secondItem="fLX-R9-NDt" secondAttribute="centerY" id="WBg-T7-One"/>
@@ -1142,14 +1142,14 @@
                                 <rect key="frame" x="0.0" y="-140" width="375" height="232"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-a5-Iwi">
-                                <rect key="frame" x="31" y="316.5" width="198" height="43"/>
+                                <rect key="frame" x="31" y="317.5" width="198" height="43"/>
                                 <state key="normal" backgroundImage="SoundOfSilence"/>
                                 <connections>
                                     <segue destination="Bbu-XY-oVH" kind="presentation" id="O9j-pq-rsj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sx-ZT-xy8">
-                                <rect key="frame" x="31" y="404" width="280" height="44"/>
+                                <rect key="frame" x="31" y="406" width="280" height="44"/>
                                 <state key="normal" backgroundImage="QuestionsOfCoupleTherapy"/>
                                 <connections>
                                     <segue destination="GSY-xC-upK" kind="presentation" id="tKh-9A-eIo"/>
@@ -1168,16 +1168,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-k5-QHA">
-                                <rect key="frame" x="15.5" y="238.5" width="344" height="1"/>
+                                <rect key="frame" x="-156.5" y="238.5" width="688" height="2"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-dt-tgb">
-                                <rect key="frame" x="17" y="257.5" width="102" height="29"/>
+                                <rect key="frame" x="17" y="258.5" width="102" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-Ob-B2P">
-                                <rect key="frame" x="15.5" y="382" width="344" height="1"/>
+                                <rect key="frame" x="-156.5" y="383" width="688" height="2"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1638,7 +1638,8 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0DR-Ry-B3t"/>
-        <segue reference="Sxa-Qw-5AC"/>
+        <segue reference="O9j-pq-rsj"/>
+        <segue reference="Pdo-Jn-Q3I"/>
+        <segue reference="ik5-FZ-rwT"/>
     </inferredMetricsTieBreakers>
 </document>
