@@ -36,7 +36,7 @@ class PlayScreenViewController: UIViewController {
         timeConverted = time
         timeLeft = TimeInterval(timeConverted!)
         endTime = Date().addingTimeInterval(timeLeft!)
-        //exitOutlet.isHidden = true
+        
         
         finishButton.isHidden = true
         
