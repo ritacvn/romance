@@ -3,7 +3,6 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -119,7 +118,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" name="DarkMode"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="u3b-c0-rFS" firstAttribute="leading" secondItem="o4y-xc-Zq0" secondAttribute="leading" constant="24" id="0ea-Jm-AaV"/>
                             <constraint firstItem="IsS-BZ-wWy" firstAttribute="top" secondItem="u3b-c0-rFS" secondAttribute="bottom" constant="24" id="10a-PG-cI1"/>
@@ -1694,9 +1693,6 @@
         <image name="shakeYourPhoneIlustration" width="269" height="331"/>
         <image name="timedDiscussionIlustration1.0" width="342" height="403"/>
         <image name="x" width="17" height="18"/>
-        <namedColor name="DarkMode">
-            <color red="0.28400000929832458" green="0.28400000929832458" blue="0.29199999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Pdo-Jn-Q3I"/>
