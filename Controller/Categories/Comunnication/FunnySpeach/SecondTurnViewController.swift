@@ -15,7 +15,7 @@ class SecondTurnViewController: UIViewController {
     let name2 = UserDefaults.standard.string(forKey: "initialName02")
 
     var timer = Timer()
-    var time = 10
+    var time = 5
     
     @IBOutlet weak var secondTimerLabel: UILabel!
     @IBOutlet weak var secondPartnerLabel: UILabel!
