@@ -167,10 +167,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qoctIntroScreen2.0" translatesAutoresizingMaskIntoConstraints="NO" id="rg4-6B-Od3">
-                                <rect key="frame" x="0.0" y="51" width="375" height="456"/>
+                                <rect key="frame" x="0.0" y="105.5" width="375" height="456"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0K-Kp-4Cb">
-                                <rect key="frame" x="127" y="551" width="123" height="38"/>
+                                <rect key="frame" x="127" y="573" width="123" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="YP5-sD-sg2"/>
+                                    <constraint firstAttribute="width" constant="123" id="rT4-Zt-lnR"/>
+                                </constraints>
                                 <state key="normal" image="GotIt"/>
                                 <connections>
                                     <segue destination="GSY-xC-upK" kind="show" id="tmv-p6-XIe"/>
@@ -179,11 +183,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ryn-du-jD0" firstAttribute="bottom" secondItem="X0K-Kp-4Cb" secondAttribute="bottom" constant="78" id="24h-Yq-V2o"/>
-                            <constraint firstItem="X0K-Kp-4Cb" firstAttribute="leading" secondItem="Ryn-du-jD0" secondAttribute="leading" constant="127" id="TAP-6J-zzg"/>
-                            <constraint firstItem="X0K-Kp-4Cb" firstAttribute="top" secondItem="rg4-6B-Od3" secondAttribute="bottom" constant="44" id="bX1-qT-Mig"/>
-                            <constraint firstItem="rg4-6B-Od3" firstAttribute="centerX" secondItem="vmb-sw-Nl6" secondAttribute="centerX" id="dXh-5Q-W0M"/>
-                            <constraint firstItem="rg4-6B-Od3" firstAttribute="top" secondItem="Ryn-du-jD0" secondAttribute="top" constant="51" id="uI4-8b-3hg"/>
+                            <constraint firstItem="X0K-Kp-4Cb" firstAttribute="leading" secondItem="Ryn-du-jD0" secondAttribute="leading" constant="127" id="0yS-tP-5dU"/>
+                            <constraint firstItem="rg4-6B-Od3" firstAttribute="centerY" secondItem="vmb-sw-Nl6" secondAttribute="centerY" id="AMq-Rp-ful"/>
+                            <constraint firstItem="rg4-6B-Od3" firstAttribute="centerX" secondItem="vmb-sw-Nl6" secondAttribute="centerX" id="Liy-cT-1rw"/>
+                            <constraint firstItem="Ryn-du-jD0" firstAttribute="trailing" secondItem="X0K-Kp-4Cb" secondAttribute="trailing" constant="125" id="Y9M-Ta-zYr"/>
+                            <constraint firstItem="Ryn-du-jD0" firstAttribute="bottom" secondItem="X0K-Kp-4Cb" secondAttribute="bottom" constant="56" id="aSm-Y8-Vvh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ryn-du-jD0"/>
                     </view>
@@ -965,11 +969,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fE8-UK-Fsn" customClass="EditNamesViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" alpha="0.69999999999999996" contentMode="scaleToFill" id="fLX-R9-NDt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3u-lq-jJr">
-                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <rect key="frame" x="57" y="218" width="300" height="300"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="PopUpBackgrounf-1" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-Bt-IbH">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
@@ -979,7 +983,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does you and your partner like to be called?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssT-Ek-N2B">
-                                        <rect key="frame" x="12" y="34" width="276" height="57.5"/>
+                                        <rect key="frame" x="12" y="34" width="276" height="57.333333333333343"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1059,7 +1063,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="placeholderTextColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerX" secondItem="fLX-R9-NDt" secondAttribute="centerX" id="ENv-VG-1ED"/>
                             <constraint firstItem="p3u-lq-jJr" firstAttribute="centerY" secondItem="fLX-R9-NDt" secondAttribute="centerY" id="WBg-T7-One"/>
@@ -1199,14 +1203,14 @@
                                 <rect key="frame" x="0.0" y="-140" width="375" height="232"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-a5-Iwi">
-                                <rect key="frame" x="31" y="316.5" width="198" height="43"/>
+                                <rect key="frame" x="31" y="317.5" width="198" height="43"/>
                                 <state key="normal" backgroundImage="SoundOfSilence"/>
                                 <connections>
                                     <segue destination="Bbu-XY-oVH" kind="show" id="O9j-pq-rsj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sx-ZT-xy8">
-                                <rect key="frame" x="31" y="404" width="208" height="46"/>
+                                <rect key="frame" x="31" y="406" width="208" height="46"/>
                                 <state key="normal" backgroundImage="Activity2_2.0"/>
                                 <connections>
                                     <segue destination="yeT-ab-YN2" kind="show" id="iT8-ge-4yN"/>
@@ -1225,16 +1229,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-k5-QHA">
-                                <rect key="frame" x="15.5" y="238.5" width="344" height="1"/>
+                                <rect key="frame" x="-156.5" y="238.5" width="688" height="2"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-dt-tgb">
-                                <rect key="frame" x="17" y="257.5" width="102" height="29"/>
+                                <rect key="frame" x="17" y="258.5" width="102" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-Ob-B2P">
-                                <rect key="frame" x="15.5" y="382" width="344" height="1"/>
+                                <rect key="frame" x="-156.5" y="383" width="688" height="2"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
