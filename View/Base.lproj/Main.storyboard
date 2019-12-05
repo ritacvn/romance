@@ -74,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKb-hc-yfP">
-                                <rect key="frame" x="159" y="454" width="65" height="50"/>
+                                <rect key="frame" x="159" y="454" width="65" height="100"/>
                                 <state key="normal" image="PlayNew"/>
                                 <connections>
                                     <action selector="startActivity2:" destination="9hG-LH-gax" eventType="touchUpInside" id="WcV-dE-kcd"/>
@@ -106,13 +106,13 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coracaodaDireita_Comunicacao" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-Lt-39P">
-                                <rect key="frame" x="185" y="540" width="254" height="246"/>
+                                <rect key="frame" x="185" y="540" width="508" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="246" id="fe8-gk-HY2"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsS-BZ-wWy">
-                                <rect key="frame" x="159" y="454" width="65" height="50"/>
+                                <rect key="frame" x="159" y="454" width="65" height="100"/>
                                 <state key="normal" image="PlayNew"/>
                                 <connections>
                                     <action selector="startActivity:" destination="9hG-LH-gax" eventType="touchUpInside" id="EKB-TZ-4oR"/>
@@ -1062,7 +1062,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
-                                <rect key="frame" x="17" y="110" width="294" height="48"/>
+                                <rect key="frame" x="17" y="110" width="293.5" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Comunnication  ">
                                         <attributes>
@@ -1075,14 +1075,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="A process by which information is exchanged between individuals through a common system of symbols, signs, or behavior." adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
-                                <rect key="frame" x="17" y="158" width="341" height="73.5"/>
+                                <rect key="frame" x="17" y="157" width="341" height="73.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-QH-ec4">
-                                <rect key="frame" x="15.5" y="239.5" width="344" height="1"/>
+                                <rect key="frame" x="15.5" y="238.5" width="344" height="1"/>
                                 <color key="tintColor" red="0.76862745098039209" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="344" id="N3A-oR-fS3"/>
@@ -1090,13 +1090,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-0k-Bze">
-                                <rect key="frame" x="14" y="250.5" width="347" height="29"/>
+                                <rect key="frame" x="14" y="249.5" width="347" height="28"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="auL-dh-9IZ">
-                                <rect key="frame" x="0.0" y="289.5" width="375" height="377.5"/>
+                                <rect key="frame" x="0.0" y="287.5" width="375" height="379.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="activities" rowHeight="111" id="CWz-8i-05L" customClass="ActivitiesCommunicationTableViewCell" customModule="romance" customModuleProvider="target">
@@ -1107,7 +1107,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atv3_c" translatesAutoresizingMaskIntoConstraints="NO" id="JyV-cY-uul">
-                                                    <rect key="frame" x="23" y="34" width="237.00000000000006" height="43"/>
+                                                    <rect key="frame" x="23" y="12.5" width="474" height="86"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -1435,35 +1435,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-9B-ZdX" userLabel="clockLabel">
-                                <rect key="frame" x="291" y="32" width="68" height="29"/>
+                                <rect key="frame" x="298.5" y="32" width="60.5" height="28"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-DX-lAM">
-                                <rect key="frame" x="106" y="269" width="163" height="129"/>
+                                <rect key="frame" x="97" y="269" width="181.5" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The theme is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-We-peH">
-                                        <rect key="frame" x="0.0" y="0.0" width="163" height="29"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181.5" height="28"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Piece" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-bj-lCj">
-                                        <rect key="frame" x="0.0" y="37" width="163" height="38.5"/>
+                                        <rect key="frame" x="0.0" y="36" width="181.5" height="37.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu6-7Y-GOf">
-                                        <rect key="frame" x="53.5" y="80.5" width="56" height="53.5"/>
+                                        <rect key="frame" x="62.5" y="78.5" width="56" height="53.5"/>
                                         <state key="normal" image="PlayNew"/>
                                         <connections>
                                             <action selector="startButton2:" destination="QRi-ft-NKl" eventType="touchUpInside" id="QcV-tF-gEF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-c2-3Wu">
-                                        <rect key="frame" x="53.5" y="80.5" width="56" height="53.5"/>
+                                        <rect key="frame" x="62.5" y="78.5" width="56" height="53.5"/>
                                         <state key="normal" image="PlayNew"/>
                                         <connections>
                                             <action selector="startButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="Xjf-0A-VGy"/>
@@ -1512,7 +1512,7 @@
                                 <rect key="frame" x="164" y="447" width="195" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balao2_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-QF-sxT">
-                                        <rect key="frame" x="-1.5" y="-2" width="198" height="204"/>
+                                        <rect key="frame" x="-100.5" y="-104" width="396" height="408"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome02!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-0k-8DP">
                                         <rect key="frame" x="0.0" y="0.0" width="195" height="200"/>
