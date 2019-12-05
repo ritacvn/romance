@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="btx-Kl-MNS">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -27,18 +27,18 @@
             <objects>
                 <viewController storyboardIdentifier="sentences" id="Qm2-xf-DaS" customClass="SentencesActivityViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d2j-RB-uXQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkp-KO-EpV">
-                                <rect key="frame" x="145.66666666666666" y="760" width="122.99999999999997" height="38"/>
+                                <rect key="frame" x="126" y="565" width="123" height="38"/>
                                 <state key="normal" backgroundImage="StartNovo"/>
                                 <connections>
                                     <segue destination="9hG-LH-gax" kind="show" id="eQx-ph-N5b"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IlustrationTSA1.0" translatesAutoresizingMaskIntoConstraints="NO" id="fT3-4y-f3W">
-                                <rect key="frame" x="36" y="262" width="342" height="454"/>
+                                <rect key="frame" x="16.5" y="67" width="342" height="454"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -60,11 +60,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="9hG-LH-gax" customClass="FrasesRandomicaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7sT-K7-Lpb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0i-l1-UM5" userLabel="SecondLabel">
-                                <rect key="frame" x="299" y="14" width="103" height="28"/>
+                                <rect key="frame" x="295" y="-30" width="72" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="SV8-sG-di1"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="fY0-Of-PYV"/>
@@ -74,14 +74,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKb-hc-yfP">
-                                <rect key="frame" x="159" y="454" width="104" height="50"/>
+                                <rect key="frame" x="159" y="454" width="65" height="50"/>
                                 <state key="normal" image="PlayNew"/>
                                 <connections>
                                     <action selector="startActivity2:" destination="9hG-LH-gax" eventType="touchUpInside" id="WcV-dE-kcd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's Your turn Eliza!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xt-9u-gf8">
-                                <rect key="frame" x="61.666666666666657" y="175" width="299" height="78"/>
+                                <rect key="frame" x="57.5" y="175" width="268" height="78"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="Kgk-uA-KVO"/>
                                 </constraints>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3b-c0-rFS">
-                                <rect key="frame" x="24" y="252" width="372" height="178"/>
+                                <rect key="frame" x="24" y="252" width="333" height="178"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="178" id="p6i-Ct-oIh"/>
                                 </constraints>
@@ -99,20 +99,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coracaodaEsquerda_Comunicacao" translatesAutoresizingMaskIntoConstraints="NO" id="k2L-gn-3OS">
-                                <rect key="frame" x="-25" y="-124" width="254" height="246"/>
+                                <rect key="frame" x="-29" y="-124" width="254" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="246" id="QNU-Ck-iqO"/>
                                     <constraint firstAttribute="width" constant="254" id="waE-GV-UiS"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coracaodaDireita_Comunicacao" translatesAutoresizingMaskIntoConstraints="NO" id="lUr-Lt-39P">
-                                <rect key="frame" x="185" y="735" width="254" height="246"/>
+                                <rect key="frame" x="185" y="540" width="254" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="246" id="fe8-gk-HY2"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsS-BZ-wWy">
-                                <rect key="frame" x="159" y="454" width="104" height="50"/>
+                                <rect key="frame" x="159" y="454" width="65" height="50"/>
                                 <state key="normal" image="PlayNew"/>
                                 <connections>
                                     <action selector="startActivity:" destination="9hG-LH-gax" eventType="touchUpInside" id="EKB-TZ-4oR"/>
@@ -164,7 +164,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="yeT-ab-YN2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vmb-sw-Nl6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="qoctIntroScreen1.0" translatesAutoresizingMaskIntoConstraints="NO" id="rg4-6B-Od3">
@@ -194,11 +194,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="GSY-xC-upK" customClass="QOCTActivityScreenViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuD-xi-rbg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FK5-u7-I0J">
-                                <rect key="frame" x="242" y="60" width="117" height="43"/>
+                                <rect key="frame" x="242" y="16" width="117" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="117" id="LN5-ZI-82g"/>
                                     <constraint firstAttribute="height" constant="43" id="h0E-h0-m5E"/>
@@ -208,26 +208,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDI-xN-M6M">
-                                <rect key="frame" x="126" y="536" width="123" height="38"/>
+                                <rect key="frame" x="126" y="416.5" width="123" height="38"/>
                                 <state key="normal" backgroundImage="StartNovo"/>
                                 <connections>
                                     <action selector="startButton02:" destination="GSY-xC-upK" eventType="touchUpInside" id="lgk-U4-CC4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meow fat baby cat best buddy little guy yet hell is other people for yowling nonstop?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9S-VT-X0m">
-                                <rect key="frame" x="16" y="410" width="343" height="86"/>
+                                <rect key="frame" x="16" y="290.5" width="343" height="86"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eliza's turn" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JN-Ln-DXe">
-                                <rect key="frame" x="16" y="191" width="343" height="199"/>
+                                <rect key="frame" x="16" y="191" width="343" height="79.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRr-u9-jjV">
-                                <rect key="frame" x="126" y="536" width="123" height="38"/>
+                                <rect key="frame" x="126" y="416.5" width="123" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="123" id="0DU-Vy-Ehn"/>
                                     <constraint firstAttribute="height" constant="38" id="C8o-eT-uS0"/>
@@ -245,7 +245,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coracaDaDireita_Familiarity" translatesAutoresizingMaskIntoConstraints="NO" id="YkT-Zm-c0O">
-                                <rect key="frame" x="185" y="769" width="254" height="246"/>
+                                <rect key="frame" x="185" y="540" width="254" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="XV1-gF-UKS"/>
                                     <constraint firstAttribute="height" constant="246" id="qjh-1R-CYo"/>
@@ -298,30 +298,29 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="RYl-uv-IkF" customClass="EndVcOfQOCT" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X2k-VO-sLz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="TwoHearts" translatesAutoresizingMaskIntoConstraints="NO" id="6q2-st-FCU">
-                                <rect key="frame" x="41" y="174" width="672.66666666666663" height="230.66666666666663"/>
+                                <rect key="frame" x="41" y="130" width="293" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="gH8-3D-kG4"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-vd-vYi">
-                                <rect key="frame" x="255" y="428.66666666666669" width="245" height="39"/>
+                                <rect key="frame" x="65" y="314" width="245" height="39"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations! We hope you both have liked it, try to practice this with your partner every time is possible." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6x-1O-JH6">
-                                <rect key="frame" x="24" y="491.66666666666669" width="706.66666666666663" height="142.33333333333331"/>
+                                <rect key="frame" x="24" y="381.5" width="327" height="57.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCp-ap-3Jr">
-                                <rect key="frame" x="126.00000000000003" y="694" width="502.66666666666674" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="cQu-NC-o5m"/>
-                                    <constraint firstAttribute="width" constant="123" id="yRT-O4-KUw"/>
-                                </constraints>
+                                <rect key="frame" x="126" y="499" width="123" height="38"/>
                                 <state key="normal" backgroundImage="FinishNew"/>
                                 <connections>
                                     <action selector="dismissQOCTAction:" destination="RYl-uv-IkF" eventType="touchUpInside" id="NTp-CJ-tsI"/>
@@ -330,20 +329,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="scJ-vd-vYi" firstAttribute="top" secondItem="6q2-st-FCU" secondAttribute="bottom" constant="24" id="0fL-Mz-dRT"/>
-                            <constraint firstItem="PCp-ap-3Jr" firstAttribute="top" secondItem="P6x-1O-JH6" secondAttribute="bottom" constant="60" id="5zA-Kq-vOn"/>
-                            <constraint firstItem="M6s-zh-9pB" firstAttribute="bottom" secondItem="PCp-ap-3Jr" secondAttribute="bottom" constant="130" id="6Vu-9T-8zx"/>
-                            <constraint firstItem="scJ-vd-vYi" firstAttribute="centerY" secondItem="X2k-VO-sLz" secondAttribute="centerY" id="Aad-Am-SMg"/>
-                            <constraint firstItem="6q2-st-FCU" firstAttribute="top" secondItem="M6s-zh-9pB" secondAttribute="top" constant="130" id="BHx-n3-Q5t"/>
-                            <constraint firstItem="M6s-zh-9pB" firstAttribute="trailing" secondItem="PCp-ap-3Jr" secondAttribute="trailing" constant="126" id="RfL-KQ-rId"/>
-                            <constraint firstItem="scJ-vd-vYi" firstAttribute="centerX" secondItem="X2k-VO-sLz" secondAttribute="centerX" id="Wic-8S-1Bc"/>
-                            <constraint firstAttribute="trailing" secondItem="P6x-1O-JH6" secondAttribute="trailing" constant="24" id="jBb-st-kh1"/>
-                            <constraint firstItem="P6x-1O-JH6" firstAttribute="leading" secondItem="X2k-VO-sLz" secondAttribute="leading" constant="24" id="och-pa-yA8"/>
-                            <constraint firstItem="PCp-ap-3Jr" firstAttribute="leading" secondItem="M6s-zh-9pB" secondAttribute="leading" constant="126" id="vJ4-EO-amx"/>
-                            <constraint firstItem="6q2-st-FCU" firstAttribute="leading" secondItem="M6s-zh-9pB" secondAttribute="leading" constant="41" id="vJv-pM-Wg0"/>
-                            <constraint firstItem="P6x-1O-JH6" firstAttribute="centerX" secondItem="X2k-VO-sLz" secondAttribute="centerX" id="xFX-FW-2rL"/>
-                            <constraint firstItem="M6s-zh-9pB" firstAttribute="trailing" secondItem="6q2-st-FCU" secondAttribute="trailing" constant="41" id="z4M-CZ-hdO"/>
-                            <constraint firstItem="P6x-1O-JH6" firstAttribute="top" secondItem="scJ-vd-vYi" secondAttribute="bottom" constant="24" id="zJM-v3-HSO"/>
+                            <constraint firstItem="P6x-1O-JH6" firstAttribute="leading" secondItem="M6s-zh-9pB" secondAttribute="leading" constant="24" id="3oU-SH-jq5"/>
+                            <constraint firstItem="6q2-st-FCU" firstAttribute="centerX" secondItem="P6x-1O-JH6" secondAttribute="centerX" id="Hdr-ps-4xd"/>
+                            <constraint firstItem="6q2-st-FCU" firstAttribute="top" secondItem="M6s-zh-9pB" secondAttribute="top" constant="130" id="RVw-uD-FhT"/>
+                            <constraint firstItem="P6x-1O-JH6" firstAttribute="top" secondItem="scJ-vd-vYi" secondAttribute="bottom" constant="28.5" id="UlC-9I-DoF"/>
+                            <constraint firstItem="scJ-vd-vYi" firstAttribute="top" secondItem="6q2-st-FCU" secondAttribute="bottom" constant="24" id="WHL-yx-YIZ"/>
+                            <constraint firstItem="6q2-st-FCU" firstAttribute="centerX" secondItem="X2k-VO-sLz" secondAttribute="centerX" id="YVv-l1-OcM"/>
+                            <constraint firstItem="PCp-ap-3Jr" firstAttribute="top" secondItem="P6x-1O-JH6" secondAttribute="bottom" constant="60" id="hbS-8C-qHs"/>
+                            <constraint firstItem="6q2-st-FCU" firstAttribute="centerX" secondItem="PCp-ap-3Jr" secondAttribute="centerX" id="pGk-se-YEd"/>
+                            <constraint firstItem="6q2-st-FCU" firstAttribute="centerX" secondItem="scJ-vd-vYi" secondAttribute="centerX" id="xoN-ao-dmP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M6s-zh-9pB"/>
                     </view>
@@ -358,11 +352,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Bbu-XY-oVH" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yAX-s9-cQE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQC-Pw-Jhc">
-                                <rect key="frame" x="145.66666666666666" y="641.66666666666663" width="122.99999999999997" height="38"/>
+                                <rect key="frame" x="126" y="527" width="123" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="C2h-X2-gVO"/>
                                     <constraint firstAttribute="width" constant="123" id="R56-gk-CTT"/>
@@ -373,16 +367,16 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IlustrationSoundOfSilence" translatesAutoresizingMaskIntoConstraints="NO" id="guI-mn-bk4">
-                                <rect key="frame" x="0.0" y="97" width="414" height="243"/>
+                                <rect key="frame" x="0.0" y="53" width="375" height="243"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sound of Silence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-OQ-959">
-                                <rect key="frame" x="54.666666666666657" y="424" width="305" height="48"/>
+                                <rect key="frame" x="35" y="309.5" width="305" height="48"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="40"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5A-zL-ckt">
-                                <rect key="frame" x="24" y="495.66666666666669" width="366" height="76.666666666666686"/>
+                                <rect key="frame" x="24" y="381" width="327" height="76.5"/>
                                 <string key="text">In a relationship we sometimes talk too much and forget to enjoy each other’s company. Now it’s time to do it. Enjoy your partner’s company company, listening to the sound of silence.</string>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -414,24 +408,24 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Vg7-ht-sba" customClass="PlayScreenViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAq-pE-HC9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxK-Ew-DUi">
-                                <rect key="frame" x="166.66666666666666" y="323.66666666666669" width="42" height="215.00000000000006"/>
+                                <rect key="frame" x="166.5" y="323.5" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fT-Cb-ZqE">
-                                <rect key="frame" x="126" y="722" width="123" height="38"/>
+                                <rect key="frame" x="126" y="527" width="123" height="38"/>
                                 <state key="normal" image="StartNovo"/>
                                 <connections>
                                     <action selector="playTime:" destination="Vg7-ht-sba" eventType="touchUpInside" id="TwC-ua-Yd6"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="coracaDaDireita_Familiarity" translatesAutoresizingMaskIntoConstraints="NO" id="XBA-Mp-Kel">
-                                <rect key="frame" x="185" y="735" width="254" height="246"/>
+                                <rect key="frame" x="185" y="540" width="254" height="246"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="246" id="7Sa-9U-Jvc"/>
                                     <constraint firstAttribute="width" constant="254" id="CLR-7Z-abW"/>
@@ -445,7 +439,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHG-rV-8fn">
-                                <rect key="frame" x="126" y="722" width="123" height="38"/>
+                                <rect key="frame" x="126" y="527" width="123" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="803-Km-XV7"/>
                                     <constraint firstAttribute="width" constant="123" id="KzU-11-7Ky"/>
@@ -456,7 +450,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9W-hl-wgK">
-                                <rect key="frame" x="330" y="64" width="29" height="29"/>
+                                <rect key="frame" x="330" y="20" width="29" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="F9W-hl-wgK" secondAttribute="height" multiplier="1:1" id="DPI-8z-meZ"/>
                                 </constraints>
@@ -508,11 +502,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="gZb-rS-j6c" customClass="EndVcOfSoundOfSilence" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pa7-gn-hI8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlO-c2-l5x">
-                                <rect key="frame" x="126" y="550" width="123" height="38"/>
+                                <rect key="frame" x="126" y="506" width="123" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="123" id="IXS-oB-zoZ"/>
                                     <constraint firstAttribute="height" constant="38" id="yaA-L3-FzF"/>
@@ -523,7 +517,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="EndScreenOfQOCT" translatesAutoresizingMaskIntoConstraints="NO" id="xaW-y8-Biv">
-                                <rect key="frame" x="32" y="166" width="303" height="321"/>
+                                <rect key="frame" x="32" y="122" width="303" height="321"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="321" id="OwL-tJ-ovc"/>
                                     <constraint firstAttribute="width" constant="303" id="oL8-31-Huk"/>
@@ -553,14 +547,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="3sy-bA-0Cd" customClass="EndVcOfTheSentencesActivity" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5m-Wb-Cfl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="finalScreenTheSentencesActivity1.0" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-dO-YSe">
-                                <rect key="frame" x="34" y="34" width="346" height="359"/>
+                                <rect key="frame" x="34" y="-10" width="307" height="359"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-2B-zDh">
-                                <rect key="frame" x="145.66666666666666" y="457" width="122.99999999999997" height="38"/>
+                                <rect key="frame" x="126" y="413" width="123" height="38"/>
                                 <state key="normal" image="FinishNew"/>
                                 <connections>
                                     <action selector="dismissActivityTSA:" destination="3sy-bA-0Cd" eventType="touchUpInside" id="KuW-BP-vo8"/>
@@ -588,14 +582,14 @@
             <objects>
                 <viewController storyboardIdentifier="nameScreen" modalPresentationStyle="fullScreen" id="tdu-aD-04F" customClass="InicialDinamica2ViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eYH-CS-PEf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="IllustrationINICIAL" translatesAutoresizingMaskIntoConstraints="NO" id="Oth-Qg-5ek">
-                                <rect key="frame" x="-22" y="-41.666666666666686" width="458" height="979.33333333333348"/>
+                                <rect key="frame" x="-22" y="-41.5" width="419" height="750"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkc-7z-yQa">
-                                <rect key="frame" x="41" y="413" width="332" height="378"/>
+                                <rect key="frame" x="21.5" y="218" width="332" height="378"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Partner Two" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EbD-oV-to2" customClass="AkiraTextField" customModule="TextFieldEffects">
                                         <rect key="frame" x="0.0" y="223" width="329" height="70"/>
@@ -624,7 +618,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovs-TB-6xa">
-                                        <rect key="frame" x="1.6666666666666572" y="315" width="329" height="51"/>
+                                        <rect key="frame" x="1.5" y="315" width="329" height="51"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="329" id="XYY-S7-cko"/>
                                             <constraint firstAttribute="height" constant="51" id="hiP-b7-FR7"/>
@@ -712,11 +706,11 @@
             <objects>
                 <viewController storyboardIdentifier="cardVC" modalPresentationStyle="fullScreen" id="8Oz-aI-xQ2" customClass="CardTelaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7zL-Uv-i8J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtQ-yI-n1N">
-                                <rect key="frame" x="123" y="691.66666666666663" width="168" height="56"/>
+                                <rect key="frame" x="103.5" y="534.5" width="168" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="chM-yP-4yQ"/>
                                     <constraint firstAttribute="height" constant="56" id="wx4-Ih-ucZ"/>
@@ -728,13 +722,13 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhP-NM-5No">
-                                <rect key="frame" x="0.0" y="44" width="414" height="613.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackOfCard_Din2_NEW" translatesAutoresizingMaskIntoConstraints="NO" id="Z0C-or-KbT">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-zX-jzg">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                                         <connections>
                                             <action selector="flipButton:" destination="8Oz-aI-xQ2" eventType="touchUpInside" id="dlF-RY-6o5"/>
                                         </connections>
@@ -780,23 +774,23 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="3dl-ei-8fK" customClass="SecondTurnViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JsR-5O-oEv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxq-Tr-uGF">
-                                <rect key="frame" x="357" y="44" width="41" height="38.666666666666657"/>
+                                <rect key="frame" x="318" y="0.0" width="41" height="38.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's your turn Eliza!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-FL-05s">
-                                <rect key="frame" x="16" y="117.66666666666667" width="265.66666666666669" height="38.333333333333329"/>
+                                <rect key="frame" x="16" y="73.5" width="265.5" height="38.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="32"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="groupOfHearts" translatesAutoresizingMaskIntoConstraints="NO" id="NT0-5p-zQd">
-                                <rect key="frame" x="0.0" y="432" width="414" height="430"/>
+                                <rect key="frame" x="0.0" y="237" width="375" height="430"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -827,17 +821,17 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="OXd-Kp-hq0" customClass="SecondCardTelaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F8X-va-m4Z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fc0-k1-M0C">
-                                <rect key="frame" x="0.0" y="44" width="414" height="613.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BackOfCard_Din2_NEW" translatesAutoresizingMaskIntoConstraints="NO" id="ZR4-rm-NvU">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuZ-00-AoC">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500.5"/>
                                         <connections>
                                             <action selector="flipButton:" destination="OXd-Kp-hq0" eventType="touchUpInside" id="eof-Xp-BzF"/>
                                         </connections>
@@ -856,7 +850,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ4-an-40P">
-                                <rect key="frame" x="123" y="691.66666666666663" width="168" height="56"/>
+                                <rect key="frame" x="103.5" y="534.5" width="168" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="Si5-0G-hS6"/>
                                     <constraint firstAttribute="height" constant="56" id="dkc-mb-WBV"/>
@@ -893,22 +887,22 @@
             <objects>
                 <viewController storyboardIdentifier="categories" modalPresentationStyle="fullScreen" id="w5A-aS-m2f" customClass="CategoriesTableViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="34m-dV-S2x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-9e-dGX">
-                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="591"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCellId" rowHeight="388" id="3Uz-mw-uc9" customClass="CategoriaTableViewCell" customModule="romance" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="388"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="388"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Uz-mw-uc9" id="O4r-07-1bH">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="388"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="388"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lii-Se-VgW">
-                                                    <rect key="frame" x="16" y="19" width="382" height="369"/>
+                                                    <rect key="frame" x="16" y="19" width="343" height="369"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -941,7 +935,7 @@
                     <navigationItem key="navigationItem" title="Categories" id="wdQ-AK-HzA">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="4H3-DM-Vpx">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Rzu-Rx-9MQ">
-                                <rect key="frame" x="344" y="6" width="50" height="44"/>
+                                <rect key="frame" x="309" y="6" width="50" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Button"/>
                                 <connections>
@@ -965,11 +959,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fE8-UK-Fsn" customClass="EditNamesViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" alpha="0.69999999999999996" contentMode="scaleToFill" id="fLX-R9-NDt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3u-lq-jJr">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="PopUpBackgrounf-1" translatesAutoresizingMaskIntoConstraints="NO" id="pCT-Bt-IbH">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
@@ -979,7 +973,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does you and your partner like to be called?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssT-Ek-N2B">
-                                        <rect key="frame" x="12" y="34" width="276" height="57.333333333333343"/>
+                                        <rect key="frame" x="12" y="34" width="276" height="57.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1082,17 +1076,17 @@
             <objects>
                 <viewController storyboardIdentifier="comunicacao" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lBF-HX-uKY" customClass="ComunicaoTelaViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ge3-LD-W8s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavBackground_Com" translatesAutoresizingMaskIntoConstraints="NO" id="rb6-vk-YG9">
-                                <rect key="frame" x="0.0" y="-96" width="414" height="240"/>
+                                <rect key="frame" x="0.0" y="-140" width="375" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="awt-H6-uau"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELK-S7-N0Z">
-                                <rect key="frame" x="17" y="154" width="294" height="48"/>
+                                <rect key="frame" x="17" y="110" width="294" height="48"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Comunnication  ">
                                         <attributes>
@@ -1105,14 +1099,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" text="A process by which information is exchanged between individuals through a common system of symbols, signs, or behavior." adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="caw-5a-zJJ">
-                                <rect key="frame" x="17" y="202" width="380" height="73.333333333333314"/>
+                                <rect key="frame" x="17" y="158" width="341" height="73.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-QH-ec4">
-                                <rect key="frame" x="35" y="283.33333333333331" width="344" height="1"/>
+                                <rect key="frame" x="15.5" y="239.5" width="344" height="1"/>
                                 <color key="tintColor" red="0.76862745098039209" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="344" id="N3A-oR-fS3"/>
@@ -1120,20 +1114,20 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-0k-Bze">
-                                <rect key="frame" x="14" y="294.33333333333331" width="386" height="29"/>
+                                <rect key="frame" x="14" y="250.5" width="347" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="auL-dh-9IZ">
-                                <rect key="frame" x="0.0" y="333.33333333333331" width="414" height="528.66666666666674"/>
+                                <rect key="frame" x="0.0" y="289.5" width="375" height="377.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="activities" rowHeight="111" id="CWz-8i-05L" customClass="ActivitiesCommunicationTableViewCell" customModule="romance" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="111"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CWz-8i-05L" id="1vb-qS-wFm">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="atv3_c" translatesAutoresizingMaskIntoConstraints="NO" id="JyV-cY-uul">
@@ -1192,49 +1186,49 @@
             <objects>
                 <viewController storyboardIdentifier="conhecimento" modalPresentationStyle="fullScreen" id="nbV-vp-OTY" customClass="FamiliarityViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SEa-DF-sX4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="NavBackground_Fam" translatesAutoresizingMaskIntoConstraints="NO" id="ymx-Ct-g9m">
-                                <rect key="frame" x="0.0" y="-96" width="414" height="232"/>
+                                <rect key="frame" x="0.0" y="-140" width="375" height="232"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-a5-Iwi">
-                                <rect key="frame" x="31" y="342.33333333333331" width="198" height="43"/>
+                                <rect key="frame" x="31" y="317.5" width="198" height="43"/>
                                 <state key="normal" backgroundImage="SoundOfSilence"/>
                                 <connections>
                                     <segue destination="Bbu-XY-oVH" kind="presentation" id="O9j-pq-rsj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sx-ZT-xy8">
-                                <rect key="frame" x="31" y="431" width="280" height="44"/>
+                                <rect key="frame" x="31" y="406" width="280" height="44"/>
                                 <state key="normal" backgroundImage="QuestionsOfCoupleTherapy"/>
                                 <connections>
                                     <segue destination="yeT-ab-YN2" kind="show" id="iT8-ge-4yN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close acquaintance with or knowledge of something." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRg-tl-Qje">
-                                <rect key="frame" x="16" y="216" width="382" height="19.333333333333343"/>
+                                <rect key="frame" x="16" y="172" width="343" height="38.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Familiarity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOW-WN-heW">
-                                <rect key="frame" x="16" y="164" width="188.66666666666666" height="48"/>
+                                <rect key="frame" x="16" y="120" width="188.5" height="48"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="8DA-k5-QHA">
-                                <rect key="frame" x="-137" y="263.33333333333331" width="688" height="2"/>
+                                <rect key="frame" x="-156.5" y="238.5" width="688" height="2"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-dt-tgb">
-                                <rect key="frame" x="17" y="283.33333333333331" width="102" height="29"/>
+                                <rect key="frame" x="17" y="258.5" width="102" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Divisória-1" translatesAutoresizingMaskIntoConstraints="NO" id="b9W-Ob-B2P">
-                                <rect key="frame" x="-137" y="408" width="688" height="2"/>
+                                <rect key="frame" x="-156.5" y="383" width="688" height="2"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1271,14 +1265,14 @@
             <objects>
                 <viewController storyboardIdentifier="funnySpeech" id="pWk-We-tug" customClass="FunnySpeachViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqJ-Rh-rnP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="illustrationFS" translatesAutoresizingMaskIntoConstraints="NO" id="mbj-w2-tDN">
-                                <rect key="frame" x="43.666666666666657" y="254" width="327" height="462"/>
+                                <rect key="frame" x="24" y="59" width="327" height="462"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2j-S2-F5w">
-                                <rect key="frame" x="145.66666666666666" y="760" width="122.99999999999997" height="38"/>
+                                <rect key="frame" x="126" y="565" width="123" height="38"/>
                                 <state key="normal" backgroundImage="StartNovo"/>
                                 <connections>
                                     <segue destination="bG2-3S-PJu" kind="show" id="YmB-zR-9b6"/>
@@ -1304,20 +1298,20 @@
             <objects>
                 <viewController storyboardIdentifier="Main" modalPresentationStyle="fullScreen" id="bG2-3S-PJu" customClass="TurnViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YPH-kD-Haa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="It's your turn Rita!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K71-Ro-idg">
-                                <rect key="frame" x="15.999999999999986" y="117.99999999999999" width="245.66666666666663" height="38.333333333333329"/>
+                                <rect key="frame" x="16" y="74" width="246" height="38.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="32"/>
                                 <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="groupOfHearts" translatesAutoresizingMaskIntoConstraints="NO" id="np4-Gj-Y8C">
-                                <rect key="frame" x="0.0" y="432" width="414" height="430"/>
+                                <rect key="frame" x="0.0" y="237" width="375" height="430"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPt-ea-2B7">
-                                <rect key="frame" x="351" y="44" width="41" height="39"/>
+                                <rect key="frame" x="312" y="0.0" width="41" height="39"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="EO1-Hr-8RR"/>
@@ -1356,14 +1350,14 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="igY-58-YhP" customClass="EndActivityTwoViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BHb-wp-12j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FinalScreenOfFunnySpeech" translatesAutoresizingMaskIntoConstraints="NO" id="Koe-pq-PpK">
-                                <rect key="frame" x="34" y="195" width="346" height="305"/>
+                                <rect key="frame" x="34" y="151" width="307" height="305"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJu-Dz-Odf">
-                                <rect key="frame" x="126" y="564" width="162" height="38"/>
+                                <rect key="frame" x="126" y="520" width="123" height="38"/>
                                 <state key="normal" title="Sair" image="FinishNew"/>
                                 <connections>
                                     <action selector="dismissFunnySpeech:" destination="igY-58-YhP" eventType="touchUpInside" id="Ufb-rg-AXu"/>
@@ -1392,18 +1386,18 @@
             <objects>
                 <viewController storyboardIdentifier="timedDiscussion" modalPresentationStyle="fullScreen" id="IQD-64-xW6" customClass="TimedDiscussionViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETR-LG-G2B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68u-VM-aX5">
-                                <rect key="frame" x="145.66666666666666" y="760" width="122.99999999999997" height="38"/>
+                                <rect key="frame" x="126" y="565" width="123" height="38"/>
                                 <state key="normal" backgroundImage="GotIt"/>
                                 <connections>
                                     <segue destination="fbl-sZ-TIu" kind="show" id="blD-AP-D7A"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="timedDiscussionIlustration1.0" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-q7-coh">
-                                <rect key="frame" x="36" y="313" width="342" height="403"/>
+                                <rect key="frame" x="16.5" y="118" width="342" height="403"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1425,11 +1419,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="fbl-sZ-TIu" customClass="Dinamica03ViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dPG-pE-b0f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shakeYourPhoneIlustration" translatesAutoresizingMaskIntoConstraints="NO" id="TRL-J3-Jlc">
-                                <rect key="frame" x="72.666666666666686" y="282.66666666666669" width="269" height="331.00000000000006"/>
+                                <rect key="frame" x="53" y="168" width="269" height="331"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1461,17 +1455,17 @@
             <objects>
                 <viewController storyboardIdentifier="telaCronometro" modalPresentationStyle="fullScreen" id="QRi-ft-NKl" customClass="TelaCronometroViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aSA-Rn-bS4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnX-9B-ZdX" userLabel="clockLabel">
-                                <rect key="frame" x="330" y="76" width="68" height="29"/>
+                                <rect key="frame" x="291" y="32" width="68" height="29"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-DX-lAM">
-                                <rect key="frame" x="125.66666666666669" y="313" width="163" height="280"/>
+                                <rect key="frame" x="106" y="269" width="163" height="129"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The theme is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-We-peH">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="29"/>
@@ -1480,20 +1474,20 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global Piece" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-bj-lCj">
-                                        <rect key="frame" x="0.0" y="37" width="163" height="38.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="37" width="163" height="38.5"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu6-7Y-GOf">
-                                        <rect key="frame" x="50.333333333333329" y="80.333333333333314" width="62" height="65.333333333333314"/>
+                                        <rect key="frame" x="53.5" y="80.5" width="56" height="53.5"/>
                                         <state key="normal" image="PlayNew"/>
                                         <connections>
                                             <action selector="startButton2:" destination="QRi-ft-NKl" eventType="touchUpInside" id="QcV-tF-gEF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqE-c2-3Wu">
-                                        <rect key="frame" x="50.333333333333329" y="80.333333333333314" width="62" height="65.333333333333314"/>
+                                        <rect key="frame" x="53.5" y="80.5" width="56" height="53.5"/>
                                         <state key="normal" image="PlayNew"/>
                                         <connections>
                                             <action selector="startButton:" destination="QRi-ft-NKl" eventType="touchUpInside" id="Xjf-0A-VGy"/>
@@ -1517,14 +1511,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="7Iy-6b-zrB" userLabel="BallonA">
-                                <rect key="frame" x="16" y="64.000000000000014" width="215.33333333333334" height="245.33333333333337"/>
+                                <rect key="frame" x="16" y="20" width="195" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Balao1_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="U3C-Lx-TUc">
                                         <rect key="frame" x="0.0" y="0.0" width="198" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="da" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4e-7d-8ag">
-                                        <rect key="frame" x="10.333333333333329" y="11.666666666666671" width="194.66666666666669" height="222"/>
+                                        <rect key="frame" x="9.5" y="9.5" width="176" height="181"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1539,13 +1533,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6O-Ki-xeN">
-                                <rect key="frame" x="182.66666666666663" y="596.66666666666663" width="215.33333333333337" height="245.33333333333337"/>
+                                <rect key="frame" x="164" y="447" width="195" height="200"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Balao2_ShakeScreen" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-QF-sxT">
-                                        <rect key="frame" x="-90.333333333333329" y="-81.333333333333258" width="396" height="408"/>
+                                        <rect key="frame" x="-100.5" y="-104" width="396" height="408"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome02!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHQ-0k-8DP">
-                                        <rect key="frame" x="0.0" y="0.0" width="215.33333333333334" height="245.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="200"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="32"/>
                                         <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1604,14 +1598,14 @@
             <objects>
                 <viewController storyboardIdentifier="endTimedDiscussion" modalPresentationStyle="fullScreen" id="O9T-ol-uEL" customClass="EndGameViewController" customModule="romance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ji0-Fk-y5N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="FinalScreenOfTimedDiscussion" translatesAutoresizingMaskIntoConstraints="NO" id="uq7-1A-HS7">
-                                <rect key="frame" x="34" y="164" width="346" height="340"/>
+                                <rect key="frame" x="34" y="120" width="307" height="340"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izZ-ev-Hga">
-                                <rect key="frame" x="145.66666666666666" y="568" width="122.99999999999997" height="38"/>
+                                <rect key="frame" x="126" y="524" width="123" height="38"/>
                                 <state key="normal" image="FinishNew"/>
                                 <connections>
                                     <action selector="dismissDiscussion:" destination="O9T-ol-uEL" eventType="touchUpInside" id="zZw-hu-hdg"/>
@@ -1644,7 +1638,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="zIv-NE-kVI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Fw3-tb-2rJ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
