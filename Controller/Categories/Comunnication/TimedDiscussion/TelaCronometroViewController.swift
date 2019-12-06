@@ -32,7 +32,7 @@ class TelaCronometroViewController: UIViewController {
     
     //Time Variables
     var timer = Timer()
-    var time: Int = 5
+    var time: Int = 60
     var count: Int = 0
     var minute: Int = 0
     var second: Int = 0
@@ -160,7 +160,7 @@ class TelaCronometroViewController: UIViewController {
             
             timer.invalidate()
             
-            time = 5
+            time = 60
             
             if endTurn == 2 {
                 performSegue(withIdentifier: "endSegue", sender: self)
