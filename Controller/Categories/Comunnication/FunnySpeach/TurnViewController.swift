@@ -22,7 +22,9 @@ class TurnViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
         navigationController?.navigationBar.isHidden = true
         
         parterName.text = "It's your turn \(String(describing: name1!))"

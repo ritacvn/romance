@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         
+        
+    
         return true
     }
 
@@ -55,6 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
     }
+   
 
     // MARK: - Core Data stack
 

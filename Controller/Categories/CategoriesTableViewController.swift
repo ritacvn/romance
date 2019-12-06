@@ -23,6 +23,9 @@ class CategoriesTableViewController: UIViewController {
         self.tableView.dataSource = self
         //self.blurEffect.isHidden = true
         navigationController?.navigationBar.isHidden = false
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
     }
     
     @IBAction func editNameButton(_ sender: Any) {
